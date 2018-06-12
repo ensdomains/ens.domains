@@ -11,5 +11,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-next`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Overpass\:300,400,500,700`, `Karma: 300`],
+      },
+    },
   ],
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="251px" height="120px" viewBox="0 0 251 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Color-Variation" transform="translate(-312.000000, -1435.000000)">
+            <g id="Secure-/-Distributed" transform="translate(310.000000, 1433.000000)">
+                <g id="Secure" transform="translate(2.000000, 0.000000)">
+                    <g id="Group-2" transform="translate(0.000000, 2.000000)">
+                        <polygon id="Polygon-Copy-5" fill="#5284FF" points="51.7134328 1 103.426866 30.5674847 103.426866 89.702454 51.7134328 119.269939 2.13162821e-14 89.702454 -1.0658141e-14 30.5674847"></polygon>
+                        <polygon id="Polygon-Copy-6" fill="#5284FF" points="198.713433 1 250.426866 30.5674847 250.426866 89.702454 198.713433 119.269939 147 89.702454 147 30.5674847"></polygon>
+                        <circle id="Oval" stroke="#3252C8" stroke-width="8" cx="122.5" cy="60.5" r="55.5"></circle>
+                        <path d="M51.7134328,4.6076551 L4,31.8881143 L4,86.3818244 L51.7134328,113.662284 L99.4268657,86.3818244 L99.4268657,31.8881143 L51.7134328,4.6076551 Z M198.713529,4.6076551 L151.000096,31.8881143 L151.000096,86.3818244 L198.713529,113.662284 L246.426962,86.3818244 L246.426962,31.8881143 L198.713529,4.6076551 Z" id="Polygon-Copy-5" stroke="#5284FF" stroke-width="8"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
