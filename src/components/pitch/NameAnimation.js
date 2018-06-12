@@ -42,7 +42,6 @@ class NameAnimation extends Component {
     this.tl = new TimelineMax()
   }
   componentDidMount() {
-    //console.log(this.cross)
     const hashStart = (node, num) => {
       this.tl.addLabel(`hashStart${num}`)
       this.tl.to(node, 0, { display: 'block' })
@@ -57,7 +56,7 @@ class NameAnimation extends Component {
         this.cross.current,
         0.4,
         { opacity: 1, ease: Power1.easeIn },
-        `hashStart${num}+=2`
+        `hashStart${num}+=1`
       )
       this.tl.addLabel(`hashEnd${num}`)
       this.tl.to(
@@ -129,7 +128,7 @@ class NameAnimation extends Component {
             .map((e, i) => <span key={i}>{e}</span>)}
         </p>
         <p className="hash" ref={this.hash2}>
-          {'0x10abc565ef57aebf13e5eafc02fa864f8a1f5be'
+          {'0xCAB1e92Cc3C753AE8398151d4E24d561a3c5E1dE'
             .split('')
             .map((e, i) => <span key={i}>{e}</span>)}
         </p>
