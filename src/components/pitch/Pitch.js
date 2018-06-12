@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
-import StaggerEntrance from './StaggerEntrance'
+import NameAnimation from './NameAnimation'
 import secure from '../../assets/secure.svg'
 import distributed from '../../assets/distributed.svg'
 
@@ -27,8 +27,7 @@ export default () => (
       ENS offers a secure &amp; decentralised way to address resources both on
       and off the blockchain using simple, human-readable names.
     </p>
-    <StaggerEntrance>jack.mywallet.eth</StaggerEntrance>
-    <StaggerEntrance>0x10abc565ef57aebf13e5eafc02fa864f8a1f5be</StaggerEntrance>
+    <NameAnimation />
     <ValueCard title="Secure." img={secure}>
       ENS operates in a distributed fashion for both its infrastructure and
       governance. Anyone can register a .eth domain name for themselves by

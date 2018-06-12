@@ -25,7 +25,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:test": "gatsby build && cd public && surge . --domain ensdomains.surge.sh"
   },
   "devDependencies": {
     "prettier": "^1.12.0"
