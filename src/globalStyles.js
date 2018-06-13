@@ -16,14 +16,17 @@ injectGlobal`
 
   blockquote {
     font-family: Karma;
-    font-weight: 300;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0px 1.0875rem 1.45rem;
+    padding-top: 0;
   }
 
   #___gatsby {
     height: 100%
   }
 
-  #___gatsby > div {
-    height: 100%
-  }
 `

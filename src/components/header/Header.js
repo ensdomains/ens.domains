@@ -1,41 +1,11 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import BG from './Hero_BG.jpg'
 import styled from 'react-emotion'
 import logoLarge from '../../assets/logoLarge.png'
 import logoSmall from '../../assets/logoSmall.png'
 import ethereum from '../../assets/ethereum.png'
 import nameService from '../../assets/nameService.png'
-
-function modulate(value, rangeA, rangeB, limit) {
-  let fromHigh, fromLow, result, toHigh, toLow
-  if (limit == null) {
-    limit = false
-  }
-  fromLow = rangeA[0]
-  fromHigh = rangeA[1]
-  toLow = rangeB[0]
-  toHigh = rangeB[1]
-  result = toLow + ((value - fromLow) / (fromHigh - fromLow)) * (toHigh - toLow)
-  if (limit === true) {
-    if (toLow < toHigh) {
-      if (result < toLow) {
-        return toLow
-      }
-      if (result > toHigh) {
-        return toHigh
-      }
-    } else {
-      if (result > toLow) {
-        return toLow
-      }
-      if (result < toHigh) {
-        return toHigh
-      }
-    }
-  }
-  return result
-}
+import { modulate } from '../../utils'
 
 const StickyHeader = styled('header')`
   position: fixed;
@@ -78,6 +48,7 @@ const HeroBG = styled('div')`
 
   .ethereum-logo {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .name-service {
@@ -112,10 +83,18 @@ class Header extends React.Component {
     )
 
     const logoWidth = modulate(window.pageYOffset, scrollRange1, [20, 10], true)
+
     const logoMargin = modulate(
       window.pageYOffset,
       scrollRange1,
       [0, bodyHeight],
+      true
+    )
+
+    const logoOpacity = modulate(
+      window.pageYOffset,
+      [bodyHeight - 150, bodyHeight],
+      [1, 0],
       true
     )
 
@@ -136,6 +115,7 @@ class Header extends React.Component {
     //this.header.current.style.height = headerHeight + 'px'
     this.logo.current.style.width = logoWidth + '%'
     this.logo.current.style.marginBottom = `-${logoMargin}px`
+    this.logo.current.style.opacity = logoOpacity
     this.stickyHeader.current.style.opacity = stickyOpacity
     this.stickyHeader.current.style.transform = `scale(${stickyScale}`
   }
