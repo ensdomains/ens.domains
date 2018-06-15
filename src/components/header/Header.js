@@ -1,5 +1,5 @@
 import React from 'react'
-import BG from './Hero_BG.jpg'
+import BG from '../../assets/heroBG.jpg'
 import styled from 'react-emotion'
 import logoLarge from '../../assets/logoLarge.png'
 import logoSmall from '../../assets/logoSmall.png'
