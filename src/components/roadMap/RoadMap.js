@@ -1,13 +1,117 @@
 import React from 'react'
 import styled from 'react-emotion'
+import { modulate } from '../../utils'
+import smallBlueHexagon from './smallBlueHexagon.png'
+import cyanHexagon from './cyanHexagon.png'
+import cyanCircle from './cyanCircle.png'
+import blueHexagon from './blueHexagon.png'
 
-const RoadMapContainer = styled('section')``
+const RoadMapContainer = styled('section')`
+  padding: 100px 0;
+  position: relative;
+
+  .lede {
+    font-family: Karma;
+    font-weight: 100;
+    font-size: 34px;
+    line-height: 1.3em;
+  }
+
+  .container-small:first-child {
+    margin-bottom: 100px;
+  }
+
+  .bg {
+    position: absolute;
+  }
+
+  .small-blue-hexagon {
+    top: -200px;
+    right: 0;
+  }
+
+  .blue-hexagon {
+    bottom: 0;
+    left: 0;
+  }
+
+  .cyan-circle {
+    bottom: 0;
+    right: 0;
+  }
+
+  .cyan-hexagon {
+    left: 0;
+    top: 0;
+  }
+`
 
 class RoadMap extends React.Component {
+  constructor(props) {
+    super(props)
+    this.roadmap = React.createRef()
+    this.cyancircle = React.createRef()
+    this.blueHexagon = React.createRef()
+    this.cyanHexagon = React.createRef()
+    this.smallBlueHexagon = React.createRef()
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+  handleScroll = () => {
+    let bodyHeight = document.body.clientHeight
+    let roadmap = this.roadmap.current
+    let roadMapHeight = roadmap.offsetHeight
+    let roadMapOffsetTop = roadmap.offsetTop - bodyHeight
+
+    //console.log(event)
+    console.log(roadMapHeight)
+    console.log(window.scrollY, roadMapOffsetTop)
+
+    // let scrollRange1 = [0, bodyHeight]
+    // let scrollRange2 = [0, 200]
+    // const headerHeight = modulate(
+    //   window.pageYOffset,
+    //   scrollRange1,
+    //   [bodyHeight, 100],
+    //   true
+    // )
+
+    //this.header.current.style.height = headerHeight + 'px'
+    // this.logo.current.style.width = logoWidth + '%'
+    // this.logo.current.style.marginBottom = `-${logoMargin}px`
+    // this.logo.current.style.opacity = logoOpacity
+    // this.stickyHeader.current.style.opacity = stickyOpacity
+    // this.stickyHeader.current.style.transform = `scale(${stickyScale}`
+  }
   render() {
     return (
-      <RoadMapContainer>
-        <div className="container">
+      <RoadMapContainer innerRef={this.roadmap}>
+        <img
+          src={cyanCircle}
+          ref={this.cyancircle}
+          className="cyan-circle bg"
+        />
+        <img
+          src={blueHexagon}
+          ref={this.blueHexagon}
+          className="blue-hexagon bg"
+        />
+        <img
+          src={cyanHexagon}
+          ref={this.cyanHexagon}
+          className="cyan-hexagon bg"
+        />
+        <img
+          src={smallBlueHexagon}
+          ref={this.smallBlueHexagon}
+          className="small-blue-hexagon bg"
+        />
+        <div className="container-small">
           <h2>ENS Roadmap.</h2>
           <p className="lede">
             ENS launched on mainnet on May 4, 2017. At launch, ENS features an
@@ -33,6 +137,8 @@ class RoadMap extends React.Component {
             names registered with the initial registrar to the permanent
             registrar.
           </p>
+        </div>
+        <div className="container-small">
           <h2>Managing the ENS Root.</h2>
           <p>
             To facilitate the possibility of upgrades and maintenance, and in
@@ -45,6 +151,10 @@ class RoadMap extends React.Component {
             than the development of the permanent .eth registrar.
           </p>
           <h3>· Root Key Holders ·</h3>
+          <ul>
+            <li>Dan Findley</li>
+            <li>Jarrod Hope</li>
+          </ul>
         </div>
       </RoadMapContainer>
     )

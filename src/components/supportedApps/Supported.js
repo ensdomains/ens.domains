@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'react-emotion'
 
 const Supported = styled('section')`
-  padding-top: 170px;
+  padding: 170px 0;
   background-image: linear-gradient(
     -179deg,
     rgba(138, 244, 255, 0.1) 0%,

@@ -14,7 +14,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Overpass\:100,200,300,400,500,700,900`, `Karma: 300,200`],
+        fonts: [
+          `Overpass\:100,200,300,400,500,700,800,900`,
+          `Karma: 300,200,100`,
+        ],
       },
     },
   ],

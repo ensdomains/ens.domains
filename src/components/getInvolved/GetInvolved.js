@@ -7,6 +7,25 @@ const GetInvolvedContainer = styled('section')`
   background-size: cover;
   background-position: center center;
   height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3em;
+    max-width: 768px;
+    text-align: center;
+  }
 `
 
 class GetInvolved extends React.Component {
