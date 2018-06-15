@@ -29,4 +29,15 @@ injectGlobal`
     height: 100%
   }
 
+  h2 {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
 `

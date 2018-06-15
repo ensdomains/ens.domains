@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="138px" height="160px" viewBox="0 0 138 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="120.303416%" y1="119.820205%" x2="-33.984375%" y2="-35.0973887%" id="linearGradient-1">
+            <stop stop-color="#5040FF" offset="0%"></stop>
+            <stop stop-color="#52E4FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="566.796875%" y1="2326.95312%" x2="566.796875%" y2="-1721.875%" id="linearGradient-2">
+            <stop stop-color="#5040FF" offset="0%"></stop>
+            <stop stop-color="#52E4FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="12.3366443%" y1="-9.64387175%" x2="94.9411981%" y2="95.8806818%" id="linearGradient-3">
+            <stop stop-color="#52E5FF" offset="0%"></stop>
+            <stop stop-color="#5041FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Color-Variation" transform="translate(-991.000000, -2657.000000)">
+            <g id="Get-Started-group" transform="translate(294.000000, 2557.000000)">
+                <g id="Icons" transform="translate(0.000000, 93.000000)">
+                    <g id="ICONS-V1" transform="translate(247.000000, 10.000000)">
+                        <g id="Group-7" transform="translate(452.000000, 0.000000)">
+                            <g id="BookV2" transform="translate(35.000000, 43.000000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5">
+                                <path d="M50.8571429,73 L14,73 L14,0 L50.8571429,0 C54.2495357,0 57,2.84223913 57,6.34782609 L57,66.6521739 C57,70.1577609 54.2495357,73 50.8571429,73 Z" id="Stroke-1" stroke="url(#linearGradient-1)"></path>
+                                <path d="M13,73 L9.14285714,73 C6.30271429,73 4,70.1577609 4,66.6521739 L4,6.34782609 C4,2.84223913 6.30271429,0 9.14285714,0 L13,0" id="Stroke-3" stroke="url(#linearGradient-1)"></path>
+                                <path d="M0,18 L6,18" id="Stroke-5" stroke="url(#linearGradient-2)"></path>
+                                <path d="M0,36 L6,36" id="Stroke-7" stroke="url(#linearGradient-2)"></path>
+                                <path d="M0,54 L6,54" id="Stroke-9" stroke="url(#linearGradient-2)"></path>
+                                <path d="M23,26 L48,26" id="Stroke-11" stroke="url(#linearGradient-2)"></path>
+                                <path d="M23,36 L48,36" id="Stroke-13" stroke="url(#linearGradient-1)"></path>
+                                <path d="M23,46 L48,46" id="Stroke-15" stroke="url(#linearGradient-1)"></path>
+                            </g>
+                            <polygon id="Polygon-7-Copy" stroke="url(#linearGradient-3)" stroke-width="4" points="66.6839561 0 133.367912 38.5 133.367912 115.5 66.6839561 154 2.98427949e-13 115.5 2.55795385e-13 38.5"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Pitch from '../components/pitch/Pitch'
 import Quote from '../components/quote/Quote'
 import GetStarted from '../components/getStarted/GetStarted'
+import Supported from '../components/supportedApps/Supported'
 
 const IndexPage = () => (
   <Fragment>
@@ -11,6 +12,7 @@ const IndexPage = () => (
       author="Henri Poincare"
     />
     <GetStarted />
+    <Supported />
   </Fragment>
 )
 

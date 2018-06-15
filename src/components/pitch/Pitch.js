@@ -9,7 +9,7 @@ class ValueCard extends React.Component {
     return (
       <div className="value-prop-card">
         <img src={this.props.img} />
-        <h2>{this.props.title}</h2>
+        <h3>{this.props.title}</h3>
         <p>{this.props.children}</p>
       </div>
     )
