@@ -1,11 +1,10 @@
 import React from 'react'
 import BG from '../../assets/heroBG.jpg'
 import styled from 'react-emotion'
-import logoLarge from '../../assets/logoLarge.png'
 import logoSmall from '../../assets/logoSmall.png'
-import ethereum from '../../assets/ethereum.png'
-import nameService from '../../assets/nameService.png'
+import logo from '../../assets/logo.png'
 import { modulate } from '../../utils'
+import mq from '../../mediaQuery'
 
 const StickyHeader = styled('header')`
   position: fixed;
@@ -39,20 +38,19 @@ const HeroBG = styled('div')`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20%;
+    width: 50%;
+
+    ${mq.medium`
+      width: 30%
+    `};
+
+    ${mq.large`
+      width: 20%
+    `};
   }
   .ens-logo {
-    width: 60%;
-    margin-bottom: 15px;
-  }
-
-  .ethereum-logo {
     width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .name-service {
-    width: 75%;
+    margin-bottom: 15px;
   }
 `
 
@@ -82,7 +80,12 @@ class Header extends React.Component {
       true
     )
 
-    const logoWidth = modulate(window.pageYOffset, scrollRange1, [20, 10], true)
+    const logoWidth = modulate(
+      window.pageYOffset,
+      scrollRange1,
+      [100, 50],
+      true
+    )
 
     const logoMargin = modulate(
       window.pageYOffset,
@@ -126,10 +129,8 @@ class Header extends React.Component {
           <img src={logoSmall} />
         </StickyHeader>
         <HeroBG innerRef={this.header}>
-          <a href="#" className="logo" ref={this.logo}>
-            <img src={logoLarge} className="ens-logo" />
-            <img src={ethereum} className="ethereum-logo" />
-            <img src={nameService} className="name-service" />
+          <a href="#" className="logo">
+            <img src={logo} className="ens-logo" ref={this.logo} />
             {/* <div className="name-service">Name Service</div> */}
           </a>
         </HeroBG>
