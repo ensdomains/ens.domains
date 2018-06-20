@@ -10,15 +10,12 @@ const RoadMapContainer = styled('section')`
   padding: 100px 0;
   position: relative;
 
-  .lede {
-    font-family: Karma;
-    font-weight: 100;
-    font-size: 34px;
-    line-height: 1.3em;
-  }
-
   .container-small:first-child {
     margin-bottom: 100px;
+  }
+
+  h3 {
+    text-align: center;
   }
 
   .bg {
@@ -50,7 +47,7 @@ class RoadMap extends React.Component {
   constructor(props) {
     super(props)
     this.roadmap = React.createRef()
-    this.cyancircle = React.createRef()
+    this.cyanCircle = React.createRef()
     this.blueHexagon = React.createRef()
     this.cyanHexagon = React.createRef()
     this.smallBlueHexagon = React.createRef()
@@ -67,33 +64,54 @@ class RoadMap extends React.Component {
     let roadmap = this.roadmap.current
     let roadMapHeight = roadmap.offsetHeight
     let roadMapOffsetTop = roadmap.offsetTop - bodyHeight
+    let roadMapOffsetBottom = roadmap.offsetTop + bodyHeight + bodyHeight
 
     //console.log(event)
     console.log(roadMapHeight)
     console.log(window.scrollY, roadMapOffsetTop)
 
-    // let scrollRange1 = [0, bodyHeight]
+    let scrollRange1 = [roadMapOffsetTop, roadMapOffsetBottom]
     // let scrollRange2 = [0, 200]
-    // const headerHeight = modulate(
-    //   window.pageYOffset,
-    //   scrollRange1,
-    //   [bodyHeight, 100],
-    //   true
-    // )
+    console.log(this.smallBlueHexagon)
+    const smallBlueHexagonTop = modulate(
+      window.pageYOffset,
+      scrollRange1,
+      [-200, 300],
+      true
+    )
 
-    //this.header.current.style.height = headerHeight + 'px'
-    // this.logo.current.style.width = logoWidth + '%'
-    // this.logo.current.style.marginBottom = `-${logoMargin}px`
-    // this.logo.current.style.opacity = logoOpacity
-    // this.stickyHeader.current.style.opacity = stickyOpacity
-    // this.stickyHeader.current.style.transform = `scale(${stickyScale}`
+    const cyanHexagonTop = modulate(
+      window.pageYOffset,
+      scrollRange1,
+      [0, 500],
+      true
+    )
+
+    const blueHexagonBottom = modulate(
+      window.pageYOffset,
+      scrollRange1,
+      [-200, 200],
+      true
+    )
+
+    const cyanCircleBottom = modulate(
+      window.pageYOffset,
+      scrollRange1,
+      [-300, 300],
+      true
+    )
+
+    this.smallBlueHexagon.current.style.top = smallBlueHexagonTop + 'px'
+    this.cyanHexagon.current.style.top = cyanHexagonTop + 'px'
+    this.blueHexagon.current.style.bottom = blueHexagonBottom + 'px'
+    this.cyanCircle.current.style.bottom = cyanCircleBottom + 'px'
   }
   render() {
     return (
       <RoadMapContainer innerRef={this.roadmap}>
         <img
           src={cyanCircle}
-          ref={this.cyancircle}
+          ref={this.cyanCircle}
           className="cyan-circle bg"
         />
         <img

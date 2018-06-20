@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+import mq from '../../mediaQuery'
 
 const QuoteContainer = styled('div')`
   background: linear-gradient(, rgba())
@@ -9,15 +10,22 @@ const QuoteContainer = styled('div')`
   color: #3252C8;
   text-align: center;
   blockquote {
-    font-size: 52px;
-    line-height: 1.1em;
+    font-size: 32px;
+    line-height: 1.2em;
     font-weight: 100;
+
+    ${mq.medium(`
+      font-size: 48px
+    `)}
   }
   cite {
     font-family: Karma;
     font-weight: 300;
     font-style: normal;
-    font-size: 32px;
+    font-size: 18px;
+    ${mq.medium(`
+      font-size: 28px
+    `)}
   }
   
 `

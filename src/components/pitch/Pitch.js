@@ -3,6 +3,7 @@ import styled from 'react-emotion'
 import NameAnimation from './NameAnimation'
 import secure from '../../assets/secure.svg'
 import distributed from '../../assets/distributed.svg'
+import mq from '../../mediaQuery'
 
 class ValueCard extends React.Component {
   render() {
@@ -22,14 +23,18 @@ const PitchContainer = styled.div`
 
   .value-prop {
     margin-top: 20px;
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 100;
-    line-height: 1.15em;
+    line-height: 1.3em;
     text-align: center;
     width: 100%;
     strong {
-      font-weight: bold;
+      font-weight: 500;
     }
+
+    ${mq.medium(`
+      font-size: 34px;
+    `)};
   }
 
   .card-container {
