@@ -10,6 +10,7 @@ const NameAnimationContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   p {
     font-size: 32px;
     text-align: center;

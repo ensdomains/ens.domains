@@ -9,6 +9,7 @@ import blueHexagon from './blueHexagon.png'
 const RoadMapContainer = styled('section')`
   padding: 100px 0;
   position: relative;
+  overflow: hidden;
 
   .container-small:first-child {
     margin-bottom: 100px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
-import NameAnimation from './NameAnimation'
+import Explainer from './Explainer'
 import secure from '../../assets/secure.svg'
 import hexagonBG from '../../assets/hexagonBG.png'
 import distributed from '../../assets/distributed.svg'
@@ -19,8 +19,6 @@ class ValueCard extends React.Component {
 }
 
 const PitchContainer = styled.div`
-  
-  width: 90%;
   margin: 100px auto 0;
 
   .value-prop {
@@ -97,7 +95,7 @@ export default () => (
       and off the blockchain using simple,{' '}
       <strong>human-readable names.</strong>
     </p>
-    <NameAnimation />
+    <Explainer />
     <div className="card-container container">
       <ValueCard title="Secure." img={secure}>
         ENS operates in a distributed fashion for both its infrastructure and
