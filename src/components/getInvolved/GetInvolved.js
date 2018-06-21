@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+import mq from '../../mediaQuery'
 import BG from '../../assets/heroBG.jpg'
 
 const GetInvolvedContainer = styled('section')`
@@ -20,11 +21,15 @@ const GetInvolvedContainer = styled('section')`
   }
 
   p {
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 300;
     line-height: 1.3em;
     max-width: 768px;
     text-align: center;
+
+    ${mq.medium`
+      font-size: 30px;
+    `};
   }
 `
 
