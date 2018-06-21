@@ -1,8 +1,14 @@
 import React from 'react'
 import styled from 'react-emotion'
+import mq from '../../mediaQuery'
 
 const Supported = styled('section')`
-  padding: 170px 0;
+  padding: 100px 0;
+
+  ${mq.medium`
+    padding: 170px 0;
+  `};
+
   background-image: linear-gradient(
     -179deg,
     rgba(138, 244, 255, 0.1) 0%,
@@ -15,7 +21,16 @@ const Supported = styled('section')`
     display: flex;
     justify-content: space-between;
     margin: 0 auto 50px;
-    width: 80%;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &:last-of-type {
+      margin 0 auto 0;
+    }
+
+    ${mq.medium`
+      width: 80%%;
+    `};
   }
 
   h3 {
@@ -26,6 +41,10 @@ const Supported = styled('section')`
 
   .app {
     text-align: center;
+    width: 50%;
+    ${mq.medium`
+      width: 25%;
+    `};
     img {
       margin-bottom: 15px;
     }
@@ -59,7 +78,7 @@ const AppRow = ({ list, className, title }) => {
   return (
     <React.Fragment>
       <h3>{title}</h3>
-      <div className={`${className} apps`}>
+      <div className={`apps ${className ? className : ''}`}>
         {list.map(item => (
           <App key={item.name} src={item.src} name={item.name} />
         ))}

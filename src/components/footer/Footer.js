@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'react-emotion'
-import fb from './facebook.png'
 import twitter from './twitter.png'
 import medium from './medium.png'
 
