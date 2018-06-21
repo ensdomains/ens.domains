@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+import mq from '../../mediaQuery'
 
 import docs from './documentation.svg'
 import manage from './manage.svg'
@@ -12,9 +13,15 @@ const GetStarted = styled('section')`
   .icons {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
+
   .icon {
-    width: 20%;
+    width: 40%;
+
+    ${mq.medium`
+      width: 20%;
+    `};
   }
 
   .img-wrapper {
@@ -22,6 +29,13 @@ const GetStarted = styled('section')`
     justify-content: center;
     align-items: center;
     height: 200px;
+
+    img {
+      max-width: 80%;
+      ${mq.medium`
+        max-width: 100%;
+      `};
+    }
   }
 
   p {
