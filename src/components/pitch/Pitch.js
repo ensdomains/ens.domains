@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'react-emotion'
 import NameAnimation from './NameAnimation'
 import secure from '../../assets/secure.svg'
+import hexagonBG from '../../assets/hexagonBG.png'
 import distributed from '../../assets/distributed.svg'
 import mq from '../../mediaQuery'
 
@@ -18,16 +19,19 @@ class ValueCard extends React.Component {
 }
 
 const PitchContainer = styled.div`
+  
   width: 90%;
   margin: 100px auto 0;
 
   .value-prop {
-    margin-top: 20px;
+    position: relative;
+    padding: 100px 0;
+    margin: 0 auto 0;
     font-size: 22px;
     font-weight: 100;
     line-height: 1.3em;
     text-align: center;
-    width: 100%;
+    max-width: 75%;
     strong {
       font-weight: 500;
     }
@@ -35,6 +39,18 @@ const PitchContainer = styled.div`
     ${mq.medium(`
       font-size: 34px;
     `)};
+
+    &:before {
+      display: block;
+      content: '';
+      background: url('${hexagonBG}');
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 240px;
+      height: 276px;
+    }
   }
 
   .card-container {

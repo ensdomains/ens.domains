@@ -50,13 +50,13 @@ injectGlobal`
   .container {
     margin: 0 auto;
     max-width: 960px;
-    padding: 0 20px 0;
+    padding: 0 28px 0;
   }
 
   .container-small {
     margin: 0 auto;
     max-width: 768px;
-    padding: 0 20px 0;
+    padding: 0 28px 0;
   }
 
   #___gatsby {
