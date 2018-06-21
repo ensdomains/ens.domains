@@ -25,7 +25,7 @@ const PitchContainer = styled.div`
 
   .value-prop {
     position: relative;
-    padding: 100px 0;
+    padding: 20px 0;
     margin: 0 auto 0;
     font-size: 22px;
     font-weight: 100;
@@ -37,6 +37,7 @@ const PitchContainer = styled.div`
     }
 
     ${mq.medium(`
+      padding: 100px 0;
       font-size: 34px;
     `)};
 
@@ -55,15 +56,36 @@ const PitchContainer = styled.div`
 
   .card-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 100px;
+
+    ${mq.medium(`
+      flex-direction: row;
+    `)};
   }
 
   .value-prop-card {
-    width: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    ${mq.medium(`
+      align-items: flex-start;
+      width: 45%;
+    `)};
     p {
       font-weight: 300;
+    }
+
+    img {
+      align-self: center;
+      max-width: 80%;
+      ${mq.medium(`
+        align-self: flex-start;
+        max-width: 100%;
+      `)};
     }
   }
 `
