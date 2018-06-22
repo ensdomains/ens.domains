@@ -46,6 +46,7 @@ const Supported = styled('section')`
       width: 25%;
     `};
     img {
+      width: 50%;
       margin-bottom: 15px;
     }
     p {

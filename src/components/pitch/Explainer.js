@@ -26,7 +26,7 @@ const BaseContainer = styled.div`
     font-size: 52px;
     line-height: 1em;
     text-wrap: nowrap;
-    opacity: 0.15;
+    opacity: 0.1;
   }
 
   .hook {
@@ -61,22 +61,32 @@ class Explainer extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('scroll', this.scroll)
+
+    this.interval = setInterval(() => {
+      if (this.didScroll === true) {
+        this.didScroll = false
+        this.handleScroll()
+      }
+    }, 50)
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('scroll', this.scroll)
+
+    clearInterval(this.interval)
   }
+
+  scroll = () => {
+    this.didScroll = true
+  }
+
   handleScroll = () => {
     let bodyHeight = document.body.clientHeight
     let explainer = this.explainer.current
     let explainerHeight = explainer.offsetHeight
     let explainerOffsetTop = explainer.offsetTop - bodyHeight
     let explainerOffsetBottom = explainer.offsetTop + bodyHeight + bodyHeight
-
-    //console.log(event)
-    console.log(explainerHeight)
-    console.log(window.scrollY, explainerOffsetTop)
 
     let scrollRange1 = [explainerOffsetTop, explainerOffsetBottom]
     // let scrollRange2 = [0, 200]
