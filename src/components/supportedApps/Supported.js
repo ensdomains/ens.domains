@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'react-emotion'
 import mq from '../../mediaQuery'
 import { modulate } from '../../utils'
+import phoneIcon from './icons/phone.png'
+import desktopIcon from './icons/desktop.png'
+import appsIcon from './icons/apps.png'
 
 const Supported = styled('section')`
   position: relative;
@@ -13,6 +16,7 @@ const Supported = styled('section')`
 
   .bg-images img {
     position: absolute;
+    z-index: -1;
   }
 
   .hexagon1 {
@@ -69,6 +73,25 @@ const Supported = styled('section')`
     text-align: center;
     font-size: 30px;
     margin-bottom: 60px;
+
+    img {
+      margin-right: 5px;
+    }
+
+    .phone-icon {
+      width: 15px;
+      height: 22px;
+    }
+
+    .desktop-icon {
+      width: 29px;
+      height: 22px;
+    }
+
+    .apps-icon {
+      width: 22px;
+      height: 23px;
+    }
   }
 
   .app {
@@ -117,10 +140,10 @@ const bgImages = importAll(
   require.context('./images', false, /\.(png|jpe?g|svg)$/)
 )
 
-const AppRow = ({ list, className, title }) => {
+const AppRow = ({ list, className, children }) => {
   return (
     <React.Fragment>
-      <h3>{title}</h3>
+      {children}
       <div className={`apps ${className ? className : ''}`}>
         {list.map(item => (
           <App key={item.name} src={item.src} name={item.name} />
@@ -211,16 +234,28 @@ export default class SuppportedContainer extends React.Component {
   render() {
     return (
       <Supported innerRef={this.supported}>
+        <div className="container">
+          <h2>Apps Supporting ENS</h2>
+          <AppRow list={mobile} title="s">
+            <h3>
+              <img className="phone-icon" src={phoneIcon} />Mobile Wallet
+            </h3>
+          </AppRow>
+          <AppRow list={desktop}>
+            <h3>
+              <img className="desktop-icon" src={desktopIcon} />Desktop Wallets
+            </h3>
+          </AppRow>
+          <AppRow list={apps}>
+            <h3>
+              <img className="apps-icon" src={appsIcon} />Apps
+            </h3>
+          </AppRow>
+        </div>
         <div className="bg-images">
           {bgImages.map(img => (
             <img className={img.name} src={img.src} ref={this[img.name]} />
           ))}
-        </div>
-        <div className="container">
-          <h2>Apps Supporting ENS</h2>
-          <AppRow list={mobile} title="· Mobile Wallets ·" />
-          <AppRow list={desktop} title="· Desktop Wallets ·" />
-          <AppRow list={apps} title="· Apps ·" />
         </div>
       </Supported>
     )
