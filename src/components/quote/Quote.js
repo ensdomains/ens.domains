@@ -1,14 +1,16 @@
 import React from 'react'
 import styled from 'react-emotion'
 import mq from '../../mediaQuery'
+import quoteBG from '../../assets/quoteBG.jpg'
 
 const QuoteContainer = styled('div')`
-  background: linear-gradient(, rgba())
-  opacity: 0.1;
-  background-image: linear-gradient(8deg, rgba(51, 76, 232, 0.1) 0%, rgba(144, 239, 255, 0.1) 100%);
-  padding: 100px 0;
-  color: #3252C8;
+  background-image: url(${quoteBG});
+  padding: 80px 0;
+  color: #3252c8;
   text-align: center;
+  ${mq.medium(`
+    padding: 175px 0;
+  `)};
   blockquote {
     font-size: 32px;
     line-height: 1.2em;
@@ -16,7 +18,7 @@ const QuoteContainer = styled('div')`
 
     ${mq.medium(`
       font-size: 48px
-    `)}
+    `)};
   }
   cite {
     font-family: Karma;
@@ -25,9 +27,8 @@ const QuoteContainer = styled('div')`
     font-size: 18px;
     ${mq.medium(`
       font-size: 28px
-    `)}
+    `)};
   }
-  
 `
 
 const Quote = ({ quote, author }) => (

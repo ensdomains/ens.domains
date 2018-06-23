@@ -39,7 +39,12 @@ const GetStarted = styled('section')`
   }
 
   p {
+    font-size: 16px;
+    color: #3252c8;
     text-align: center;
+    ${mq.medium`
+      font-size: 20px;
+    `};
   }
 `
 

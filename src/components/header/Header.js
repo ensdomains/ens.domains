@@ -10,7 +10,7 @@ import mq from '../../mediaQuery'
 
 const StickyHeader = styled('header')`
   position: fixed;
-  background: white;
+  background: rgba(255, 255, 255, 0)
   height: 64px;
   width: 100%;
   box-shadow: 2px 8px 25px 2px rgba(136, 149, 169, 0.12);
