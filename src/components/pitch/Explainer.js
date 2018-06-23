@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
-import { TimelineMax, Power1 } from 'gsap'
 import styled from 'react-emotion'
 import { modulate } from '../../utils'
-import { createInflateRaw } from 'zlib'
+import circleTop from './circleTop.svg'
+import circleBottom from './circleBottom.svg'
+import circleSide from './circleSide.svg'
+import mq from '../../mediaQuery'
 
 const BaseContainer = styled.div`
-  overflow: hidden;
   margin: 100px 0;
   position: relative;
-  height: 312px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 52px;
+
+  ${mq.medium` 
+  `};
 
   .background {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     position: absolute;
     left: 0;
     top: 0;
@@ -23,21 +27,108 @@ const BaseContainer = styled.div`
     font-family: Overpass Mono;
     position: relative;
     color: #5284ff;
-    font-size: 52px;
+    font-size: 26px;
     line-height: 1em;
     text-wrap: nowrap;
     opacity: 0.1;
+
+    ${mq.medium` 
+      font-size: 52px;
+    `};
   }
 
   .hook {
+    margin: 0 auto 0;
+    padding-top: 45px;
     position: relative;
     z-index: 100;
+    width: 50%;
+    text-align: center;
+    ${mq.medium`
+      padding-top: 110px;
+    `};
     h2 {
-      background: white;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      font-weight: 500;
+      padding: 10px 5px 0;
+      margin-bottom: 0;
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+      ${mq.medium`
+        font-size: 30px;
+      `};
     }
 
     p {
-      background: white;
+      background: rgba(255, 255, 255, 0.7);
+      font-weight: 300;
+      font-size: 26px;
+      margin-top: -5px;
+      display: inline-block;
+      ${mq.medium` 
+        font-size: 52px;
+      `};
+    }
+  }
+
+  .explanation {
+    display: none;
+    font-size: 20px;
+    background: #ffffff;
+    box-shadow: 2px 8px 25px 2px rgba(136, 149, 169, 0.12);
+    border-radius: 20px;
+    font-weight: 300;
+    line-height: 1.4em;
+    text-align: center;
+    position: relative;
+    top: -15%;
+    padding: 50px;
+    max-width: 50%;
+    margin: 0 auto 0;
+    ${mq.medium`
+      display: block
+    `};
+    img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .top {
+      top: 0;
+    }
+
+    .bottom {
+      bottom: 0;
+    }
+  }
+
+  .explanation-mobile {
+    background: white;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto 30px;
+    padding: 50px 30px;
+    display: block;
+    position: relative;
+    box-shadow: 0 5px 20px 2px rgba(223, 223, 223, 0.5);
+    border-radius: 20px;
+
+    ${mq.medium`
+      display: none
+    `};
+
+    strong {
+      font-weight: 500;
+    }
+
+    .side {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 `
@@ -123,8 +214,28 @@ class Explainer extends Component {
           ))}
         </div>
         <div className="hook">
-          <h2>No more long addresses</h2>
+          <h2>No long addresses</h2>
           <p>jack.mywallet.eth</p>
+        </div>
+        <div className="explanation">
+          ENS eliminates the need to copy or type long addresses. With ENS,
+          you'll be able to send money to your friend at{' '}
+          <strong>'aardvark.eth'</strong> instead of{' '}
+          <strong>'0x4cbe58c50480...'</strong>, interact with your favorite
+          contract at 'mycontract.eth', or visit a Swarm-hosted site at
+          'swarmsite.eth'.
+          <img src={circleTop} className="top" />
+          <img src={circleBottom} className="bottom" />
+        </div>
+        <div className="explanation-mobile">
+          Send money to your friend at ‘aardvark.eth’ instead of
+          ‘0x4c80xCt40c78xUb…’
+          <img src={circleSide} className="side" />
+        </div>
+        <div className="explanation-mobile">
+          Interact with your favorite contract at 'mycontract.eth’, or visit a
+          Swarm-hosted site at 'swarmsite.eth'
+          <img src={circleSide} className="side" />
         </div>
       </BaseContainer>
     )

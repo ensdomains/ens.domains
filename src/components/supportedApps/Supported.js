@@ -163,13 +163,9 @@ export default class SuppportedContainer extends React.Component {
     let supportedTop = supported.offsetTop - bodyHeight
     let roadMapOffsetBottom = roadmap.offsetTop + roadMapHeight
 
-    //console.log(event)
-    console.log(roadMapHeight)
-    console.log(window.scrollY, roadMapOffsetBottom)
-
     let scrollRange1 = [supportedTop, roadMapOffsetBottom]
     let scrollRange2 = [supportedTop + supportedHeight / 2, roadMapOffsetBottom]
-    // let scrollRange2 = [0, 200]
+
     const hexagon1Pos = modulate(
       window.pageYOffset,
       scrollRange1,

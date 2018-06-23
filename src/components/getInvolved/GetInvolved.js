@@ -43,7 +43,12 @@ class GetInvolved extends React.Component {
             For more information about ENS, or to help us develop and expand it,
             join our Gitter channel.
           </p>
-          <button>Join Now</button>
+          <a
+            href="https://gitter.im/ethereum/go-ethereum/name-registry"
+            className="button"
+          >
+            Join Now
+          </a>
         </div>
       </GetInvolvedContainer>
     )

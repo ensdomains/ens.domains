@@ -18,17 +18,31 @@ const StickyHeader = styled('header')`
   align-items: center;
   justify-content: space-between;
 
-  padding: 10px 0;
+  padding: 10px 25px 10px 25px;
   z-index: 1000;
 
   h1 {
     opacity: 0;
-    margin-left: 20px;
     font-weight: 700;
     color: rgb(0, 0, 0);
     font-size: 16px;
     letter-spacing: 1px;
     transform: scale(0.7);
+
+    .full {
+      display: none;
+
+      ${mq.medium`
+        display: block;
+      `}
+    }
+
+    .acro {
+      display: block;
+      ${mq.medium`
+        display: none;
+      `}
+    }
   }
 
   .small-logo {
@@ -44,8 +58,12 @@ const StickyHeader = styled('header')`
 
   .social {
     opacity: 0;
-    margin-right: 20px;
+    display: flex;
+    a {
+      display: inline-block;
+    }
     img {
+      display: block;
       width: 32px;
       height: 31px;
       margin: 0 3px 0;
@@ -190,7 +208,10 @@ class Header extends React.Component {
     return (
       <React.Fragment>
         <StickyHeader innerRef={this.stickyHeader}>
-          <h1 ref={this.acronymLogo}>ETHEREUM NAME SERVICE</h1>
+          <h1 ref={this.acronymLogo}>
+            <span className="full">ETHEREUM NAME SERVICE</span>
+            <span className="acro">ENS</span>
+          </h1>
           <img ref={this.logoSmall} src={logoSmall} className="small-logo" />
           <div className="social" ref={this.social}>
             <a href="https://twitter.com/ensdomains">

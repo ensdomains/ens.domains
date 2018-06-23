@@ -85,7 +85,7 @@ injectGlobal`
     
   }
 
-  button {
+  button, .button {
     background: transparent;
     border-radius: 25px;
     color: white;
@@ -95,8 +95,12 @@ injectGlobal`
     font-size: 14px;
     border: 2px solid white;
     padding: 10px 40px;
+    transition: all 0.2s;
+    text-decoration: none;
 
     &:hover {
+      color: #5284FF;
+      background: white;
       cursor: pointer;
     }
   }
