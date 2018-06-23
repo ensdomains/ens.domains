@@ -39,13 +39,13 @@ const BaseContainer = styled.div`
 
   .hook {
     margin: 0 auto 0;
-    padding-top: 45px;
+    padding-top: 30px;
     position: relative;
     z-index: 100;
-    width: 50%;
+    width: 100%;
     text-align: center;
     ${mq.medium`
-      padding-top: 110px;
+      padding-top: 95px;
     `};
     h2 {
       background: rgba(255, 255, 255, 0.7);
@@ -55,6 +55,7 @@ const BaseContainer = styled.div`
       margin-bottom: 0;
       display: inline-block;
       position: relative;
+      vertical-align: text-bottom;
       z-index: 2;
       ${mq.medium`
         font-size: 30px;
@@ -67,8 +68,10 @@ const BaseContainer = styled.div`
       font-size: 26px;
       margin-top: -5px;
       display: inline-block;
+      vertical-align: text-top;
       ${mq.medium` 
         font-size: 52px;
+        
       `};
     }
   }
@@ -215,6 +218,7 @@ class Explainer extends Component {
         </div>
         <div className="hook">
           <h2>No long addresses</h2>
+          <br />
           <p>jack.mywallet.eth</p>
         </div>
         <div className="explanation">
