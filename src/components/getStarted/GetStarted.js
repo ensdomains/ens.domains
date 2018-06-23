@@ -8,7 +8,11 @@ import register from './register.svg'
 import wallet from './wallet.svg'
 
 const GetStarted = styled('section')`
-  padding: 100px 0;
+  padding: 100px 0 0;
+
+  ${mq.medium`
+    padding: 100px 0;
+    `};
 
   .icons {
     display: flex;

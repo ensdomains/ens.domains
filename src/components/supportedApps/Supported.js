@@ -8,7 +8,7 @@ import appsIcon from './icons/apps.png'
 
 const Supported = styled('section')`
   position: relative;
-  padding: 100px 0;
+  padding: 100px 0 0;
 
   ${mq.medium`
     padding: 170px 0;
@@ -17,6 +17,10 @@ const Supported = styled('section')`
   .bg-images img {
     position: absolute;
     z-index: -1;
+    max-width: 50%;
+    ${mq.medium`
+      max-width: 100%;
+    `};
   }
 
   .hexagon1 {
@@ -45,13 +49,12 @@ const Supported = styled('section')`
     top: 150%;
   }
 
-  background-image: linear-gradient(
-    -179deg,
-    rgba(138, 244, 255, 0.1) 0%,
-    rgba(21, 94, 240, 0.1) 100%
-  );
   h2 {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+
+    ${mq.medium`
+      margin-bottom: 100px;
+    `}
   }
   .apps {
     display: flex;
