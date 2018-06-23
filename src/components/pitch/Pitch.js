@@ -45,24 +45,34 @@ const PitchContainer = styled.div`
       display: block;
       content: '';
       background: url('${hexagonBG}');
+      background-size: cover;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 240px;
-      height: 276px;
+      width: 180px;
+      height: 207px;
+      ${mq.medium(`
+        width: 240px;
+        height: 276px;
+      `)};
     }
 
     .circle {
       display: block;
       content: '';
-      background: url('${circleBG}');
+      background: center / cover url('${circleBG}');
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 261px;
-      height: 261px;
+      width: 195px;
+      height: 195px;
+
+      ${mq.medium(`
+        width: 260px;
+        height: 260px;
+      `)};
     }
   }
 
