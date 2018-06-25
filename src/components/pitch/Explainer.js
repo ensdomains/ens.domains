@@ -89,7 +89,7 @@ const BaseContainer = styled.div`
     text-align: center;
     position: relative;
     top: -15%;
-    padding: 50px;
+    padding: 70px;
     max-width: 50%;
     margin: 0 auto 0;
     ${mq.medium`

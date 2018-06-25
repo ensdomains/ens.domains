@@ -7,13 +7,16 @@ import typedLogo from '../../assets/ENS_TypeLogo_Nav_57x22.svg'
 import medium from './Medium_Icon_11x9.svg'
 import twitter from './Twitter_Icon_12x10.svg'
 import github from './GitHub_Icon_13x13.svg'
+import mediumBlack from './Medium_Black.svg'
+import twitterBlack from './Twitter_Black.svg'
+import githubBlack from './GitHub_Black.svg'
 import { modulate } from '../../utils'
 import mq from '../../mediaQuery'
 
 const StickyHeader = styled('header')`
   position: fixed;
   background: rgba(255, 255, 255, 0);
-  height: 64px;
+  height: 48px;
   width: 100%;
   box-shadow: 2px 8px 25px 2px rgba(136, 149, 169, 0.12);
   display: flex;
@@ -23,19 +26,19 @@ const StickyHeader = styled('header')`
   padding: 10px 25px 10px 25px;
   z-index: 1000;
 
-  h1 {
+  ${mq.medium`
+    height: 64px;
+  `};
+
+  .typed-logo {
     opacity: 0;
     transform: scale(0.7);
     margin: 0;
+    width: 40px;
 
-    .acro {
-      display: none;
-    }
-
-    img {
+    ${mq.medium`
       width: 57px;
-      height: 22px;
-    }
+    `};
   }
 
   .small-logo {
@@ -43,24 +46,32 @@ const StickyHeader = styled('header')`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0.7);
-    width: 37px;
+    width: 30px;
     margin-bottom: 0;
     opacity: 0;
+    ${mq.medium`
+      width: 37px;
+    `};
   }
 
   .social {
     opacity: 0;
     display: flex;
     a {
-      background: black;
+      background: white;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 32px;
-      height: 32px;
+      width: 25px;
+      height: 25px;
       margin: 0 3px 0;
       transition: 0.2s ease-in-out;
+      ${mq.medium`
+        background: black;
+        width: 32px;
+        height: 32px;
+      `};
       &:last-child {
         margin-right: 0;
       }
@@ -69,19 +80,36 @@ const StickyHeader = styled('header')`
         background: #5284ff;
       }
     }
-    .github {
+    .github,
+    .github-mobile {
       width: 13px;
     }
-    .twitter {
+    .twitter,
+    .twitter-mobile {
       width: 12px;
     }
-    .medium {
+    .medium,
+    .medium-mobile {
       width: 11px;
     }
+
+    .medium,
+    .github,
+    .twitter {
+      display: none;
+    }
+
+    ${mq.medium`
+      .medium, .github, .twitter {
+        display: block
+      }
+
+      .medium-mobile, .github-mobile, .twitter-mobile {
+        display: none
+      }
+    `};
     img {
       display: block;
-      width: 32px;
-      height: 31px;
     }
   }
 `
@@ -219,20 +247,25 @@ class Header extends React.Component {
     return (
       <React.Fragment>
         <StickyHeader innerRef={this.stickyHeader}>
-          <h1 ref={this.acronymLogo}>
-            <span className="acro">ENS</span>
-            <img src={typedLogo} />
-          </h1>
+          <img
+            ref={this.acronymLogo}
+            className="typed-logo"
+            src={typedLogo}
+            alt="Ethereum Name Service"
+          />
           <img ref={this.logoSmall} src={logoSmall} className="small-logo" />
           <div className="social" ref={this.social}>
             <a href="https://twitter.com/ensdomains">
               <img src={twitter} className="twitter" />
+              <img src={twitterBlack} className="twitter-mobile" />
             </a>
             <a href="https://medium.com/the-ethereum-name-service">
               <img src={medium} className="medium" />
+              <img src={mediumBlack} className="medium-mobile" />
             </a>
             <a href="https://github.com/ensdomains">
               <img src={github} className="github" />
+              <img src={githubBlack} className="github-mobile" />
             </a>
           </div>
         </StickyHeader>
