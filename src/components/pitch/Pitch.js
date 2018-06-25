@@ -24,6 +24,7 @@ const PitchContainer = styled.div`
   margin: 100px auto 0;
 
   .value-prop {
+    color: #2B2B2B;
     position: relative;
     padding: 20px 0;
     margin: 0 auto 0;
@@ -145,7 +146,7 @@ class Pitch extends React.Component {
     let elementOffsetTop = valueProp.offsetTop - bodyHeight
     let elementOffsetBottom = valueProp.offsetTop + bodyHeight + bodyHeight
 
-    let scrollRange1 = [elementOffsetTop, elementOffsetTop + 300]
+    let scrollRange1 = [elementOffsetTop + 200, elementOffsetTop + 600]
 
     const circleX = modulate(window.pageYOffset, scrollRange1, [-50, -15], true)
     const hexagonX = modulate(

@@ -48,6 +48,7 @@ const BaseContainer = styled.div`
       padding-top: 95px;
     `};
     h2 {
+      color: #2b2b2b;
       background: rgba(255, 255, 255, 0.7);
       font-size: 16px;
       font-weight: 500;
@@ -63,6 +64,7 @@ const BaseContainer = styled.div`
     }
 
     p {
+      color: #2b2b2b;
       background: rgba(255, 255, 255, 0.7);
       font-weight: 300;
       font-size: 26px;
