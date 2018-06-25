@@ -1,17 +1,26 @@
 import React from 'react'
 import styled from 'react-emotion'
-import { modulate } from '../../utils'
+import people from './people.svg'
+import mq from '../../mediaQuery'
 
 const RoadMapContainer = styled('section')`
-  padding: 100px 0;
+  padding: 100px 0 0;
   position: relative;
   overflow: hidden;
 
-  .container-small:first-child {
+  .roadmap-container {
     margin-bottom: 100px;
   }
 
   h3 {
+    margin-bottom: 50px;
+    ${mq.small`
+      margin-bottom: 100px;
+    `};
+
+    img {
+      margin-right: 5px;
+    }
     text-align: center;
   }
 
@@ -38,13 +47,60 @@ const RoadMapContainer = styled('section')`
     left: 0;
     top: 0;
   }
+
+  .managing-root {
+    padding-top: 30px;
+    background-image: linear-gradient(
+      -179deg,
+      rgba(138, 244, 255, 0.1) 0%,
+      rgba(21, 94, 240, 0.1) 100%
+    );
+  }
+
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: Karma;
+    font-weight: 100;
+    margin-bottom: 0;
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      ${mq.small`
+        margin-bottom: 50px;
+        width: 50%;
+      `};
+    }
+
+    dt {
+      font-weight: 100;
+      font-size: 22px;
+      margin-bottom: 10px;
+      ${mq.medium`
+        font-size: 34px;
+      `};
+    }
+
+    dd {
+      font-weight: 100;
+      font-size: 18px;
+      margin-bottom: 0;
+      ${mq.medium`
+        font-size: 22px;
+      `};
+    }
+  }
 `
 
 class RoadMap extends React.Component {
   render() {
     return (
       <RoadMapContainer innerRef={this.roadmap} className="roadmap">
-        <div className="container-small">
+        <div className="container-small roadmap-container">
           <h2>ENS Roadmap.</h2>
           <p className="lede">
             ENS launched on mainnet on May 4, 2017. At launch, ENS features an
@@ -71,23 +127,55 @@ class RoadMap extends React.Component {
             registrar.
           </p>
         </div>
-        <div className="container-small">
-          <h2>Managing the ENS Root.</h2>
-          <p>
-            To facilitate the possibility of upgrades and maintenance, and in
-            exceptional circumstances to handle problems with ENS, the ENS root
-            will initially be owned by a multisig, with members of the Ethereum
-            dev community as keyholders. In the long term, we would like to see
-            the root multisig replaced by some form of distributed decision
-            making process, but developing such a process will require time,
-            thought, and care, which we anticipate will be a longer term effort
-            than the development of the permanent .eth registrar.
-          </p>
-          <h3>· Root Key Holders ·</h3>
-          <ul>
-            <li>Dan Findley</li>
-            <li>Jarrod Hope</li>
-          </ul>
+        <div className="managing-root">
+          <div className="container-small">
+            <h2>Managing the ENS Root.</h2>
+            <p>
+              To facilitate the possibility of upgrades and maintenance, and in
+              exceptional circumstances to handle problems with ENS, the ENS
+              root will initially be owned by a multisig, with members of the
+              Ethereum dev community as keyholders. In the long term, we would
+              like to see the root multisig replaced by some form of distributed
+              decision making process, but developing such a process will
+              require time, thought, and care, which we anticipate will be a
+              longer term effort than the development of the permanent .eth
+              registrar.
+            </p>
+            <h3>
+              <img src={people} />Root Key Holders
+            </h3>
+            <dl>
+              <div>
+                <dt>Aron Ficher</dt>
+                <dd>Colony &amp; Swarm</dd>
+              </div>
+              <div>
+                <dt>Dan Finley</dt>
+
+                <dd>Metamask</dd>
+              </div>
+              <div>
+                <dt>Nick Johnson</dt>
+                <dd>Ethereum Name Service</dd>
+              </div>
+              <div>
+                <dt>Jarrod Hope</dt>
+                <dd>Status.im</dd>
+              </div>
+              <div>
+                <dt>Piper Merriam</dt>
+                <dd>Ethereum Foundation</dd>
+              </div>
+              <div>
+                <dt>Taylor Monahan</dt>
+                <dd>MyCrypto</dd>
+              </div>
+              <div>
+                <dt>Vlad Zamfir</dt>
+                <dd>Ethereum Foundation</dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </RoadMapContainer>
     )
