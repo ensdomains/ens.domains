@@ -103,7 +103,11 @@ const Supported = styled('section')`
     ${mq.medium`
       width: 25%;
     `};
+    
     img {
+      transition: box-shadow 0.3s ease-in-out;
+      border-radius: 50%;
+      box-shadow: 4px 10px 20px 0 rgba(136,149,169,0.30);
       width: 50%;
       margin-bottom: 15px;
     }
@@ -115,6 +119,18 @@ const Supported = styled('section')`
       ${mq.medium`
         font-size: 20px;
       `};
+    }
+
+    &:hover {
+      cursor: pointer;
+      img {
+        box-shadow: 4px 10px 20px 0 rgba(136,149,169,0.75);
+      }
+      
+      p {
+        transition: 0.2s ease-in-out;
+        color: #5284FF;
+      }
     }
   }
 `
