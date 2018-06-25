@@ -1,16 +1,18 @@
 import React from 'react'
 import BG from '../../assets/heroBG.jpg'
 import styled from 'react-emotion'
-import logoSmall from '../../assets/logoSmall.png'
-import logo from '../../assets/logo.png'
-import medium from './medium.png'
-import twitter from './twitter.png'
+import logoSmall from '../../assets/ENS_Logo_Nav_84x84.svg'
+import logo from '../../assets/ENS_Logo_600x600.svg'
+import typedLogo from '../../assets/ENS_TypeLogo_Nav_57x22.svg'
+import medium from './Medium_Icon_11x9.svg'
+import twitter from './Twitter_Icon_12x10.svg'
+import github from './GitHub_Icon_13x13.svg'
 import { modulate } from '../../utils'
 import mq from '../../mediaQuery'
 
 const StickyHeader = styled('header')`
   position: fixed;
-  background: rgba(255, 255, 255, 0)
+  background: rgba(255, 255, 255, 0);
   height: 64px;
   width: 100%;
   box-shadow: 2px 8px 25px 2px rgba(136, 149, 169, 0.12);
@@ -23,25 +25,16 @@ const StickyHeader = styled('header')`
 
   h1 {
     opacity: 0;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    letter-spacing: 1px;
     transform: scale(0.7);
-
-    .full {
-      display: none;
-
-      ${mq.medium`
-        display: block;
-      `}
-    }
+    margin: 0;
 
     .acro {
-      display: block;
-      ${mq.medium`
-        display: none;
-      `}
+      display: none;
+    }
+
+    img {
+      width: 57px;
+      height: 22px;
     }
   }
 
@@ -50,8 +43,7 @@ const StickyHeader = styled('header')`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0.7);
-    width: 32px;
-    height: 36px;
+    width: 37px;
     margin-bottom: 0;
     opacity: 0;
   }
@@ -60,17 +52,36 @@ const StickyHeader = styled('header')`
     opacity: 0;
     display: flex;
     a {
-      display: inline-block;
+      background: black;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      margin: 0 3px 0;
+      transition: 0.2s ease-in-out;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        background: #5284ff;
+      }
+    }
+    .github {
+      width: 13px;
+    }
+    .twitter {
+      width: 12px;
+    }
+    .medium {
+      width: 11px;
     }
     img {
       display: block;
       width: 32px;
       height: 31px;
-      margin: 0 3px 0;
-
-      &:last-child {
-        margin-right: 0;
-      }
     }
   }
 `
@@ -157,14 +168,14 @@ class Header extends React.Component {
 
     const stickyOpacity = modulate(
       window.pageYOffset,
-      [bodyHeight + 200, bodyHeight + 400],
+      [bodyHeight + 25, bodyHeight + 200],
       [0, 1],
       true
     )
 
     const boxShadow = modulate(
       window.pageYOffset,
-      [bodyHeight + 200, bodyHeight + 400],
+      [bodyHeight + 25, bodyHeight + 200],
       [0, 0.12],
       true
     )
@@ -209,8 +220,8 @@ class Header extends React.Component {
       <React.Fragment>
         <StickyHeader innerRef={this.stickyHeader}>
           <h1 ref={this.acronymLogo}>
-            <span className="full">ETHEREUM NAME SERVICE</span>
             <span className="acro">ENS</span>
+            <img src={typedLogo} />
           </h1>
           <img ref={this.logoSmall} src={logoSmall} className="small-logo" />
           <div className="social" ref={this.social}>
@@ -219,6 +230,9 @@ class Header extends React.Component {
             </a>
             <a href="https://medium.com/the-ethereum-name-service">
               <img src={medium} className="medium" />
+            </a>
+            <a href="https://github.com/ensdomains">
+              <img src={github} className="github" />
             </a>
           </div>
         </StickyHeader>
