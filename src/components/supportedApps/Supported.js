@@ -3,7 +3,7 @@ import styled from 'react-emotion'
 import mq from '../../mediaQuery'
 import { modulate } from '../../utils'
 import phoneIcon from './icons/phone.png'
-import desktopIcon from './icons/desktop.png'
+import desktopIcon from './icons/desktop.svg'
 import appsIcon from './icons/apps.png'
 import links from './links.json'
 

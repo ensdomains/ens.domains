@@ -48,13 +48,12 @@ const RoadMapContainer = styled('section')`
     top: 0;
   }
 
-  .managing-root {
-    padding-top: 30px;
-    background-image: linear-gradient(
-      -179deg,
-      rgba(138, 244, 255, 0.1) 0%,
-      rgba(21, 94, 240, 0.1) 100%
-    );
+  .rootkey-holders-title {
+    margin-top: 50px;
+
+    ${mq.medium`
+      margin-top: 100px;
+    `};
   }
 
   dl {
@@ -63,7 +62,7 @@ const RoadMapContainer = styled('section')`
     justify-content: flex-start;
     font-family: Karma;
     font-weight: 100;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     div {
       width: 100%;
       display: flex;
@@ -141,7 +140,7 @@ class RoadMap extends React.Component {
               longer term effort than the development of the permanent .eth
               registrar.
             </p>
-            <h3>
+            <h3 className="rootkey-holders-title">
               <img src={people} />Root Key Holders
             </h3>
             <dl>
