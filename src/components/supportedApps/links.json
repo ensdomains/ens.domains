@@ -1,0 +1,14 @@
+{
+  "cipher": "https://www.cipherbrowser.com/",
+  "imToken": "https://token.im/",
+  "leth": "https://www.inzhoop.com/",
+  "status": "https://status.im/",
+  "metamask": "https://metamask.io/",
+  "mist": "https://github.com/ethereum/mist",
+  "myCrypto": "https://mycrypto.com/",
+  "myEtherWallet": "https://myetherwallet.com/",
+  "aragon": "https://aragon.one/",
+  "bitfinex": "https://www.bitfinex.com/",
+  "etherscan": "https://etherscan.io",
+  "swarm": "https://github.com/ethersphere/swarm"
+}

@@ -5,6 +5,9 @@ import { modulate } from '../../utils'
 import phoneIcon from './icons/phone.png'
 import desktopIcon from './icons/desktop.png'
 import appsIcon from './icons/apps.png'
+import links from './links.json'
+
+console.log(links)
 
 const Supported = styled('section')`
   position: relative;
@@ -99,6 +102,7 @@ const Supported = styled('section')`
 
   .app {
     text-align: center;
+    text-decoration: none;
     width: 50%;
     ${mq.medium`
       width: 25%;
@@ -137,11 +141,13 @@ const Supported = styled('section')`
 
 const importAll = r =>
   r.keys().map(item => {
+    let fileName = item.replace(/\.(png|jpe?g|svg)$/, '').replace('./', '')
     let parsed = item
       .replace(/\.(png|jpe?g|svg)$/, '')
       .replace(/([A-Z])/g, ' $1')
       .replace('./', '')
     return {
+      fileName: fileName,
       name: parsed,
       src: r(item),
     }
@@ -165,18 +171,23 @@ const AppRow = ({ list, className, children }) => {
       {children}
       <div className={`apps ${className ? className : ''}`}>
         {list.map(item => (
-          <App key={item.name} src={item.src} name={item.name} />
+          <App
+            key={item.name}
+            src={item.src}
+            name={item.name}
+            fileName={item.fileName}
+          />
         ))}
       </div>
     </React.Fragment>
   )
 }
 
-const App = ({ src, name }) => (
-  <div className="app">
+const App = ({ src, name, fileName }) => (
+  <a className="app" href={links[fileName]}>
     <img src={src} />
     <p>{name}</p>
-  </div>
+  </a>
 )
 
 export default class SuppportedContainer extends React.Component {
