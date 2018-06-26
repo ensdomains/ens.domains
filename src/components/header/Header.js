@@ -1,6 +1,6 @@
 import React from 'react'
-import BG from '../../assets/heroBG.jpg'
 import styled from 'react-emotion'
+import BG from '../../assets/heroBG.jpg'
 import logoSmall from '../../assets/ENS_Logo_Nav_84x84.svg'
 import logo from '../../assets/ENS_Logo_600x600.svg'
 import typedLogo from '../../assets/ENS_TypeLogo_Nav_57x22.svg'
@@ -77,8 +77,15 @@ const StickyHeader = styled('header')`
       }
 
       &:hover {
-        background: #5284ff;
+        background: white;
       }
+
+      ${mq.medium`
+        &:hover {
+          background: black;
+        }
+
+      `};
     }
     .github,
     .github-mobile {
