@@ -20,9 +20,13 @@ const GetInvolvedContainer = styled('section')`
     flex-direction: column;
   }
 
+  h2 {
+    font-weight: 200;
+  }
+
   p {
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.3em;
     max-width: 768px;
     text-align: center;

@@ -11,7 +11,7 @@ const GetStarted = styled('section')`
   padding: 100px 0 0;
 
   ${mq.medium`
-    padding: 100px 0;
+    padding: 100px 0 0;
     `};
 
   .icons {
@@ -44,8 +44,9 @@ const GetStarted = styled('section')`
 
   p {
     font-size: 16px;
-    color: #3252c8;
+    color: #2b2b2b;
     text-align: center;
+    margin-bottom: 0;
     ${mq.medium`
       font-size: 20px;
     `};

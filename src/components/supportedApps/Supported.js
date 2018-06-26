@@ -14,7 +14,7 @@ const Supported = styled('section')`
   padding: 100px 0 0;
 
   ${mq.medium`
-    padding: 170px 0;
+    padding: 170px 0 0;
   `};
 
   .bg-images img {
@@ -111,7 +111,7 @@ const Supported = styled('section')`
     img {
       transition: box-shadow 0.3s ease-in-out;
       border-radius: 50%;
-      box-shadow: 4px 10px 20px 0 rgba(136,149,169,0.30);
+      box-shadow: 4px 10px 20px 0 rgba(136,149,169,0.25);
       width: 50%;
       margin-bottom: 15px;
     }
@@ -128,7 +128,7 @@ const Supported = styled('section')`
     &:hover {
       cursor: pointer;
       img {
-        box-shadow: 4px 10px 20px 0 rgba(136,149,169,0.75);
+        box-shadow: 4px 10px 20px 0 rgba(136,149,169,0.60);
       }
       
       p {
@@ -268,7 +268,7 @@ export default class SuppportedContainer extends React.Component {
           <h2>Apps Supporting ENS</h2>
           <AppRow list={mobile} title="s">
             <h3>
-              <img className="phone-icon" src={phoneIcon} />Mobile Wallet
+              <img className="phone-icon" src={phoneIcon} />Mobile Wallets
             </h3>
           </AppRow>
           <AppRow list={desktop}>
