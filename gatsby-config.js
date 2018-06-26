@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    pathPrefix: `/ens.domains`,
     title: 'Ethereum Name Service',
   },
   plugins: [
