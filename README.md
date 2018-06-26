@@ -23,8 +23,8 @@ cd gatsby-example-site
 gatsby develop
 ```
 
-## Deploy to test
+## Deploy
 
 ```sh
-npm run deploy:test
+npm run deploy
 ```
