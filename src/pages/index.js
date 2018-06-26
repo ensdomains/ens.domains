@@ -18,6 +18,7 @@ const IndexPage = () => (
     <Supported />
     <RoadMap />
     <GetInvolved />
+    <Footer />
   </Fragment>
 )
 
