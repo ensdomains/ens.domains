@@ -221,7 +221,7 @@ class Explainer extends Component {
         <div className="hook">
           <h2>No long addresses</h2>
           <br />
-          <p>jack.mywallet.eth</p>
+          <p>alice.mywallet.eth</p>
         </div>
         <div className="explanation">
           ENS eliminates the need to copy or type long addresses. With ENS,
