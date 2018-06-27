@@ -124,7 +124,7 @@ class NameAnimation extends Component {
             .map((e, i) => <span key={i}>{e}</span>)}
         </p>
         <p className="name" ref={this.name}>
-          {'jack.mywallet.eth'
+          {'alice.mywallet.eth'
             .split('')
             .map((e, i) => <span key={i}>{e}</span>)}
         </p>
