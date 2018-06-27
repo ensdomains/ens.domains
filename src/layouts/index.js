@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Header from '../components/header/Header.js'
 import '../globalStyles'
 import './index.css'
-import favicon from '../assets/favicon.png';
+import favicon from '../assets/favicon.ico';
 
 const Layout = ({ children, data }) => (
   <Fragment>
@@ -16,7 +16,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
       link={[
-        { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+        { rel: 'shortcut icon', type: 'image/x-icon', href: `${favicon}` }
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
