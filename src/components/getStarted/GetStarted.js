@@ -35,10 +35,7 @@ const GetStarted = styled('section')`
     height: 200px;
 
     img {
-      max-width: 80%;
-      ${mq.medium`
-        max-width: 100%;
-      `};
+      width: 80%;
     }
   }
 
