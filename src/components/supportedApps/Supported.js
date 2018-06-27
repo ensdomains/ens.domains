@@ -7,8 +7,6 @@ import desktopIcon from './icons/desktop.svg'
 import appsIcon from './icons/apps.png'
 import links from './links.json'
 
-console.log(links)
-
 const Supported = styled('section')`
   position: relative;
   padding: 100px 0 0;

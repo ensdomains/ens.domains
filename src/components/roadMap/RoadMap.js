@@ -157,7 +157,7 @@ class RoadMap extends React.Component {
                 <dd>Ethereum Name Service</dd>
               </div>
               <div>
-                <dt>Jarrad Hope</dt>
+                <dt>Jarrod Hope</dt>
                 <dd>Status.im</dd>
               </div>
               <div>
