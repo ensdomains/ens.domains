@@ -82,7 +82,7 @@ const StickyHeader = styled('header')`
 
       ${mq.medium`
         &:hover {
-          background: black;
+          background: #5284FF;
         }
 
       `};

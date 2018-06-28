@@ -172,10 +172,9 @@ class Pitch extends React.Component {
         <Explainer />
         <div className="card-container container">
           <ValueCard title="Secure." img={secure}>
-            ENS operates in a distributed fashion for both its infrastructure
-            and governance. Anyone can register a .eth domain name for
-            themselves by participating in an auction process, mediated by the
-            blockchain.
+            ENS is built on smart contracts on the Ethereum blockchain, meaning
+            it doesn't suffer from the insecurity of the DNS system. You can be
+            confident names you enter work the way their owner intended.
           </ValueCard>
           <ValueCard title="Truly distributed." img={distributed}>
             ENS operates in a distributed fashion for both its infrastructure
