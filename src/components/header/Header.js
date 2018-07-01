@@ -1,126 +1,10 @@
 import React from 'react'
 import styled from 'react-emotion'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import BG from '../../assets/heroBG.jpg'
-import logoSmall from '../../assets/ensIconLogo.svg'
-import logo from '../../assets/ENS_Logo_600x600.svg'
-import typedLogo from '../../assets/ENS_TypeLogo_Nav_57x22.svg'
-import medium from '../../assets/medium.svg'
-import twitter from '../../assets/twitter.svg'
-import github from '../../assets/github.svg'
-import mediumBlack from './Medium_Black.svg'
-import twitterBlack from './Twitter_Black.svg'
-import githubBlack from './GitHub_Black.svg'
 import { modulate } from '../../utils'
+import logo from '../../assets/ENS_Logo_600x600.svg'
 import mq from '../../mediaQuery'
-
-const StickyHeader = styled('header')`
-  position: fixed;
-  background: rgba(255, 255, 255, 0);
-  height: 48px;
-  width: 100%;
-  box-shadow: 2px 8px 25px 2px rgba(136, 149, 169, 0.12);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 10px 25px 10px 25px;
-  z-index: 1000;
-
-  ${mq.medium`
-    height: 64px;
-  `};
-
-  .typed-logo {
-    opacity: 0;
-    transform: scale(0.7);
-    margin: 0;
-    width: 40px;
-
-    ${mq.medium`
-      width: 57px;
-    `};
-  }
-
-  .small-logo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0.7);
-    width: 30px;
-    margin-bottom: 0;
-    opacity: 0;
-    ${mq.medium`
-      width: 37px;
-    `};
-  }
-
-  .social {
-    opacity: 0;
-    display: flex;
-    a {
-      background: white;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 25px;
-      height: 25px;
-      margin: 0 3px 0;
-      transition: 0.2s ease-in-out;
-      ${mq.medium`
-        background: black;
-        width: 32px;
-        height: 32px;
-      `};
-      &:last-child {
-        margin-right: 0;
-      }
-
-      &:hover {
-        background: white;
-      }
-
-      ${mq.medium`
-        &:hover {
-          background: #5284FF;
-        }
-
-      `};
-    }
-    .github,
-    .github-mobile {
-      width: 13px;
-    }
-    .twitter,
-    .twitter-mobile {
-      width: 12px;
-    }
-    .medium,
-    .medium-mobile {
-      width: 11px;
-    }
-
-    .medium,
-    .github,
-    .twitter {
-      display: none;
-    }
-
-    ${mq.medium`
-      .medium, .github, .twitter {
-        display: block
-      }
-
-      .medium-mobile, .github-mobile, .twitter-mobile {
-        display: none
-      }
-    `};
-    img {
-      display: block;
-    }
-  }
-`
+import StickyHeader from './StickyHeader'
 
 const HeroBG = styled('div')`
   background: url(${BG});
@@ -171,6 +55,7 @@ class Header extends React.Component {
     window.removeEventListener('scroll', this.handleScroll)
   }
   handleScroll = () => {
+    console.log(this.refs)
     let bodyHeight = document.body.clientHeight
     let scrollRange1 = [0, bodyHeight]
     let scrollRange2 = [0, 200]
@@ -235,18 +120,18 @@ class Header extends React.Component {
     this.logo.current.style.marginBottom = `-${logoMargin}px`
     this.logo.current.style.opacity = logoOpacity
 
-    const stickyHeader = this.stickyHeader.current.style
+    const stickyHeader = this.refs.stickyHeader.style
     stickyHeader.background = `rgba(255,255,255, ${stickyOpacity})`
     stickyHeader.boxShadow = `2px 8px 25px 2px rgba(136, 149, 169, ${boxShadow})`
 
-    const logoSmall = this.logoSmall.current
+    const logoSmall = this.refs.logoSmall
     logoSmall.style.opacity = smallLogoOpacity
     logoSmall.style.transform = `translate(-50%, -50%) scale(${stickyScale}`
-    const acroLogo = this.acronymLogo.current.style
+    const acroLogo = this.refs.acronymLogo.style
     acroLogo.opacity = smallLogoOpacity
     acroLogo.transform = `scale(${stickyScale}`
 
-    const social = this.social.current.style
+    const social = this.refs.social.style
 
     social.opacity = smallLogoOpacity
     social.transform = `scale(${stickyScale}`
@@ -254,33 +139,10 @@ class Header extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <StickyHeader innerRef={this.stickyHeader}>
-          <img
-            ref={this.acronymLogo}
-            className="typed-logo"
-            src={typedLogo}
-            alt="Ethereum Name Service"
-          />
-          <img ref={this.logoSmall} src={logoSmall} className="small-logo" />
-          <div className="social" ref={this.social}>
-            <OutboundLink href="https://twitter.com/ensdomains">
-              <img src={twitter} className="twitter" />
-              <img src={twitterBlack} className="twitter-mobile" />
-            </OutboundLink>
-            <OutboundLink href="https://medium.com/the-ethereum-name-service">
-              <img src={medium} className="medium" />
-              <img src={mediumBlack} className="medium-mobile" />
-            </OutboundLink>
-            <OutboundLink href="https://github.com/ensdomains">
-              <img src={github} className="github" />
-              <img src={githubBlack} className="github-mobile" />
-            </OutboundLink>
-          </div>
-        </StickyHeader>
+        <StickyHeader setRefs={refs => (this.refs = refs)} />
         <HeroBG innerRef={this.header}>
           <a href="#" className="logo">
             <img src={logo} className="ens-logo" ref={this.logo} />
-            {/* <div className="name-service">Name Service</div> */}
           </a>
         </HeroBG>
       </React.Fragment>
