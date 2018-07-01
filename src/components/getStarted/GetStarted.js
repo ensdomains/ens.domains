@@ -6,6 +6,7 @@ import docs from './documentation.svg'
 import manage from './manage.svg'
 import register from './register.svg'
 import wallet from './wallet.svg'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const GetStarted = styled('section')`
   padding: 100px 0 0;
@@ -73,30 +74,30 @@ export default () => (
   <GetStarted>
     <h2>Get Started using ENS</h2>
     <div className="icons container">
-      <a href="https://now.ens.domains" className="icon">
+      <OutboundLink href="https://now.ens.domains" className="icon">
         <div className="img-wrapper">
           <img src={wallet} />
         </div>
         <p>Name your wallet instantly</p>
-      </a>
-      <a href="https://registrar.ens.domains" className="icon">
+      </OutboundLink>
+      <OutboundLink href="https://registrar.ens.domains" className="icon">
         <div className="img-wrapper">
           <img src={register} />
         </div>
         <p>Register a .eth domain</p>
-      </a>
-      <a href="https://manager.ens.domains/" className="icon">
+      </OutboundLink>
+      <OutboundLink href="https://manager.ens.domains/" className="icon">
         <div className="img-wrapper">
           <img src={manage} />
         </div>
         <p>Manage your domains</p>
-      </a>
-      <a href="https://docs.ens.domains/" className="icon">
+      </OutboundLink>
+      <OutboundLink href="https://docs.ens.domains/" className="icon">
         <div className="img-wrapper">
           <img src={docs} />
         </div>
         <p>Read the documentation</p>
-      </a>
+      </OutboundLink>
     </div>
   </GetStarted>
 )

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import BG from '../../assets/heroBG.jpg'
 import logoSmall from '../../assets/ensIconLogo.svg'
 import logo from '../../assets/ENS_Logo_600x600.svg'
@@ -262,18 +263,18 @@ class Header extends React.Component {
           />
           <img ref={this.logoSmall} src={logoSmall} className="small-logo" />
           <div className="social" ref={this.social}>
-            <a href="https://twitter.com/ensdomains">
+            <OutboundLink href="https://twitter.com/ensdomains">
               <img src={twitter} className="twitter" />
               <img src={twitterBlack} className="twitter-mobile" />
-            </a>
-            <a href="https://medium.com/the-ethereum-name-service">
+            </OutboundLink>
+            <OutboundLink href="https://medium.com/the-ethereum-name-service">
               <img src={medium} className="medium" />
               <img src={mediumBlack} className="medium-mobile" />
-            </a>
-            <a href="https://github.com/ensdomains">
+            </OutboundLink>
+            <OutboundLink href="https://github.com/ensdomains">
               <img src={github} className="github" />
               <img src={githubBlack} className="github-mobile" />
-            </a>
+            </OutboundLink>
           </div>
         </StickyHeader>
         <HeroBG innerRef={this.header}>
