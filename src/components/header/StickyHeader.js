@@ -11,6 +11,8 @@ import mediumBlack from './Medium_Black.svg'
 import twitterBlack from './Twitter_Black.svg'
 import githubBlack from './GitHub_Black.svg'
 
+import { modulate } from '../../utils'
+
 const StickyHeader = styled('header')`
   position: fixed;
   background: rgba(255, 255, 255, 0);
@@ -119,30 +121,102 @@ const StickyHeader = styled('header')`
   }
 `
 
-class StickHeaderContainer extends React.Component {
-  componentDidMount() {
-    this.props.setRefs({
-      stickyHeader: this.stickyHeader,
-      social: this.social,
-      acronymLogo: this.acronymLogo,
-      logoSmall: this.logoSmall,
-    })
+class StickyHeaderContainer extends React.Component {
+  constructor(props) {
+    super(props)
+    this.componentStyles = this.calculateStyles(props.withScroll)
   }
+
+  componentWillReceiveProps(nextProps) {
+    this.componentStyles = this.calculateStyles(nextProps.withScroll)
+  }
+
+  calculateStyles = scrollData => {
+    if (!scrollData) {
+      return
+    }
+    let { pageYOffset, bodyHeight = 1000 } = scrollData
+
+    if (pageYOffset === null) {
+      pageYOffset = 0
+      bodyHeight = 1000
+    }
+
+    console.log(pageYOffset)
+    const stickyOpacity = modulate(
+      pageYOffset,
+      [bodyHeight + 25, bodyHeight + 200],
+      [0, 1],
+      true
+    )
+
+    const boxShadow = modulate(
+      pageYOffset,
+      [bodyHeight + 25, bodyHeight + 200],
+      [0, 0.12],
+      true
+    )
+
+    const smallLogoOpacity = modulate(
+      pageYOffset,
+      [bodyHeight - 100, bodyHeight],
+      [0, 1],
+      true
+    )
+
+    const stickyScale = modulate(
+      pageYOffset,
+      [bodyHeight - 200, bodyHeight],
+      [0.7, 1],
+      true
+    )
+
+    const stickyHeaderStyle = {
+      background: `rgba(255,255,255, ${stickyOpacity})`,
+      boxShadow: `2px 8px 25px 2px rgba(136, 149, 169, ${boxShadow})`,
+    }
+
+    const smallLogoStyle = {
+      opacity: smallLogoOpacity,
+      transform: `translate(-50%, -50%) scale(${stickyScale}`,
+    }
+
+    const acronymLogoStyle = {
+      opacity: smallLogoOpacity,
+      transform: `scale(${stickyScale}`,
+    }
+
+    const socialStyle = {
+      opacity: smallLogoOpacity,
+      transform: `scale(${stickyScale}`,
+    }
+
+    return {
+      stickyHeaderStyle,
+      smallLogoStyle,
+      acronymLogoStyle,
+      socialStyle,
+    }
+  }
+
   render() {
+    const {
+      stickyHeaderStyle,
+      acronymLogoStyle,
+      smallLogoStyle,
+      socialStyle,
+    } = this.componentStyles
+
     return (
-      <StickyHeader innerRef={el => (this.stickyHeader = el)}>
+      <StickyHeader style={stickyHeaderStyle}>
         <img
-          ref={el => (this.acronymLogo = el)}
+          style={acronymLogoStyle}
           className="typed-logo"
           src={typedLogo}
           alt="Ethereum Name Service"
         />
-        <img
-          ref={el => (this.logoSmall = el)}
-          src={logoSmall}
-          className="small-logo"
-        />
-        <div className="social" ref={el => (this.social = el)}>
+        <img style={smallLogoStyle} src={logoSmall} className="small-logo" />
+        <div className="social" style={socialStyle}>
           <OutboundLink href="https://twitter.com/ensdomains">
             <img src={twitter} className="twitter" />
             <img src={twitterBlack} className="twitter-mobile" />
@@ -161,4 +235,4 @@ class StickHeaderContainer extends React.Component {
   }
 }
 
-export default StickHeaderContainer
+export default StickyHeaderContainer

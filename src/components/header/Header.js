@@ -40,12 +40,10 @@ const HeroBG = styled('div')`
 class Header extends React.Component {
   constructor(props) {
     super(props)
-    this.header = React.createRef()
-    this.logo = React.createRef()
-    this.stickyHeader = React.createRef()
-    this.acronymLogo = React.createRef()
-    this.logoSmall = React.createRef()
-    this.social = React.createRef()
+    this.state = {
+      bodyHeight: null,
+      pageYOffset: null,
+    }
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll)
@@ -87,62 +85,25 @@ class Header extends React.Component {
       true
     )
 
-    const stickyOpacity = modulate(
-      window.pageYOffset,
-      [bodyHeight + 25, bodyHeight + 200],
-      [0, 1],
-      true
-    )
-
-    const boxShadow = modulate(
-      window.pageYOffset,
-      [bodyHeight + 25, bodyHeight + 200],
-      [0, 0.12],
-      true
-    )
-
-    const smallLogoOpacity = modulate(
-      window.pageYOffset,
-      [bodyHeight - 100, bodyHeight],
-      [0, 1],
-      true
-    )
-
-    const stickyScale = modulate(
-      window.pageYOffset,
-      [bodyHeight - 200, bodyHeight],
-      [0.7, 1],
-      true
-    )
-
     //this.header.current.style.height = headerHeight + 'px'
-    this.logo.current.style.width = logoWidth + '%'
-    this.logo.current.style.marginBottom = `-${logoMargin}px`
-    this.logo.current.style.opacity = logoOpacity
+    this.logo.style.width = logoWidth + '%'
+    this.logo.style.marginBottom = `-${logoMargin}px`
+    this.logo.style.opacity = logoOpacity
 
-    const stickyHeader = this.refs.stickyHeader.style
-    stickyHeader.background = `rgba(255,255,255, ${stickyOpacity})`
-    stickyHeader.boxShadow = `2px 8px 25px 2px rgba(136, 149, 169, ${boxShadow})`
-
-    const logoSmall = this.refs.logoSmall
-    logoSmall.style.opacity = smallLogoOpacity
-    logoSmall.style.transform = `translate(-50%, -50%) scale(${stickyScale}`
-    const acroLogo = this.refs.acronymLogo.style
-    acroLogo.opacity = smallLogoOpacity
-    acroLogo.transform = `scale(${stickyScale}`
-
-    const social = this.refs.social.style
-
-    social.opacity = smallLogoOpacity
-    social.transform = `scale(${stickyScale}`
+    this.setState({
+      pageYOffset,
+      bodyHeight,
+    })
   }
   render() {
+    const { bodyHeight, pageYOffset } = this.state
+
     return (
       <React.Fragment>
-        <StickyHeader setRefs={refs => (this.refs = refs)} />
-        <HeroBG innerRef={this.header}>
+        <StickyHeader withScroll={{ bodyHeight, pageYOffset }} />
+        <HeroBG innerRef={el => (this.header = el)}>
           <a href="#" className="logo">
-            <img src={logo} className="ens-logo" ref={this.logo} />
+            <img src={logo} className="ens-logo" ref={el => (this.logo = el)} />
           </a>
         </HeroBG>
       </React.Fragment>
