@@ -15,7 +15,8 @@ import { modulate } from '../../utils'
 
 const StickyHeader = styled('header')`
   position: fixed;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 255);
+  top: 0;
   height: 48px;
   width: 100%;
   box-shadow: 2px 8px 25px 2px rgba(136, 149, 169, 0.12);
@@ -31,8 +32,8 @@ const StickyHeader = styled('header')`
   `};
 
   .typed-logo {
-    opacity: 0;
-    transform: scale(0.7);
+    opacity: 1;
+    transform: scale(1);
     margin: 0;
     width: 40px;
 
@@ -45,17 +46,17 @@ const StickyHeader = styled('header')`
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(0.7);
+    transform: translate(-50%, -50%) scale(1);
     width: 30px;
     margin-bottom: 0;
-    opacity: 0;
+    opacity: 1;
     ${mq.medium`
       width: 37px;
     `};
   }
 
   .social {
-    opacity: 0;
+    opacity: 1;
     display: flex;
     a {
       background: white;
@@ -133,7 +134,7 @@ class StickyHeaderContainer extends React.Component {
 
   calculateStyles = scrollData => {
     if (!scrollData) {
-      return
+      return {}
     }
     let { pageYOffset, bodyHeight = 1000 } = scrollData
 
@@ -201,10 +202,10 @@ class StickyHeaderContainer extends React.Component {
 
   render() {
     const {
-      stickyHeaderStyle,
-      acronymLogoStyle,
-      smallLogoStyle,
-      socialStyle,
+      stickyHeaderStyle = {},
+      acronymLogoStyle = {},
+      smallLogoStyle = {},
+      socialStyle = {},
     } = this.componentStyles
 
     return (

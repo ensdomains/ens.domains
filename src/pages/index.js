@@ -5,14 +5,16 @@ import GetStarted from '../components/getStarted/GetStarted'
 import Supported from '../components/supportedApps/Supported'
 import RoadMap from '../components/roadMap/RoadMap'
 import GetInvolved from '../components/getInvolved/GetInvolved'
+import Header from '../components/headers/AnimatedHeader'
 import Footer from '../components/footer/Footer'
 
 const IndexPage = () => (
   <Fragment>
+    <Header />
     <Pitch />
     <Quote
       quote="Mathematics is the art of giving the same name to different things."
-      author="Henri Poincare"
+      author="— Henri Poincare"
     />
     <GetStarted />
     <Supported />

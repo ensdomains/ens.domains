@@ -282,7 +282,12 @@ export default class SuppportedContainer extends React.Component {
         </div>
         <div className="bg-images">
           {bgImages.map(img => (
-            <img className={img.name} src={img.src} ref={this[img.name]} />
+            <img
+              key={img.name}
+              className={img.name}
+              src={img.src}
+              ref={this[img.name]}
+            />
           ))}
         </div>
       </Supported>

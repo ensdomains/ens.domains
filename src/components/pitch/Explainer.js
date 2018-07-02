@@ -213,7 +213,7 @@ class Explainer extends Component {
       <BaseContainer innerRef={this.explainer}>
         <div className="background">
           {hexStrings.map((s, i) => (
-            <div className="bg-string" ref={this['string' + i]}>
+            <div key={i} className="bg-string" ref={this['string' + i]}>
               {s}
             </div>
           ))}

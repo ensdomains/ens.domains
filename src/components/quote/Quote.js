@@ -35,7 +35,7 @@ const Quote = ({ quote, author }) => (
   <QuoteContainer>
     <div className="container">
       <blockquote>{quote}</blockquote>
-      <cite>— {author}</cite>
+      <cite>{author}</cite>
     </div>
   </QuoteContainer>
 )
