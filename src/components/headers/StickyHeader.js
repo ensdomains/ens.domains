@@ -143,7 +143,6 @@ class StickyHeaderContainer extends React.Component {
       bodyHeight = 1000
     }
 
-    console.log(pageYOffset)
     const stickyOpacity = modulate(
       pageYOffset,
       [bodyHeight + 25, bodyHeight + 200],

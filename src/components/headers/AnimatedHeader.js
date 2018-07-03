@@ -53,7 +53,6 @@ class Header extends React.Component {
     window.removeEventListener('scroll', this.handleScroll)
   }
   handleScroll = () => {
-    console.log(this.refs)
     let bodyHeight = document.body.clientHeight
     let scrollRange1 = [0, bodyHeight]
     let scrollRange2 = [0, 200]
