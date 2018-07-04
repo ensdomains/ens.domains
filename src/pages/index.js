@@ -4,7 +4,7 @@ import Quote from '../components/quote/Quote'
 import GetStarted from '../components/getStarted/GetStarted'
 import Supported from '../components/supportedApps/Supported'
 import RoadMap from '../components/roadMap/RoadMap'
-import GetInvolved from '../components/getInvolved/GetInvolved'
+import CallToAction from '../components/callToAction/CallToAction'
 import Header from '../components/headers/AnimatedHeader'
 import Footer from '../components/footer/Footer'
 
@@ -19,7 +19,16 @@ const IndexPage = () => (
     <GetStarted />
     <Supported />
     <RoadMap />
-    <GetInvolved />
+    <CallToAction
+      href="https://gitter.im/ethereum/go-ethereum/name-registry"
+      linkText="Join Now"
+    >
+      <h2>Get involved.</h2>
+      <p>
+        For more information about ENS, or to help us develop and expand it,
+        join our Gitter channel.
+      </p>
+    </CallToAction>
     <Footer />
   </Fragment>
 )

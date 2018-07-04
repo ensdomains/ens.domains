@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
 import mq from '../../mediaQuery'
+import PropTypes from 'prop-types'
 import { modulate, importAll } from '../../utils'
 
 const GridView = styled('section')`
@@ -8,7 +9,7 @@ const GridView = styled('section')`
   padding: 100px 0 0;
 
   ${mq.medium`
-    padding: 170px 0 0;
+    padding: 0 0 170px;
   `};
 
 
@@ -22,7 +23,8 @@ const GridView = styled('section')`
   }
   .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: ${props =>
+      props.columns !== 2 ? `space-between` : `center`};
     margin: 0 auto 50px;
     width: 100%;
     flex-wrap: wrap;
@@ -139,9 +141,13 @@ const GridItem = ({ src, name, fileName, links }) => {
 export default class GridViewContainer extends React.Component {
   render() {
     return (
-      <GridView innerRef={this.supported}>
+      <GridView columns={this.props.columns || 4} innerRef={this.supported}>
         <div className="container">{this.props.children}</div>
       </GridView>
     )
   }
+}
+
+GridViewContainer.propTypes = {
+  columns: PropTypes.number,
 }

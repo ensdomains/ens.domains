@@ -3,7 +3,7 @@ import styled from 'react-emotion'
 import mq from '../../mediaQuery'
 import BG from '../../assets/heroBG.jpg'
 
-const GetInvolvedContainer = styled('section')`
+const CallToActionContainer = styled('section')`
   background: url(${BG});
   background-size: cover;
   background-position: center center;
@@ -37,26 +37,21 @@ const GetInvolvedContainer = styled('section')`
   }
 `
 
-class GetInvolved extends React.Component {
+class CallToAction extends React.Component {
   render() {
     return (
-      <GetInvolvedContainer>
+      <CallToActionContainer>
         <div className="container">
-          <h2>Get involved.</h2>
-          <p>
-            For more information about ENS, or to help us develop and expand it,
-            join our Gitter channel.
-          </p>
-          <a
-            href="https://gitter.im/ethereum/go-ethereum/name-registry"
-            className="button"
-          >
-            Join Now
+          {this.props.children}
+          <a href={this.props.href} className="button">
+            {this.props.linkText
+              ? this.props.linkText
+              : 'Please add linkText and an href prop to CallToAction'}
           </a>
         </div>
-      </GetInvolvedContainer>
+      </CallToActionContainer>
     )
   }
 }
 
-export default GetInvolved
+export default CallToAction

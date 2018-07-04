@@ -2,9 +2,10 @@ import React, { Fragment } from 'react'
 import ValueProp from '../components/valueProp/ValueProp'
 import Quote from '../components/quote/Quote'
 import GetStarted from '../components/getStarted/GetStarted'
-import Supported from '../components/supportedApps/Supported'
-import RoadMap from '../components/roadMap/RoadMap'
-import GetInvolved from '../components/getInvolved/GetInvolved'
+import Sponsors from '../components/hackathon/Sponsors'
+import Mentors from '../components/hackathon/Mentors'
+import Partners from '../components/hackathon/Partners'
+import CallToAction from '../components/callToAction/CallToAction'
 import Header from '../components/headers/StickyHeader'
 import Footer from '../components/footer/Footer'
 
@@ -21,10 +22,16 @@ const HackPage = () => (
       <strong>August 11th-12th</strong> by a two day ENS focused hackathon
     </ValueProp>
     <Quote quote="11-12th August, 2018" author="Central London" />
-    <GetStarted />
-    <Supported />
-    <RoadMap />
-    <GetInvolved />
+    <Sponsors />
+    <Mentors />
+    <Partners />
+    <CallToAction
+      href="https://docs.google.com/forms/d/e/1FAIpQLSf8ilqmHMfh7d__wLgGU9s7gA94kiVmQ0EpH1NAWL_41Pq8sA/viewform"
+      linkText="Apply Now"
+    >
+      <h2>Get involved.</h2>
+      <p>To register your interest, please fill in the form.</p>
+    </CallToAction>
     <Footer />
   </Fragment>
 )

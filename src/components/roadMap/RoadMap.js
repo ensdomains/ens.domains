@@ -4,12 +4,14 @@ import people from './people.svg'
 import mq from '../../mediaQuery'
 
 const RoadMapContainer = styled('section')`
-  padding: 100px 0 0;
   position: relative;
   overflow: hidden;
 
   .roadmap-container {
     margin-bottom: 100px;
+    ${mq.medium`
+      margin-bottom: 170px;
+    `};
   }
 
   h3 {

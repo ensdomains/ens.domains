@@ -9,10 +9,10 @@ import wallet from './wallet.svg'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const GetStarted = styled('section')`
-  padding: 100px 0 0;
+  padding: 0 0 100px;
 
   ${mq.medium`
-    padding: 100px 0 0;
+    padding: 0 0 170px;
     `};
 
   .icons {
