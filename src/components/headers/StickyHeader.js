@@ -5,6 +5,7 @@ import mq from '../../mediaQuery'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import logoSmall from '../../assets/ensIconLogo.svg'
 import typedLogo from '../../assets/ENS_TypeLogo_Nav_57x22.svg'
+import typedLogoWhite from '../../assets/ENS_TypeLogo_Nav_White.svg'
 import medium from '../../assets/medium.svg'
 import twitter from '../../assets/twitter.svg'
 import github from '../../assets/github.svg'
@@ -16,7 +17,8 @@ import { modulate } from '../../utils'
 
 const StickyHeader = styled('header')`
   position: fixed;
-  background: rgba(255, 255, 255, 255);
+  background: ${props => (props.menuOpen ? 'black' : 'rgba(255, 255, 255, 1)')};
+
   top: 0;
   height: 48px;
   width: 100%;
@@ -25,7 +27,7 @@ const StickyHeader = styled('header')`
   align-items: center;
   justify-content: space-between;
 
-  padding: 10px 25px 10px 25px;
+  padding: 0 25px;
   z-index: 1000;
 
   ${mq.medium`
@@ -56,9 +58,48 @@ const StickyHeader = styled('header')`
     `};
   }
 
-  .social {
+  .right-nav {
+    height: 100%;
     opacity: 1;
+    display: none;
+    align-items: center;
+    ${mq.medium`
+      display: flex;
+    `};
+  }
+
+  .internal-nav {
+    align-items: center;
     display: flex;
+    height: 100%;
+    border-right: 1px solid #e9e9e9;
+    margin-right: 20px;
+    a {
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-right: 20px;
+      text-transform: uppercase;
+      color: #2b2b2b;
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover,
+      &.current {
+        color: #5284ff;
+      }
+    }
+  }
+
+  .mobile-nav {
+    ${mq.medium`
+      display: none;
+    `};
+  }
+
+  .social {
+    display: flex;
+
     a {
       background: white;
       border-radius: 50%;
@@ -69,11 +110,13 @@ const StickyHeader = styled('header')`
       height: 25px;
       margin: 0 3px 0;
       transition: 0.2s ease-in-out;
+
       ${mq.medium`
         background: black;
         width: 32px;
         height: 32px;
       `};
+
       &:last-child {
         margin-right: 0;
       }
@@ -83,10 +126,9 @@ const StickyHeader = styled('header')`
       }
 
       ${mq.medium`
-        &:hover {
-          background: #5284FF;
-        }
-
+          &:hover {
+            background: #5284FF;
+          }
       `};
     }
     .github,
@@ -109,31 +151,139 @@ const StickyHeader = styled('header')`
     }
 
     ${mq.medium`
-      .medium, .github, .twitter {
-        display: block
-      }
-
-      .medium-mobile, .github-mobile, .twitter-mobile {
-        display: none
-      }
-    `};
+        .medium, .github, .twitter {
+          display: block
+        }
+  
+        .medium-mobile, .github-mobile, .twitter-mobile {
+          display: none
+        }
+      `};
     img {
       display: block;
     }
   }
+
+  .hamburger {
+    padding: 15px 15px;
+    padding-right: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+  }
+  .hamburger:hover {
+    opacity: 0.7;
+  }
+
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+  }
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 30px;
+    height: 1px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    content: '';
+    display: block;
+  }
+  .hamburger-inner::before {
+    top: -10px;
+  }
+  .hamburger-inner::after {
+    bottom: -10px;
+  }
+
+  .hamburger--collapse-r .hamburger-inner {
+    top: auto;
+    bottom: 0;
+    transition-duration: 0.13s;
+    transition-delay: 0.13s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .hamburger--collapse-r .hamburger-inner::after {
+    top: -20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+      opacity 0.1s linear;
+  }
+  .hamburger--collapse-r .hamburger-inner::before {
+    transition: all 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+      transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  .hamburger--collapse-r.is-active .hamburger-inner {
+    transform: translate3d(0, -10px, 0) rotate(45deg);
+    transition-delay: 0.22s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .hamburger--collapse-r.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: all 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+      opacity 0.1s 0.22s linear;
+  }
+  .hamburger--collapse-r.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(90deg);
+    transition: all 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+      transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .hamburger--collapse-r.is-active .hamburger-inner,
+  .hamburger--collapse-r.is-active .hamburger-inner::after,
+  .hamburger--collapse-r.is-active .hamburger-inner::before {
+    background: #fff;
+  }
 `
 
 class StickyHeaderContainer extends React.Component {
+  state = {
+    menuOpen: false,
+  }
+
   constructor(props) {
     super(props)
-    this.componentStyles = this.calculateStyles(props.withScroll)
+    this.componentStyles = this.calculateStyles(
+      props.withScroll,
+      this.state.menuOpen
+    )
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.componentStyles = this.calculateStyles(nextProps.withScroll)
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   this.componentStyles = this.calculateStyles(
+  //     nextProps.withScroll,
+  //     this.state.menuOpen
+  //   )
+  // }
 
-  calculateStyles = scrollData => {
+  calculateStyles = (scrollData, menuOpen) => {
     if (!scrollData) {
       return {}
     }
@@ -158,7 +308,7 @@ class StickyHeaderContainer extends React.Component {
       true
     )
 
-    const smallLogoOpacity = modulate(
+    const opacity = modulate(
       pageYOffset,
       [bodyHeight - 100, bodyHeight],
       [0, 1],
@@ -173,22 +323,24 @@ class StickyHeaderContainer extends React.Component {
     )
 
     const stickyHeaderStyle = {
-      background: `rgba(255,255,255, ${stickyOpacity})`,
+      background: `rgba(${
+        menuOpen ? '0,0,0' : '255,255,255'
+      }, ${stickyOpacity})`,
       boxShadow: `2px 8px 25px 2px rgba(136, 149, 169, ${boxShadow})`,
     }
 
     const smallLogoStyle = {
-      opacity: smallLogoOpacity,
+      opacity,
       transform: `translate(-50%, -50%) scale(${stickyScale}`,
     }
 
     const acronymLogoStyle = {
-      opacity: smallLogoOpacity,
+      opacity,
       transform: `scale(${stickyScale}`,
     }
 
-    const socialStyle = {
-      opacity: smallLogoOpacity,
+    const rightNavStyle = {
+      opacity,
       transform: `scale(${stickyScale}`,
     }
 
@@ -196,41 +348,72 @@ class StickyHeaderContainer extends React.Component {
       stickyHeaderStyle,
       smallLogoStyle,
       acronymLogoStyle,
-      socialStyle,
+      rightNavStyle,
     }
   }
 
   render() {
+    // const {
+    //   stickyHeaderStyle = {},
+    //   acronymLogoStyle = {},
+    //   smallLogoStyle = {},
+    //   rightNavStyle = {},
+    // } = this.componentStyles
+
     const {
       stickyHeaderStyle = {},
       acronymLogoStyle = {},
       smallLogoStyle = {},
-      socialStyle = {},
-    } = this.componentStyles
+      rightNavStyle = {},
+    } = this.calculateStyles(this.props.withScroll, this.state.menuOpen)
 
     return (
-      <StickyHeader style={stickyHeaderStyle}>
+      <StickyHeader style={stickyHeaderStyle} menuOpen={this.state.menuOpen}>
         <Link to="/" style={acronymLogoStyle}>
           <img
             className="typed-logo"
-            src={typedLogo}
+            src={this.state.menuOpen ? typedLogoWhite : typedLogo}
             alt="Ethereum Name Service"
           />
         </Link>
         <img style={smallLogoStyle} src={logoSmall} className="small-logo" />
-        <div className="social" style={socialStyle}>
-          <OutboundLink href="https://twitter.com/ensdomains">
-            <img src={twitter} className="twitter" />
-            <img src={twitterBlack} className="twitter-mobile" />
-          </OutboundLink>
-          <OutboundLink href="https://medium.com/the-ethereum-name-service">
-            <img src={medium} className="medium" />
-            <img src={mediumBlack} className="medium-mobile" />
-          </OutboundLink>
-          <OutboundLink href="https://github.com/ensdomains">
-            <img src={github} className="github" />
-            <img src={githubBlack} className="github-mobile" />
-          </OutboundLink>
+        <div className="mobile-nav">
+          <button
+            className={`hamburger hamburger--collapse-r ${
+              this.state.menuOpen ? 'is-active' : ''
+            }`}
+            type="button"
+            onClick={() =>
+              this.setState({
+                menuOpen: !this.state.menuOpen,
+              })
+            }
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner" />
+            </span>
+          </button>
+        </div>
+        <div className="right-nav" style={rightNavStyle}>
+          <div className="internal-nav">
+            <Link to="/hack" activeClassName="current">
+              Hackathon
+            </Link>
+          </div>
+          <div className="social">
+            <OutboundLink href="https://twitter.com/ensdomains">
+              <img src={twitter} className="twitter" />
+              <img src={twitterBlack} className="twitter-mobile" />
+            </OutboundLink>
+            <OutboundLink href="https://medium.com/the-ethereum-name-service">
+              <img src={medium} className="medium" />
+              <img src={mediumBlack} className="medium-mobile" />
+            </OutboundLink>
+            <OutboundLink href="https://github.com/ensdomains">
+              <img src={github} className="github" />
+              <img src={githubBlack} className="github-mobile" />
+            </OutboundLink>
+          </div>
         </div>
       </StickyHeader>
     )
