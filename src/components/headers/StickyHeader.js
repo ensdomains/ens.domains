@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+import Link from 'gatsby-link'
 import mq from '../../mediaQuery'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import logoSmall from '../../assets/ensIconLogo.svg'
@@ -209,12 +210,13 @@ class StickyHeaderContainer extends React.Component {
 
     return (
       <StickyHeader style={stickyHeaderStyle}>
-        <img
-          style={acronymLogoStyle}
-          className="typed-logo"
-          src={typedLogo}
-          alt="Ethereum Name Service"
-        />
+        <Link to="/" style={acronymLogoStyle}>
+          <img
+            className="typed-logo"
+            src={typedLogo}
+            alt="Ethereum Name Service"
+          />
+        </Link>
         <img style={smallLogoStyle} src={logoSmall} className="small-logo" />
         <div className="social" style={socialStyle}>
           <OutboundLink href="https://twitter.com/ensdomains">

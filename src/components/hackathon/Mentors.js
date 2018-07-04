@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import styled from 'react-emotion'
 import GridView, { Row } from '../gridView/GridView'
 import { importAll } from '../../utils'
+import mentorLinks from './links.json'
 
 const mentorDetails = {
   nicksdjohnson: {
@@ -71,6 +73,52 @@ const mentorDetails = {
   },
 }
 
+const MentorRow = ({ list, className, children }) => {
+  return (
+    <React.Fragment>
+      {children}
+      <div className={`row ${className ? className : ''}`}>
+        {list.map(item => (
+          <Mentor
+            key={item.name}
+            src={item.src}
+            name={item.fullName}
+            org={item.org}
+            skillsets={item.skillsets}
+            fileName={item.fileName}
+          />
+        ))}
+      </div>
+    </React.Fragment>
+  )
+}
+
+const MentorContainer = styled.span`
+  margin-bottom: 50px;
+
+  a {
+    text-decoration: none;
+  }
+
+  span {
+    font-size: 16px;
+  }
+`
+
+const Mentor = ({ src, name, fileName, org, skillsets }) => (
+  <MentorContainer className="grid-item">
+    <a href={mentorLinks[fileName]}>
+      <img src={src} />
+      <p>{name}</p>
+    </a>
+    <span>
+      {org}
+      <br />
+      {skillsets}
+    </span>
+  </MentorContainer>
+)
+
 const importMentors = r =>
   r.keys().map(item => {
     let fileName = item.replace(/\.(png|jpe?g|svg)$/, '').replace('./', '')
@@ -101,9 +149,9 @@ class Mentors extends Component {
   render() {
     return (
       <GridView>
-        <Row list={mentors} title="s" links={links}>
+        <MentorRow list={mentors} title="s" links={links}>
           <h3>Mentors</h3>
-        </Row>
+        </MentorRow>
       </GridView>
     )
   }
