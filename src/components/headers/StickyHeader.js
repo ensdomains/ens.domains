@@ -17,7 +17,9 @@ import { modulate } from '../../utils'
 
 const StickyHeader = styled('header')`
   position: fixed;
-  background: ${props => (props.menuOpen ? 'black' : 'rgba(255, 255, 255, 1)')};
+  transition: background 0.2s ease-in-out;
+  background: ${props =>
+    props.menuOpen ? 'rgb(18, 29, 70)' : 'rgba(255,255,255,1)'};
 
   top: 0;
   height: 48px;
@@ -59,36 +61,67 @@ const StickyHeader = styled('header')`
   }
 
   .right-nav {
-    height: 100%;
+    height: 100px;
     opacity: 1;
-    display: none;
     align-items: center;
+    position: absolute;
+    left: 100%;
+    top: 48px;
+    background: rgb(18, 29, 70);
+    color: white;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+    ${props => (props.menuOpen ? `left: 0` : '')};
     ${mq.medium`
+      height: 100%;
+      background: transparent;
+      color: #2b2b2b;
       display: flex;
+      width: auto;
+      position: static;
     `};
   }
 
   .internal-nav {
     align-items: center;
     display: flex;
-    height: 100%;
-    border-right: 1px solid #e9e9e9;
-    margin-right: 20px;
+    height: auto;
+    justify-content: center;
+
     a {
-      font-size: 14px;
-      font-weight: 900;
-      letter-spacing: 1px;
-      margin-right: 20px;
-      text-transform: uppercase;
-      color: #2b2b2b;
+      color: white;
       text-decoration: none;
-      transition: 0.2s;
+      font-size: 22px;
+      font-weight: 100;
+      padding: 20px;
 
       &:hover,
       &.current {
         color: #5284ff;
       }
     }
+
+    ${mq.medium`
+      height: 100%;
+      margin-right: 20px;
+      border-right: 1px solid #e9e9e9;
+
+      a {
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        margin-right: 20px;
+        text-transform: uppercase;
+        color: #2b2b2b;
+        transition: 0.2s;
+  
+        &:hover,
+        &.current {
+          color: #5284ff;
+        }
+      }
+    `};
   }
 
   .mobile-nav {
@@ -99,6 +132,7 @@ const StickyHeader = styled('header')`
 
   .social {
     display: flex;
+    justify-content: center;
 
     a {
       background: white;
@@ -270,10 +304,10 @@ class StickyHeaderContainer extends React.Component {
 
   constructor(props) {
     super(props)
-    this.componentStyles = this.calculateStyles(
-      props.withScroll,
-      this.state.menuOpen
-    )
+    // this.componentStyles = this.calculateStyles(
+    //   props.withScroll,
+    //   this.state.menuOpen
+    // )
   }
 
   // componentWillReceiveProps(nextProps) {
@@ -324,7 +358,7 @@ class StickyHeaderContainer extends React.Component {
 
     const stickyHeaderStyle = {
       background: `rgba(${
-        menuOpen ? '0,0,0' : '255,255,255'
+        menuOpen ? '18, 29, 70' : '255,255,255'
       }, ${stickyOpacity})`,
       boxShadow: `2px 8px 25px 2px rgba(136, 149, 169, ${boxShadow})`,
     }
@@ -344,27 +378,27 @@ class StickyHeaderContainer extends React.Component {
       transform: `scale(${stickyScale}`,
     }
 
+    const mobileNavStyle = {
+      opacity,
+      transform: `scale(${stickyScale}`,
+    }
+
     return {
       stickyHeaderStyle,
       smallLogoStyle,
       acronymLogoStyle,
       rightNavStyle,
+      mobileNavStyle,
     }
   }
 
   render() {
-    // const {
-    //   stickyHeaderStyle = {},
-    //   acronymLogoStyle = {},
-    //   smallLogoStyle = {},
-    //   rightNavStyle = {},
-    // } = this.componentStyles
-
     const {
       stickyHeaderStyle = {},
       acronymLogoStyle = {},
       smallLogoStyle = {},
       rightNavStyle = {},
+      mobileNavStyle = {},
     } = this.calculateStyles(this.props.withScroll, this.state.menuOpen)
 
     return (
@@ -377,7 +411,7 @@ class StickyHeaderContainer extends React.Component {
           />
         </Link>
         <img style={smallLogoStyle} src={logoSmall} className="small-logo" />
-        <div className="mobile-nav">
+        <div className="mobile-nav" style={mobileNavStyle}>
           <button
             className={`hamburger hamburger--collapse-r ${
               this.state.menuOpen ? 'is-active' : ''
@@ -394,7 +428,7 @@ class StickyHeaderContainer extends React.Component {
             </span>
           </button>
         </div>
-        <div className="right-nav" style={rightNavStyle}>
+        <div className={`right-nav`} style={rightNavStyle}>
           <div className="internal-nav">
             <Link to="/hack" activeClassName="current">
               Hackathon
