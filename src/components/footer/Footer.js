@@ -133,7 +133,7 @@ const Footer = () => (
           <img src={medium} className="medium" />
           Medium
         </a>
-        <a href="https://medium.com/the-ethereum-name-service">
+        <a href="https://github.com/ensdomains">
           <img src={github} className="github" />
           Github
         </a>
