@@ -74,6 +74,7 @@ const StickyHeader = styled('header')`
     z-index: -1;
     ${props => (props.menuOpen ? `left: 0` : '')};
     ${mq.medium`
+      transition: none;
       height: 100%;
       background: transparent;
       color: #2b2b2b;
@@ -248,6 +249,12 @@ const StickyHeader = styled('header')`
     content: '';
     display: block;
   }
+
+  .hamburger-inner::after {
+    content: '';
+    display: none;
+  }
+
   .hamburger-inner::before {
     top: -10px;
   }
@@ -381,6 +388,11 @@ class StickyHeaderContainer extends React.Component {
       transform: `scale(${stickyScale}`,
     }
 
+    const internalNavStyle = {
+      opacity: stickyOpacity,
+      borderRight: `1px solid rgba(204,204,204,${stickyOpacity})`,
+    }
+
     const mobileNavStyle = {
       opacity,
       transform: `scale(${stickyScale}`,
@@ -392,6 +404,7 @@ class StickyHeaderContainer extends React.Component {
       acronymLogoStyle,
       rightNavStyle,
       mobileNavStyle,
+      internalNavStyle,
     }
   }
 
@@ -402,6 +415,7 @@ class StickyHeaderContainer extends React.Component {
       smallLogoStyle = {},
       rightNavStyle = {},
       mobileNavStyle = {},
+      internalNavStyle = {},
     } = this.calculateStyles(this.props.withScroll, this.state.menuOpen)
 
     return (
@@ -432,7 +446,7 @@ class StickyHeaderContainer extends React.Component {
           </button>
         </div>
         <div className={`right-nav`} style={rightNavStyle}>
-          <div className="internal-nav">
+          <div className="internal-nav" style={internalNavStyle}>
             <Link to="/hack" activeClassName="current">
               Hackathon
             </Link>
