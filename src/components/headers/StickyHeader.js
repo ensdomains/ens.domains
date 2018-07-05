@@ -374,6 +374,9 @@ class StickyHeaderContainer extends React.Component {
     }
 
     const rightNavStyle = {
+      background: `rgba(${
+        menuOpen ? '18, 29, 70' : '255,255,255'
+      }, ${stickyOpacity})`,
       opacity,
       transform: `scale(${stickyScale}`,
     }
