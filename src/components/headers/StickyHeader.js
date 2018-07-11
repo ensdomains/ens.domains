@@ -200,8 +200,7 @@ const StickyHeader = styled('header')`
   }
 
   .hamburger {
-    padding: 15px 15px;
-    padding-right: 0;
+    padding: 10px 0 15px 15px;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
@@ -214,6 +213,9 @@ const StickyHeader = styled('header')`
     border: 0;
     margin: 0;
     overflow: visible;
+    &:is-active {
+      padding-top: 15px;
+    }
   }
   .hamburger:hover {
     opacity: 0.7;
