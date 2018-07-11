@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import GridView, { Row } from '../gridView/GridView'
 import { importAll } from '../../utils'
 

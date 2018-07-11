@@ -449,7 +449,7 @@ class StickyHeaderContainer extends React.Component {
         </div>
         <div className={`right-nav`} style={rightNavStyle}>
           <div className="internal-nav" style={internalNavStyle}>
-            <Link to="/hack" activeClassName="current">
+            <Link to="/hack2018" activeClassName="current">
               Hackathon
             </Link>
           </div>

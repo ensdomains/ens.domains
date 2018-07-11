@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import styled from 'react-emotion'
-import GridView, { Row } from '../gridView/GridView'
-import { importAll } from '../../utils'
+import GridView from '../gridView/GridView'
 import mentorLinks from './links.json'
 
 const mentorDetails = {
