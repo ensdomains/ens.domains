@@ -72,7 +72,7 @@ const mentorDetails = {
   aliazam: {
     fullName: 'Ali Azam',
     org: "King's College London",
-    skillsets: '#solidity',
+    skillsets: '#solidity #consensus',
   },
   will_harborne: {
     fullName: 'Will Harborne',
