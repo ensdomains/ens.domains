@@ -156,7 +156,7 @@ const links = {
 class Mentors extends Component {
   render() {
     return (
-      <GridView>
+      <GridView justifyContent="flex-start">
         <MentorRow list={mentors} title="s" links={links}>
           <h3>Mentors</h3>
         </MentorRow>
