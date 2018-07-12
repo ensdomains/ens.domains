@@ -24,7 +24,7 @@ const GridView = styled('section')`
   .row {
     display: flex;
     justify-content: ${props =>
-      props.columns !== 2 ? `space-between` : `center`};
+      props.justifyContent ? props.justifyContent : `center`};
     margin: 0 auto 50px;
     width: 100%;
     flex-wrap: wrap;
@@ -141,7 +141,10 @@ const GridItem = ({ src, name, fileName, links }) => {
 export default class GridViewContainer extends React.Component {
   render() {
     return (
-      <GridView columns={this.props.columns || 4} innerRef={this.supported}>
+      <GridView
+        justifyContent={this.props.justifyContent}
+        innerRef={this.supported}
+      >
         <div className="container">{this.props.children}</div>
       </GridView>
     )
