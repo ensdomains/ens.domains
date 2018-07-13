@@ -69,6 +69,7 @@ const TeamContainer = styled.section`
   .member {
     text-decoration: none;
     display: block;
+    text-align: center;
     &:visited {
       color: #2b2b2b;
     }
@@ -76,7 +77,7 @@ const TeamContainer = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 200px;
+      height: 180px;
       width: 100%;
       margin-bottom: 0;
       position: relative;
