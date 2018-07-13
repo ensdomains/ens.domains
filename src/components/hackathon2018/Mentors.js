@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'react-emotion'
 import GridView from '../gridView/GridView'
 import mentorLinks from './links.json'
+import { importAll } from '../../utils'
 
 const mentorDetails = {
   nicksdjohnson: {
@@ -117,24 +118,9 @@ const Mentor = ({ src, name, fileName, org, skillsets }) => (
   </MentorContainer>
 )
 
-const importMentors = r =>
-  r.keys().map(item => {
-    let fileName = item.replace(/\.(png|jpe?g|svg)$/, '').replace('./', '')
-    let parsed = item
-      .replace(/\.(png|jpe?g|svg)$/, '')
-      .replace(/([A-Z])/g, ' $1')
-      .replace('./', '')
-
-    let obj = {
-      fileName: fileName,
-      name: parsed,
-      src: r(item),
-    }
-    return { ...obj, ...mentorDetails[parsed] }
-  })
-
-const mentors = importMentors(
-  require.context('./mentors', false, /\.(png|jpe?g|svg)$/)
+const mentors = importAll(
+  require.context('./mentors', false, /\.(png|jpe?g|svg)$/),
+  mentorDetails
 )
 
 const links = {

@@ -2,6 +2,7 @@ import { css } from 'emotion'
 
 const breakpoints = {
   // Numerical values will result in a min-width query
+  xs: 400,
   small: 576,
   medium: 768,
   large: 992,

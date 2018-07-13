@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="163px" height="189px" viewBox="0 0 163 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Hover_Hex</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="30.9119051%" y1="-15.9725041%" x2="75.1826505%" y2="105.331778%" id="linearGradient-1">
+            <stop stop-color="#52E3FF" offset="0%"></stop>
+            <stop stop-color="#5144FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Hover_Hex" stroke="url(#linearGradient-1)" stroke-width="8" points="81.5 5 159 49.725436 159 139.176308 81.5 183.901744 4 139.176308 4 49.725436"></polygon>
+    </g>
+</svg>

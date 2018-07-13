@@ -33,9 +33,6 @@ const GridView = styled('section')`
       margin 0 auto 0;
     }
 
-    ${mq.medium`
-      width: 80%%;
-    `};
   }
 
   h3 {
