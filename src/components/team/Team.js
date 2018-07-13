@@ -5,6 +5,12 @@ import mq from '../../mediaQuery'
 import hoverCircle from './hovers/Hover_Circle_168x168.svg'
 import hoverHex from './hovers/Hover_Hex_155x179.svg'
 import teamData from './team.json'
+const TeamIntro = styled.div`
+  max-width: 660px;
+  margin: 0 auto 0;
+  padding: 0 30px;
+  text-align: center;
+`
 
 const TeamContainer = styled.section`
   box-sizing: border-box;
@@ -144,26 +150,36 @@ const team = importAll(
 class Team extends Component {
   render() {
     return (
-      <TeamContainer className="container-small">
-        {team.map((member, i) => (
-          <a
-            className={`member ${member.name} ${member.type}`}
-            href={member.link}
-          >
-            <div className="img-wrapper">
-              <img src={member.src} />
-              <img
-                className="hover"
-                src={member.type === 'hexagon' ? hoverHex : hoverCircle}
-              />
-            </div>
-            <div className="details">
-              <h3>{member.fullName}</h3>
-              <p>{member.title}</p>
-            </div>
-          </a>
-        ))}
-      </TeamContainer>
+      <React.Fragment>
+        <TeamIntro>
+          <h2>Meet the team</h2>
+          <p>
+            We’ve hired a number of talented individuals. Many of them have
+            contributed previously to ENS in a voluntary capacity.
+          </p>
+        </TeamIntro>
+        <TeamContainer className="container-small">
+          {team.map((member, i) => (
+            <a
+              className={`member ${member.name} ${member.type}`}
+              href={member.link}
+              key={i}
+            >
+              <div className="img-wrapper">
+                <img src={member.src} />
+                <img
+                  className="hover"
+                  src={member.type === 'hexagon' ? hoverHex : hoverCircle}
+                />
+              </div>
+              <div className="details">
+                <h3>{member.fullName}</h3>
+                <p>{member.title}</p>
+              </div>
+            </a>
+          ))}
+        </TeamContainer>
+      </React.Fragment>
     )
   }
 }
