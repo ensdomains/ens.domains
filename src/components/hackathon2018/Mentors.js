@@ -70,6 +70,16 @@ const mentorDetails = {
     org: 'ENS',
     skillsets: '#ens #ux',
   },
+  aliazam: {
+    fullName: 'Ali Azam',
+    org: "ZINC",
+    skillsets: '#solidity #consensus',
+  },
+  will_harborne: {
+    fullName: 'Will Harborne',
+    org: 'Ethfinex',
+    skillsets: '#solidity #payment',
+  }
 }
 
 const MentorRow = ({ list, className, children }) => {
