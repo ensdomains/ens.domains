@@ -6,7 +6,7 @@ import { modulate, importAll } from '../../utils'
 
 const GridView = styled('section')`
   position: relative;
-  padding: 100px 0 0;
+  padding: 0 0 100px;
 
   ${mq.medium`
     padding: 0 0 170px;
@@ -33,9 +33,6 @@ const GridView = styled('section')`
       margin 0 auto 0;
     }
 
-    ${mq.medium`
-      width: 80%%;
-    `};
   }
 
   h3 {

@@ -1,0 +1,56 @@
+{
+  "becca": {
+    "fullName": "Becca Liebert",
+    "title": "Graphic Designer",
+    "type": "hexagon",
+    "link": "http://beccaliebert.com/"
+  },
+  "beltran": {
+    "fullName": "Beltran Berrocal",
+    "title": "UX Designer",
+    "type": "circle",
+    "link": "https://twitter.com/lyricalpolymath"
+  },
+  "chris": {
+    "fullName": "Chris Remus",
+    "title": "Project Manager",
+    "type": "circle",
+    "link": "https://twitter.com/cjremus"
+  },
+  "dean": {
+    "fullName": "Dean Eigenmann",
+    "title": "Solidity Developer",
+    "type": "circle",
+    "link": "https://twitter.com/DeanEigenmann"
+  },
+  "jeff": {
+    "fullName": "Jeff Lau",
+    "title": "Frontend Developer",
+    "type": "circle",
+    "link": "https://twitter.com/_jefflau"
+  },
+  "leonard": {
+    "fullName": "Leonard Tan",
+    "title": "Developer Evangelist",
+    "type": "hexagon",
+    "link": "https://twitter.com/tetratorus"
+  },
+  "makoto": {
+    "fullName": "Makoto Inoue",
+    "title": "Solidity Developer",
+    "type": "hexagon",
+    "link": "https://twitter.com/makoto_inoue"
+  },
+  "nick": {
+    "fullName": "Nick Johnson",
+    "title": "Lead Developer",
+    "type": "circle",
+    "link": "https://twitter.com/nicksdjohnson"
+  },
+  "virgil": {
+    "fullName": "Virgil Griffith",
+    "title": "Executive Director",
+    "type": "hexagon",
+    "link": "https://twitter.com/virgilgr"
+  }
+}

@@ -90,24 +90,20 @@ class ScrollingShapes extends Component {
       endDomNodeOffsetBottom,
     ]
 
-    console.log(startDomNode)
-
     const hexagon1Pos = modulate(
       pageYOffset,
       scrollRange1,
-      [-200, startDomNodeHeight / 2],
+      [-200, startDomNodeHeight],
       true
     )
 
-    const hexagon2Pos = modulate(pageYOffset, scrollRange2, [80, 40], true)
+    const hexagon2Pos = modulate(pageYOffset, scrollRange2, [100, 40], true)
 
-    const circle1pos = modulate(pageYOffset, scrollRange2, [75, 100], true)
+    const circle1pos = modulate(pageYOffset, scrollRange2, [75, 150], true)
 
-    const circle2pos = modulate(pageYOffset, scrollRange1, [100, 140], true)
+    const circle2pos = modulate(pageYOffset, scrollRange1, [100, 200], true)
 
-    const hexagon3Pos = modulate(pageYOffset, scrollRange1, [150, 120], true)
-
-    console.log(this.hexagon1Pos)
+    const hexagon3Pos = modulate(pageYOffset, scrollRange1, [300, 200], true)
 
     this.hexagon1.current.style.top = hexagon1Pos + 'px'
     this.hexagon2.current.style.top = hexagon2Pos + '%'

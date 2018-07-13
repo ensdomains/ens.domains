@@ -442,8 +442,8 @@ class StickyHeaderContainer extends React.Component {
               })
             }
           >
-            <span class="hamburger-box">
-              <span class="hamburger-inner" />
+            <span className="hamburger-box">
+              <span className="hamburger-inner" />
             </span>
           </button>
         </div>

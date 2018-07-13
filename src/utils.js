@@ -7,7 +7,7 @@ export function modulate(value, rangeA, rangeB, limit) {
   fromHigh = rangeA[1]
   toLow = rangeB[0]
   toHigh = rangeB[1]
-  result = toLow + (value - fromLow) / (fromHigh - fromLow) * (toHigh - toLow)
+  result = toLow + ((value - fromLow) / (fromHigh - fromLow)) * (toHigh - toLow)
   if (limit === true) {
     if (toLow < toHigh) {
       if (result < toLow) {
@@ -43,16 +43,21 @@ export function isElementInViewport(el) {
   )
 }
 
-export const importAll = r =>
+export const importAll = (r, extraData = {}) =>
   r.keys().map(item => {
     let fileName = item.replace(/\.(png|jpe?g|svg)$/, '').replace('./', '')
     let parsed = item
       .replace(/\.(png|jpe?g|svg)$/, '')
       .replace(/([A-Z])/g, ' $1')
       .replace('./', '')
-    return {
+    let obj = {
       fileName: fileName,
       name: parsed,
       src: r(item),
+    }
+
+    return {
+      ...obj,
+      ...extraData[parsed],
     }
   })
