@@ -82,7 +82,7 @@ const mentorDetails = {
   },
   taratan: {
     fullName: 'Tara Tan',
-    org: 'IEO',
+    org: 'IDEO',
     skillsets: '#ux'
   },
 }
