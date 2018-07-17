@@ -79,7 +79,12 @@ const mentorDetails = {
     fullName: 'Will Harborne',
     org: 'Ethfinex',
     skillsets: '#solidity #payment',
-  }
+  },
+  taratan: {
+    fullName: 'Tara Tan',
+    org: 'IEO',
+    skillsets: '#ux'
+  },
 }
 
 const MentorRow = ({ list, className, children }) => {
