@@ -85,6 +85,16 @@ const mentorDetails = {
     org: 'IDEO',
     skillsets: '#ux'
   },
+  nikpage: {
+    fullName: 'Nik Page',
+    org: 'Nik Page Experience Strategy & Design',
+    skillsets: '#ux'
+  },
+  laurencekirk: {
+    fullName: 'Laurence Kirk',
+    org: 'Extropy.IO',
+    skillsets: '#solidity #security'
+  }
 }
 
 const MentorRow = ({ list, className, children }) => {
