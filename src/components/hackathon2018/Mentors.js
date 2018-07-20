@@ -87,7 +87,7 @@ const mentorDetails = {
   },
   nikpage: {
     fullName: 'Nik Page',
-    org: 'Nik Page Experience Strategy & Design',
+    org: 'NPX Strategy & Design',
     skillsets: '#ux'
   },
   laurencekirk: {
