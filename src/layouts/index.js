@@ -11,8 +11,14 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        {
+          name: 'description',
+          content: 'Human readable names for the Ethreum network',
+        },
+        {
+          name: 'keywords',
+          content: 'ENS, Ethereum, Ethereum Name Service, Names, True Names',
+        },
       ]}
       link={[
         { rel: 'shortcut icon', type: 'image/x-icon', href: `${favicon}` },
