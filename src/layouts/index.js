@@ -20,15 +20,23 @@ const Layout = ({ children, data }) => (
           name: 'keywords',
           content: 'ENS, Ethereum, Ethereum Name Service, Names, True Names',
         },
+        {
+          name: 'twitter:card',
+          content: 'summary',
+        },
+        {
+          name: 'twitter:title',
+          content: 'Ethereum Name Service',
+        },
+        {
+          name: 'twitter:image',
+          content: twitter,
+        },
       ]}
       link={[
         { rel: 'shortcut icon', type: 'image/x-icon', href: `${favicon}` },
       ]}
-    >
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content="Ethereum Name Service" />
-      <meta name="twitter:image" content={twitter} />
-    </Helmet>
+    />
     {children()}
   </Fragment>
 )
