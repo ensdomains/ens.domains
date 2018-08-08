@@ -26,11 +26,8 @@ const HackPage = () => (
     <Mentors />
     <Partners />
     <CallToAction
-      href="https://medium.com/the-ethereum-name-service/ens-hackathon-registration-is-open-now-48bd7ead5f4d"
-      linkText="RSVP Now"
+      linkText="Registraion is now closed"
     >
-      <h2>Get involved.</h2>
-      <p>Registration is now open!</p>
     </CallToAction>
     <Footer />
   </Fragment>
