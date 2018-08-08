@@ -14,7 +14,7 @@ const Layout = ({ children, data }) => (
       meta={[
         {
           name: 'description',
-          content: 'Human readable names for the Ethreum network',
+          content: 'Human readable names for the Ethereum network',
         },
         {
           name: 'keywords',
@@ -29,7 +29,7 @@ const Layout = ({ children, data }) => (
           content: 'Ethereum Name Service',
         },
         {
-          name: 'twitter:image',
+          property: 'og:image',
           content: `https://ens.domains${twitter}`,
         },
       ]}
