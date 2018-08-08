@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import '../globalStyles'
 import './index.css'
 import favicon from '../assets/favicon.ico'
+import twitter from '../assets/twitter.png'
 
 const Layout = ({ children, data }) => (
   <Fragment>
@@ -23,7 +24,11 @@ const Layout = ({ children, data }) => (
       link={[
         { rel: 'shortcut icon', type: 'image/x-icon', href: `${favicon}` },
       ]}
-    />
+    >
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="Ethereum Name Service" />
+      <meta name="twitter:image" content={twitter} />
+    </Helmet>
     {children()}
   </Fragment>
 )
