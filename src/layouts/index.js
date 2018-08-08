@@ -30,7 +30,7 @@ const Layout = ({ children, data }) => (
         },
         {
           name: 'twitter:image',
-          content: twitter,
+          content: `https://ens.domains${twitter}`,
         },
       ]}
       link={[
