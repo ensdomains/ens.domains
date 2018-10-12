@@ -1,14 +1,14 @@
 {
-  "cipher": "https://www.cipherbrowser.com/",
+  "Cipher": "https://www.cipherbrowser.com/",
   "imToken": "https://token.im/",
-  "leth": "https://www.inzhoop.com/",
-  "status": "https://status.im/",
-  "metamask": "https://metamask.io/",
-  "mist": "https://github.com/ethereum/mist",
-  "myCrypto": "https://mycrypto.com/",
-  "myEtherWallet": "https://myetherwallet.com/",
-  "aragon": "https://aragon.one/",
-  "bitfinex": "https://www.bitfinex.com/",
-  "etherscan": "https://etherscan.io",
-  "swarm": "https://github.com/ethersphere/swarm"
+  "LETH": "https://www.inzhoop.com/",
+  "Status": "https://status.im/",
+  "MetaMask": "https://metamask.io/",
+  "Mist": "https://github.com/ethereum/mist",
+  "MyCrypto": "https://mycrypto.com/",
+  "MyEtherWallet": "https://myetherwallet.com/",
+  "Aragon": "https://aragon.one/",
+  "Bitfinex": "https://www.bitfinex.com/",
+  "Etherscan": "https://etherscan.io",
+  "Swarm": "https://github.com/ethersphere/swarm"
 }
