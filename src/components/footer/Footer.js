@@ -135,7 +135,7 @@ const Footer = () => (
         </a>
         <a href="https://github.com/ensdomains">
           <img src={github} className="github" />
-          Github
+          GitHub
         </a>
       </div>
     </div>
