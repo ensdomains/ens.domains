@@ -65,7 +65,7 @@ const GridView = styled('section')`
     text-decoration: none;
     width: 50%;
     ${mq.medium`
-      width: 25%;
+      width: 20%;
     `};
     
     img {
