@@ -65,7 +65,7 @@ const GridView = styled('section')`
     text-decoration: none;
     width: 50%;
     ${mq.medium`
-      width: 25%;
+      width: 20%;
     `};
     
     img {
@@ -119,12 +119,13 @@ export const Row = ({ list, className, children, links }) => {
 }
 
 const GridItem = ({ src, name, fileName, links }) => {
+  console.log(links)
   if (links) {
     return (
-      <div className="grid-item" href={links[fileName]}>
+      <a className="grid-item" href={links[fileName]}>
         <img src={src} />
         <p>{name}</p>
-      </div>
+      </a>
     )
   }
   return (

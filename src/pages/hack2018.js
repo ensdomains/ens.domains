@@ -25,10 +25,7 @@ const HackPage = () => (
     <Sponsors />
     <Mentors />
     <Partners />
-    <CallToAction
-      linkText="Registraion is now closed"
-    >
-    </CallToAction>
+    <CallToAction linkText="Registration is now closed" />
     <Footer />
   </Fragment>
 )
