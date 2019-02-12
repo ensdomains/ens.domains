@@ -61,7 +61,6 @@ const StickyHeader = styled('header')`
   }
 
   .right-nav {
-    height: 100px;
     opacity: 1;
     align-items: center;
     position: absolute;
@@ -132,6 +131,7 @@ const StickyHeader = styled('header')`
   }
 
   .social {
+    margin:1em;
     display: flex;
     justify-content: center;
 
@@ -449,9 +449,6 @@ class StickyHeaderContainer extends React.Component {
         </div>
         <div className={`right-nav`} style={rightNavStyle}>
           <div className="internal-nav" style={internalNavStyle}>
-            <Link to="/hack2018" activeClassName="current">
-              Hackathon
-            </Link>
           </div>
           <div className="social">
             <OutboundLink href="https://twitter.com/ensdomains">
