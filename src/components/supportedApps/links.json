@@ -4,7 +4,6 @@
   "leth": "https://www.inzhoop.com/",
   "status": "https://status.im/",
   "metamask": "https://metamask.io/",
-  "mist": "https://github.com/ethereum/mist",
   "myCrypto": "https://mycrypto.com/",
   "myEtherWallet": "https://myetherwallet.com/",
   "argent": "https://www.argent.xyz/",
@@ -12,5 +11,11 @@
   "aragon": "https://aragon.one/",
   "bitfinex": "https://www.bitfinex.com/",
   "etherscan": "https://etherscan.io",
-  "swarm": "https://github.com/ethersphere/swarm"
+  "swarm": "https://github.com/ethersphere/swarm",
+  "alphawallet":"https://alphawallet.com",
+  "totem":"https://totem.network",
+  "portal":"https://www.portal.network",
+  "universallogin":"https://universallogin.io",
+  "pandax":"https://www.pandax.tech",
+  "opera":"https://www.opera.com"
 }
