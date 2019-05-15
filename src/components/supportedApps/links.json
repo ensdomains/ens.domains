@@ -20,6 +20,10 @@
   "etherscan": { "link": "https://etherscan.io", "name": "Etherscan" },
   "swarm": { "link": "https://github.com/ethersphere/swarm", "name": "Swarm" },
   "opensea": { "link": "https://opensea.io", "name": "OpenSea" },
+  "operaTouch": {
+    "link": "https://www.opera.com/mobile/touch",
+    "name": "Opera Touch"
+  },
   "alphawallet": { "link": "https://alphawallet.com", "name": "AlphaWallet" },
   "totem": { "link": "https://totem.network", "name": "Totem" },
   "portal": { "link": "https://www.portal.network", "name": "Portal" },

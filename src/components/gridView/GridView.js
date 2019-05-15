@@ -61,20 +61,21 @@ const GridView = styled('section')`
   }
 
   .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     text-decoration: none;
     width: 50%;
     ${mq.medium`
       width: 20%;
     `};
-    
+
     img {
-      transition: box-shadow 0.3s ease-in-out;
-      border-radius: 50%;
-      box-shadow: 4px 10px 20px 0 rgba(136,149,169,0.25);
-      width: 50%;
-      margin-bottom: 15px;
+      display: block;
+      max-width: 100%;
     }
+    
     p {
       color: #3252C8;
       font-size: 16px;
@@ -98,6 +99,18 @@ const GridView = styled('section')`
   }
 `
 
+const ImgWrapper = styled('div')`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 50%;
+  box-shadow: 4px 10px 20px 0 rgba(136, 149, 169, 0.25);
+  width: 50%;
+  margin-bottom: 15px;
+  overflow: hidden;
+`
+
 export const Row = ({ list, className, children, links }) => {
   return (
     <React.Fragment>
@@ -118,18 +131,21 @@ export const Row = ({ list, className, children, links }) => {
 }
 
 const GridItem = ({ src, name, fileName, links }) => {
-  console.log(links)
   if (links[fileName]) {
     return (
       <a className="grid-item" href={links[fileName].link}>
-        <img src={src} />
+        <ImgWrapper>
+          <img src={src} />
+        </ImgWrapper>
         <p>{links[fileName].name || name}</p>
       </a>
     )
   }
   return (
     <a className="grid-item" href="">
-      <img src={src} />
+      <ImgWrapper>
+        <img src={src} />
+      </ImgWrapper>
       <p>{name}</p>
     </a>
   )
