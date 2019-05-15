@@ -79,7 +79,6 @@ const GridView = styled('section')`
       color: #3252C8;
       font-size: 16px;
       font-weight: 400;
-      text-transform: capitalize;
       ${mq.medium`
         font-size: 20px;
       `};
@@ -120,16 +119,16 @@ export const Row = ({ list, className, children, links }) => {
 
 const GridItem = ({ src, name, fileName, links }) => {
   console.log(links)
-  if (links) {
+  if (links[fileName]) {
     return (
-      <a className="grid-item" href={links[fileName]}>
+      <a className="grid-item" href={links[fileName].link}>
         <img src={src} />
-        <p>{name}</p>
+        <p>{links[fileName].name || name}</p>
       </a>
     )
   }
   return (
-    <a className="grid-item" href={links[fileName]}>
+    <a className="grid-item" href="">
       <img src={src} />
       <p>{name}</p>
     </a>
