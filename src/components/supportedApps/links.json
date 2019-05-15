@@ -1,5 +1,5 @@
 {
-  "cipher": { "link": "https://www.cipherbrowser.com/" },
+  "cipher": { "link": "https://www.cipherbrowser.com/", "name": "Cipher" },
   "imToken": { "name": "imToken", "link": "https://token.im/" },
   "leth": { "name": "LETH", "link": "https://www.inzhoop.com/" },
   "status": { "name": "Status", "link": "https://status.im/" },
