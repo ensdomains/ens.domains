@@ -8,11 +8,26 @@ import RoadMap from '../components/roadMap/RoadMap'
 import CallToAction from '../components/callToAction/CallToAction'
 import Header from '../components/headers/AnimatedHeader'
 import Footer from '../components/footer/Footer'
+import styled from 'react-emotion'
+
+const Link = styled('a')`
+color: rgba(255, 255, 255, 0.75);
+`
 
 const IndexPage = () => (
   <Fragment>
     <Header />
     <Pitch />
+    <CallToAction
+      href="https://reserve.ens.domains"
+      linkText="Reserve Now"
+    >
+      <h2>What's new?</h2>
+      <p>
+      The 3–6 character .Eth name reservation process has started.
+      For more information about the process, read our <Link href='https://medium.com/the-ethereum-name-service/announcing-the-ens-3-6-character-eth-name-reservation-process-7f3cc4d13f65'>blog post</Link>
+      </p>
+    </CallToAction>
     <Quote
       quote="Mathematics is the art of giving the same name to different things."
       author="— Henri Poincare"
