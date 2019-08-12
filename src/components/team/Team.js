@@ -21,19 +21,18 @@ const TeamContainer = styled.section`
   margin-bottom: 80px;
   grid-template-areas:
     'nick virgil'
-    'chris makoto'
-    'dean leonard'
-    'jeff becca'
-    'beltran .';
+    'jeff makoto'
+    'dean brantly'
+    'chris becca';
 
   ${mq.small`
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 80px;
     grid-template-areas:
-    'nick virgil chris'
-    'makoto dean leonard'
-    'jeff becca beltran';
+    'nick virgil jeff'
+    'makoto dean brantly'
+    'chris becca .';
   `};
 
   .jeff {
@@ -60,16 +59,12 @@ const TeamContainer = styled.section`
     grid-area: dean;
   }
 
-  .leonard {
-    grid-area: leonard;
-  }
-
   .becca {
     grid-area: becca;
   }
 
-  .beltran {
-    grid-area: beltran;
+  .brantly {
+    grid-area: brantly;
   }
 
   .member {
