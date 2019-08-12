@@ -12,10 +12,11 @@ import styled from 'react-emotion'
 import mq from '../mediaQuery'
 
 const Link = styled('a')`
-color: rgba(255, 255, 255, 0.75);
+color: #5284FF;
+text-decoration: none;
 `
 const Explanation = styled('div')`
-  display: none;
+  display: block
   font-size: 20px;
   background: #ffffff;
   box-shadow: 2px 8px 25px 2px rgba(136, 149, 169, 0.12);
@@ -25,10 +26,10 @@ const Explanation = styled('div')`
   text-align: center;
   position: relative;
   padding: 70px;
-  max-width: 50%;
+  max-width: 80%;
   margin: 0 auto 100px;
   ${mq.medium`
-    display: block
+    max-width: 50%;
   `};
   img {
     position: absolute;
