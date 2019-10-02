@@ -153,7 +153,7 @@ class Team extends Component {
             contributed previously to ENS in a voluntary capacity.
           </p>
         </TeamIntro>
-        <TeamContainer className="container-small">
+        <TeamContainer className="container-small team">
           {team.map((member, i) => (
             <a
               className={`member ${member.name} ${member.type}`}

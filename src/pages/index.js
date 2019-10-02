@@ -4,7 +4,6 @@ import Quote from '../components/quote/Quote'
 import GetStarted from '../components/getStarted/GetStarted'
 import Supported from '../components/supportedApps/Supported'
 import Team from '../components/team/Team'
-import RoadMap from '../components/roadMap/RoadMap'
 import CallToAction from '../components/callToAction/CallToAction'
 import Header from '../components/headers/AnimatedHeader'
 import Footer from '../components/footer/Footer'
@@ -20,7 +19,6 @@ const IndexPage = () => (
     <GetStarted />
     <Supported />
     <Team />
-    <RoadMap />
     <CallToAction
       href="https://gitter.im/ethereum/go-ethereum/name-registry"
       linkText="Join Now"

@@ -79,7 +79,7 @@ class ScrollingShapes extends Component {
     //console.log(startDomNode)
     let startDomNodeHeight = startDomNode.offsetHeight
 
-    let endDomNode = document.querySelector('.roadmap')
+    let endDomNode = document.querySelector('.team')
     let endDomNodeHeight = endDomNode.offsetHeight
     let startDomNodeTop = startDomNode.offsetTop - bodyHeight
     let endDomNodeOffsetBottom = endDomNode.offsetTop + endDomNodeHeight
