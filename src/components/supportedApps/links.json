@@ -46,5 +46,21 @@
   "multis": {
     "link": "https://multis.co/",
     "name": "Multis"
+  },
+  "spiderdex": {
+    "link": "https://www.spiderdex.com/",
+    "name": "SpiderDEX"
+  },
+  "mintbase": {
+    "link": "https://mintbase.io/",
+    "name": "Mintbase"
+  },
+  "mailchain": {
+    "link": "https://mailchain.xyz/",
+    "name": "MailChain"
+  },
+  "torque": {
+    "link": "torque.loans",
+    "name": "Torque"
   }
 }
