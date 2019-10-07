@@ -60,7 +60,7 @@
     "name": "MailChain"
   },
   "torque": {
-    "link": "torque.loans",
+    "link": "https://torque.loans",
     "name": "Torque"
   }
 }
