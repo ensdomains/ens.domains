@@ -7,6 +7,7 @@ import Team from '../components/team/Team'
 import CallToAction from '../components/callToAction/CallToAction'
 import Header from '../components/headers/AnimatedHeader'
 import Footer from '../components/footer/Footer'
+import RoadMap from '../components/roadMap/RoadMap'
 
 const IndexPage = () => (
   <Fragment>
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <GetStarted />
     <Supported />
     <Team />
+    <RoadMap />
     <CallToAction
       href="https://gitter.im/ethereum/go-ethereum/name-registry"
       linkText="Join Now"
