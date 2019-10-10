@@ -62,5 +62,9 @@
   "torque": {
     "link": "https://torque.loans",
     "name": "Torque"
+  },
+  "dcent": {
+    "link": "https://dcentwallet.com/",
+    "name": "D'Cent Wallet"
   }
 }
