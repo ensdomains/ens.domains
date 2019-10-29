@@ -15,7 +15,7 @@
   },
   "argent": { "link": "https://www.argent.xyz/", "name": "Argent" },
   "enjinx": { "link": "https://enjinx.io/", "name": "Enjinx" },
-  "aragon": { "link": "https://aragon.one/", "name": "Aragon" },
+  "aragon": { "link": "https://aragon.org/", "name": "Aragon" },
   "bitfinex": { "link": "https://www.bitfinex.com/", "name": "Bitfinex" },
   "etherscan": { "link": "https://etherscan.io", "name": "Etherscan" },
   "swarm": { "link": "https://github.com/ethersphere/swarm", "name": "Swarm" },
