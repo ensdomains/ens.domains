@@ -46,5 +46,9 @@
   "multis": {
     "link": "https://multis.co/",
     "name": "Multis"
+  },
+  "defiprime": {
+    "link": "https://portfolio.defiprime.com",
+    "name": "DeFi Portfolio"
   }
 }
