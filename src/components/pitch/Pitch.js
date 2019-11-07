@@ -5,7 +5,7 @@ import secure from '../../assets/secure.svg'
 import distributed from '../../assets/distributed.svg'
 import { modulate } from '../../utils'
 import mq from '../../mediaQuery'
-import ValueProp from '../ValueProp/ValueProp'
+import ValueProp from '../valueProp/ValueProp'
 
 class ValueCard extends React.Component {
   render() {
