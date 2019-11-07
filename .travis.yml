@@ -6,13 +6,10 @@ cache: yarn
 github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
 jobs:
   include:
-    - stage: Build
-      name: 'Build'
-      install:
-        - yarn
-      script: 'yarn build'
     - stage: Deploy
       name: 'Deploy'
+      install:
+        - yarn
       script: yarn deploy
 notifications:
   email:
