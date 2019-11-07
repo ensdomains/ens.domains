@@ -1,5 +1,6 @@
 dist: trusty
 language: node_js
+username: makoto
 node_js:
   - "8.11.4"
 cache: yarn
