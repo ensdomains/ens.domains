@@ -31,7 +31,7 @@
     "deploy:dev": "gatsby build && cd public && surge . --domain ensdomains.surge.sh",
     "deploy:live": "gatsby build --prefix-paths && gh-pages -d public",
     "deploy:branch": "/bin/sh -c 'if [ \"$TRAVIS_BRANCH\" = \"master\" ]; then yarn deploy:live; elif [ \"$TRAVIS_BRANCH\" = \"dev\" ]; then yarn deploy:dev; fi'",
-    "deploy:pr": "yarn build && ./deploy.sh",
+    "deploy:pr": "./deploy.sh",
     "deploy": "/bin/sh -c 'if [ \"$TRAVIS_PULL_REQUEST\" = \"false\" ]; then yarn deploy:branch; else yarn deploy:pr; fi'"
   },
   "devDependencies": {
