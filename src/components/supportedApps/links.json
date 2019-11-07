@@ -50,5 +50,25 @@
   "defiprime": {
     "link": "https://portfolio.defiprime.com",
     "name": "DeFi Portfolio"
+  },
+    "spiderdex": {
+    "link": "https://www.spiderdex.com/",
+    "name": "SpiderDEX"
+  },
+  "mintbase": {
+    "link": "https://mintbase.io/",
+    "name": "Mintbase"
+  },
+  "mailchain": {
+    "link": "https://mailchain.xyz/",
+    "name": "MailChain"
+  },
+  "torque": {
+    "link": "https://torque.loans",
+    "name": "Torque"
+  },
+  "dcent": {
+    "link": "https://dcentwallet.com/",
+    "name": "D'Cent Wallet"
   }
 }

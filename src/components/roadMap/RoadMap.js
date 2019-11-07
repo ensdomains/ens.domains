@@ -101,33 +101,6 @@ class RoadMap extends React.Component {
   render() {
     return (
       <RoadMapContainer innerRef={this.roadmap} className="roadmap">
-        <div className="container-small roadmap-container">
-          <h2>ENS Roadmap.</h2>
-          <p className="lede">
-            ENS launched on mainnet on May 4, 2017. At launch, ENS features an
-            automated registrar that allows anyone to register names ending in
-            ".eth" using an auction process.
-          </p>
-          <p>
-            This registrar is designed to be an interim step in ENS's long term
-            development, to enable a fair and straightforward process in ENS's
-            initial formation, and to provide an opportunity for the community
-            to develop experience and insight into the operation of a
-            decentralised name registry.
-          </p>
-          <p>
-            The goal is to replace this interim registrar with a permanent one,
-            which has a target date of two years after launch of this initial
-            registrar. The intervening period will give the community an
-            opportunity to observe the interim registrar in operation, and to
-            submit proposals for a permanent registrar via the EIP (Ethereum
-            Improvement Proposal) standardisation process. The accepted proposal
-            will be implemented and deployed to replace the interim registrar.
-            We expect the proposal to provide a fair process for transferring
-            names registered with the initial registrar to the permanent
-            registrar.
-          </p>
-        </div>
         <div className="managing-root">
           <div className="container-small">
             <h2>Managing the ENS Root.</h2>
