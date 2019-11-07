@@ -5,7 +5,6 @@ cache: yarn
 github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
 branches:
   only:
-    - dev
     - master
 script:
   - yarn deploy
