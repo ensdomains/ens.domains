@@ -17,7 +17,8 @@
     "module-alias": "^2.1.0",
     "react-emotion": "^9.2.3",
     "react-helmet": "^5.2.0",
-    "react-transition-group-plus": "^0.5.3"
+    "react-transition-group-plus": "^0.5.3",
+    "surge": "^0.21.3"
   },
   "keywords": [
     "gatsby"
