@@ -17,7 +17,8 @@
     "module-alias": "^2.1.0",
     "react-emotion": "^9.2.3",
     "react-helmet": "^5.2.0",
-    "react-transition-group-plus": "^0.5.3"
+    "react-transition-group-plus": "^0.5.3",
+    "surge": "^0.21.3"
   },
   "keywords": [
     "gatsby"
@@ -28,9 +29,11 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy:test": "gatsby build && cd public && surge . --domain ensdomains.surge.sh",
-    "deploy:test2": "gatsby build && cd public && surge . --domain ensdomains2.surge.sh",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy:dev": "gatsby build && cd public && surge . --domain ensdomains.surge.sh",
+    "deploy:live": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy:branch": "/bin/sh -c 'if [ \"$TRAVIS_BRANCH\" = \"master\" ]; then yarn deploy:live; elif [ \"$TRAVIS_BRANCH\" = \"dev\" ]; then yarn deploy:dev; fi'",
+    "deploy:pr": "gatsby build && ./deploy.sh",
+    "deploy": "echo $TRAVIS_PULL_REQUEST && /bin/sh -c 'if [ \"$TRAVIS_PULL_REQUEST\" = \"false\" ]; then yarn deploy:branch; else yarn deploy:pr; fi'"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
