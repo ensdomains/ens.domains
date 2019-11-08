@@ -77,7 +77,7 @@ class Pitch extends React.Component {
             ENS operates in a distributed fashion for both its infrastructure
             and governance. Anyone can register a .eth domain name for
             themselves by participating in an auction process, mediated by the
-            blockchain..
+            blockchain.
           </ValueCard>
         </div>
       </PitchContainer>
