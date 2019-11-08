@@ -3,9 +3,8 @@ import styled from 'react-emotion'
 import Explainer from './Explainer'
 import secure from '../../assets/secure.svg'
 import distributed from '../../assets/distributed.svg'
-import { modulate } from '../../utils'
 import mq from '../../mediaQuery'
-import ValueProp from '../ValueProp/ValueProp'
+import ValueProp from '../valueProp/ValueProp'
 
 class ValueCard extends React.Component {
   render() {
@@ -78,7 +77,7 @@ class Pitch extends React.Component {
             ENS operates in a distributed fashion for both its infrastructure
             and governance. Anyone can register a .eth domain name for
             themselves by participating in an auction process, mediated by the
-            blockchain.
+            blockchain..
           </ValueCard>
         </div>
       </PitchContainer>

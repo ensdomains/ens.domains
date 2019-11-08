@@ -1,6 +1,6 @@
 # ens.domains
 
-Landing page for ens.domains
+Landing page for [ens.domains](https://ens.domains)
 
 ## Install
 
