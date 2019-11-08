@@ -70,5 +70,13 @@
   "dcent": {
     "link": "https://dcentwallet.com/",
     "name": "D'Cent Wallet"
+  },
+  "gnosissafe": {
+    "link": "https://safe.gnosis.io",
+    "name": "Gnosis Safe"
+  },
+  "gnosissafeteams": {
+    "link": "https://safe.gnosis.io/teams",
+    "name": "Gnosis Safe for Teams"
   }
 }
