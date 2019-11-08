@@ -47,11 +47,7 @@
     "link": "https://multis.co/",
     "name": "Multis"
   },
-  "defiprime": {
-    "link": "https://portfolio.defiprime.com",
-    "name": "DeFi Portfolio"
-  },
-    "spiderdex": {
+  "spiderdex": {
     "link": "https://www.spiderdex.com/",
     "name": "SpiderDEX"
   },
@@ -70,6 +66,58 @@
   "dcent": {
     "link": "https://dcentwallet.com/",
     "name": "D'Cent Wallet"
+  },
+  "dexwallet": {
+    "link": "https://www.dexwallet.io/",
+    "name": "DexWallet"
+  },
+  "mathwallet": {
+    "link": "https://www.mathwallet.org/en/",
+    "name": "Math Wallet"
+  },
+  "unlock": {
+    "link": "https://unlock-protocol.com/",
+    "name": "Unlock"
+  },
+  "stib": {
+    "link": "https://stib.co/",
+    "name": "StiB"
+  },
+  "defizap": {
+    "link": "https://defizap.com/",
+    "name": "DefiZap"
+  },
+  "easycryptoname": {
+    "link": "https://easycryptoname.com/",
+    "name": "Easy Crypto Name"
+  },
+  "chainlink": {
+    "link": "https://chain.link/",
+    "name": "Chainlink"
+  },
+  "defisaver": {
+    "link": "https://defisaver.com/",
+    "name": "Defi Saver"
+  },
+  "trustwallet": {
+    "link": "https://trustwallet.com/",
+    "name": "Trust Wallet"
+  },
+  "anchorx": {
+    "link": "https://anchor-x.io/",
+    "name": "AnchorX"
+  },
+  "art": {
+    "link": "https://art.art/digital-twin/",
+    "name": ".ART"
+  },
+  "coinomi": {
+    "link": "https://www.coinomi.com/en/",
+    "name": "Coinomi"
+  },
+  "defiportfoliotracker": {
+    "link": "https://portfolio.defiprime.com/",
+    "name": "DeFi Portfolio Tracker"
   },
   "gnosissafe": {
     "link": "https://safe.gnosis.io",
