@@ -42,7 +42,7 @@ src/components/supportedApps
 │   ├── burnerwallet.png
 ```
 
-2. Add metadata
+### 2. Add metadata
 
 Add `filename` of the image file you just as a key and set `link` and `name` data into `src/components/supportedApps/links.json`
 
@@ -54,7 +54,7 @@ eg:
   }
 ```
 
-3. Make sure it displays correctly.
+### 3. Make sure it displays correctly.
 
 ```
 yarn develop
@@ -62,11 +62,19 @@ yarn develop
 
 Open on http://localhost:8000
 
-![]()
+![Preview](screenshots/instruction1.png)
 
-4. Raise PR
+### 4. Raise PR
 
-Example pull request
+When raising your pull request, please add the following informatin.
 
-https://github.com/ensdomains/ens.domains/pull/29/files
+- Name
+- Type
+- Level of integration
+- How to test (would help a lot if you add screenshot)
+
+![Sample PR](screenshots/instruction2.png)
+
+
+[Example PR](https://github.com/ensdomains/ens.domains/pull/29/files)
 
