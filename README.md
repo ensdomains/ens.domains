@@ -2,7 +2,6 @@
 
 Landing page for [ens.domains](https://ens.domains)
 
-
 ## Setup
 
 ```
@@ -60,7 +59,7 @@ eg:
 yarn develop
 ```
 
-Open on http://localhost:8000
+Open on http://localhost:8000 to check if your newly added logo is properly displayed.
 
 ![Preview](screenshots/instruction1.png)
 
