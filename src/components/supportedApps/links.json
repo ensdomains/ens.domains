@@ -130,5 +130,45 @@
   "burnerwallet": {
     "link": "https://xdai.io/",
     "name": "Burner Wallet"
+  },
+  "almonit": {
+    "link": "http://almonit.eth.link/",
+    "name": "Almonit"
+  },
+  "authereum": {
+    "link": "https://authereum.org/",
+    "name": "Authereum"
+  },
+  "truffle": {
+    "link": "https://www.trufflesuite.com/",
+    "name": "Truffle Suite"
+  },
+  "ownbit": {
+    "link": "https://ownbit.io/en/",
+    "name": "OwnBit"
+  },
+  "luxe": {
+    "link": "http://nic.luxe/",
+    "name": ".LUXE"
+  },
+  "defswap": {
+    "link": "https://defswap.eth.link/",
+    "name": "Defswap"
+  },
+  "deversifi": {
+    "link": "https://deversifi.com/",
+    "name": "DeversiFI"
+  },
+  "gitcoin": {
+    "link": "https://gitcoin.co/",
+    "name": "Gitcoin"
+  },
+  "metamaskmobile": {
+    "link": "https://metamask.io/",
+    "name": "MetaMask"
+  },
+  "colony": {
+    "link": "https://colony.io/",
+    "name": "Colony"
   }
 }
