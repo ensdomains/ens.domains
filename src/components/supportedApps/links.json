@@ -126,5 +126,9 @@
   "gnosissafeteams": {
     "link": "https://safe.gnosis.io/teams",
     "name": "Gnosis Safe for Teams"
+  },
+  "burnerwallet": {
+    "link": "https://xdai.io/",
+    "name": "Burner Wallet"
   }
 }
