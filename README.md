@@ -73,8 +73,5 @@ When raising your pull request, please add the following informatin.
 - Level of integration
 - How to test (would help a lot if you add screenshot)
 
-![Sample PR](screenshots/instruction2.png)
-
-
-[Example PR](https://github.com/ensdomains/ens.domains/pull/29/files)
+[Example PR](https://github.com/ensdomains/ens.domains/pull/42)
 
