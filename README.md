@@ -2,29 +2,75 @@
 
 Landing page for [ens.domains](https://ens.domains)
 
-## Install
+## Setup
 
-Make sure that you have the Gatsby CLI program installed:
-
-```sh
-npm install --global gatsby-cli
+```
+git clone https://github.com/ensdomains/ens.domains
+cd ens.domains
+yarn
+yarn develop
 ```
 
-And run from your CLI:
+## Adding logos of integraded Dapps and Wallets
 
-```sh
-gatsby new gatsby-example-site
+The success of ENS all depends on wallets and dapps to integrate ENS into your product and service.
+To show support and recogninition of your hard work, we would love to list your brand in our website.
+
+To enable ENS in your wallets and dapps, there are three ways.
+
+- Resolve ENS names
+- Support Reverse Resolution
+- Let Users Name Things
+
+Please read [our doc](https://docs.ens.domains/dapp-developer-guide/ens-enabling-your-dapp) for more information.
+
+Once you integrate ENS, please raise pull request with the following steps.
+
+### 1. Add your logo image
+
+The category is either under `apps`, `desktop`, or `mobile`.
+
+We recommend filename to be all lowercase with png file format
+
+eg:
+```
+src/components/supportedApps
+├── apps
+├── desktop
+├── mobile
+│   ├── burnerwallet.png
 ```
 
-Then you can run it by:
+### 2. Add metadata
 
-```sh
-cd gatsby-example-site
-gatsby develop
+Add `filename` of the image file you just as a key and set `link` and `name` data into `src/components/supportedApps/links.json`
+
+eg:
+```
+  "burnerwallet": {
+    "link": "https://xdai.io/",
+    "name": "Burner Wallet"
+  }
 ```
 
-## Deploy
+### 3. Make sure it displays correctly.
 
-```sh
-npm run deploy
 ```
+yarn develop
+```
+
+Open on http://localhost:8000 to check if your newly added logo is properly displayed.
+
+![Preview](screenshots/instruction1.png)
+
+### 4. Raise PR
+
+When raising your pull request, please add the following informatin.
+
+- Name
+- Type
+- Level of integration
+- How to test (would help a lot if you add screenshot)
+
+[Example PR](https://github.com/ensdomains/ens.domains/pull/42)
+
