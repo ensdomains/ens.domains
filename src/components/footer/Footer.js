@@ -119,6 +119,9 @@ const Footer = () => (
       <div className="footer-left">
         <p className="copyright">© True Names LTD</p>
         <a href="http://docs.ens.domains/">Documentation</a>
+        <a href="http://discuss.ens.domains">
+          discuss.ens.domains
+        </a>
         <a href="https://gitter.im/ethereum/go-ethereum/name-registry">
           Gitter
         </a>
