@@ -170,5 +170,9 @@
   "colony": {
     "link": "https://colony.io/",
     "name": "Colony"
+  },
+  "knownorigin": {
+    "link": "https://knownorigin.io/",
+    "name": "KnownOrigin"
   }
 }
