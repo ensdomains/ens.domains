@@ -26,6 +26,11 @@ Please read [our doc](https://docs.ens.domains/dapp-developer-guide/ens-enabling
 
 Once you integrate ENS, please raise pull request with the following steps.
 
+
+### 0. Prep work: Fork our repo
+
+Please follow [this instruction](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/) to learn the basic of how to contribute to open source project if this is your first time to do so.
+
 ### 1. Add your logo image
 
 The category is either under `apps`, `desktop`, or `mobile`.
