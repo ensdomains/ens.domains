@@ -174,5 +174,33 @@
   "knownorigin": {
     "link": "https://knownorigin.io/",
     "name": "KnownOrigin"
+  },
+  "stablepay": {
+    "link": "https://stablepay.io/",
+    "name": "StablePay"
+  },
+  "ethdns": {
+    "link": "https://www.wealdtech.com/articles/using-ethdns-to-host-your-dns-domain/",
+    "name": "EthDNS"
+  },
+  "rainbow": {
+    "link": "https://rainbow.me/",
+    "name": "Rainbow"
+  },
+  "podcrypt": {
+    "link": "https://podcrypt.app/",
+    "name": "Podcrypt"
+  },
+  "defiwatch": {
+    "link": "https://defiwatch.io/",
+    "name": "Defi Watch"
+  },
+  "accointing": {
+    "link": "https://www.accointing.com/",
+    "name": "Accointing"
+  },
+  "originprotocol": {
+    "link": "https://www.originprotocol.com/en",
+    "name": "Origin Protocol"
   }
 }
