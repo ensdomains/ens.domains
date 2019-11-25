@@ -72,7 +72,7 @@ const GetStarted = styled('section')`
 
 export default () => (
   <GetStarted>
-    <h2>Get Started using ENS</h2>
+    <h2>Get Started Using ENS</h2>
     <div className="icons container">
       <OutboundLink href="https://now.ens.domains" className="icon">
         <div className="img-wrapper">
@@ -80,17 +80,17 @@ export default () => (
         </div>
         <p>Name your wallet instantly</p>
       </OutboundLink>
-      <OutboundLink href="https://registrar.ens.domains" className="icon">
+      <OutboundLink href="https://app.ens.domains/" className="icon">
         <div className="img-wrapper">
           <img src={register} />
         </div>
-        <p>Register a .eth domain</p>
+        <p>Register a .ETH name</p>
       </OutboundLink>
-      <OutboundLink href="https://manager.ens.domains/" className="icon">
+      <OutboundLink href="https://app.ens.domains/" className="icon">
         <div className="img-wrapper">
           <img src={manage} />
         </div>
-        <p>Manage your domains</p>
+        <p>Manage your names</p>
       </OutboundLink>
       <OutboundLink href="https://docs.ens.domains/" className="icon">
         <div className="img-wrapper">

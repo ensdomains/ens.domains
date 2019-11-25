@@ -14,7 +14,7 @@
     "name": "Fabrx"
   },
   "argent": { "link": "https://www.argent.xyz/", "name": "Argent" },
-  "enjinx": { "link": "https://enjinx.io/", "name": "Enjinx" },
+  "enjinx": { "link": "https://enjinx.io/", "name": "EnjinX" },
   "aragon": { "link": "https://aragon.org/", "name": "Aragon" },
   "bitfinex": { "link": "https://www.bitfinex.com/", "name": "Bitfinex" },
   "etherscan": { "link": "https://etherscan.io", "name": "Etherscan" },
@@ -31,11 +31,11 @@
     "link": "https://universallogin.io",
     "name": "Universal Login"
   },
-  "pandax": { "link": "https://www.pandax.tech", "name": "Pandax" },
+  "pandax": { "link": "https://www.pandax.tech", "name": "PandaX" },
   "opera": { "link": "https://www.opera.com", "name": "Opera" },
   "emoon": { "link": "https://www.emoon.io/", "name": "Emoon" },
   "poap": { "link": "https://www.poap.xyz//", "name": "POAP" },
-  "encirca": { "link": "https://www.encirca.com/eth/", "name": "Encirca" },
+  "encirca": { "link": "https://www.encirca.com/eth/", "name": "EnCirca" },
   "mevu": { "link": "https://mevu.bet/", "name": "meVu" },
   "kred": { "link": "https://nft.kred/", "name": "Kred" },
   "uniswap": { "link": "https://uniswap.io/", "name": "UniSwap" },
@@ -65,7 +65,7 @@
   },
   "dcent": {
     "link": "https://dcentwallet.com/",
-    "name": "D'Cent Wallet"
+    "name": "D'CENT Wallet"
   },
   "dexwallet": {
     "link": "https://www.dexwallet.io/",
@@ -128,7 +128,7 @@
     "name": "Gnosis Safe for Teams"
   },
   "burnerwallet": {
-    "link": "https://xdai.io/",
+    "link": "https://wallet.burnerfactory.com/",
     "name": "Burner Wallet"
   },
   "almonit": {
