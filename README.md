@@ -11,7 +11,7 @@ yarn
 yarn develop
 ```
 
-## Adding logos of integraded Dapps and Wallets
+## Adding logos of integrated Dapps and Wallets
 
 The success of ENS all depends on wallets and dapps to integrate ENS into your product and service.
 To show support and recogninition of your hard work, we would love to list your brand in our website.
