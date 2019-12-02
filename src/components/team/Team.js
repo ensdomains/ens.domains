@@ -20,19 +20,19 @@ const TeamContainer = styled.section`
   grid-gap: 30px;
   margin-bottom: 80px;
   grid-template-areas:
-    'nick virgil'
+    'nick becca'
     'jeff makoto'
     'dean brantly'
-    'chris becca';
+    'chris .';
 
   ${mq.small`
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 80px;
     grid-template-areas:
-    'nick virgil jeff'
+    'nick becca jeff'
     'makoto dean brantly'
-    'chris becca .';
+    'chris . .';
   `};
 
   .jeff {
@@ -41,10 +41,6 @@ const TeamContainer = styled.section`
 
   .nick {
     grid-area: nick;
-  }
-
-  .virgil {
-    grid-area: virgil;
   }
 
   .chris {

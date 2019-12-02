@@ -43,14 +43,8 @@
   },
   "nick": {
     "fullName": "Nick Johnson",
-    "title": "Lead Developer",
+    "title": "Executive Director",
     "type": "circle",
     "link": "https://twitter.com/nicksdjohnson"
-  },
-  "virgil": {
-    "fullName": "Virgil Griffith",
-    "title": "Executive Director",
-    "type": "hexagon",
-    "link": "https://twitter.com/virgilgr"
   }
 }
