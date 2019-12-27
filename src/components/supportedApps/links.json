@@ -14,6 +14,7 @@
     "name": "Fabrx"
   },
   "argent": { "link": "https://www.argent.xyz/", "name": "Argent" },
+  "btu-direct": { "link": "https://btu-direct.com", "name": "BTU Direct" }, 
   "enjinx": { "link": "https://enjinx.io/", "name": "EnjinX" },
   "aragon": { "link": "https://aragon.org/", "name": "Aragon" },
   "bitfinex": { "link": "https://www.bitfinex.com/", "name": "Bitfinex" },
