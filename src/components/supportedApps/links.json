@@ -1,155 +1,79 @@
 {
-  "cipher": { "link": "https://www.cipherbrowser.com/", "name": "Cipher" },
-  "imToken": { "name": "imToken", "link": "https://token.im/" },
-  "leth": { "name": "LETH", "link": "https://www.inzhoop.com/" },
-  "status": { "name": "Status", "link": "https://status.im/" },
-  "metamask": { "link": "https://metamask.io/", "name": "MetaMask" },
-  "myCrypto": { "link": "https://mycrypto.com/", "name": "MyCrypto" },
-  "myEtherWallet": {
-    "link": "https://myetherwallet.com/",
-    "name": "MyEtherWallet"
-  },
-  "fabrx": {
-    "link": "https://www.fabrx.io/",
-    "name": "Fabrx"
-  },
-  "argent": { "link": "https://www.argent.xyz/", "name": "Argent" },
-  "enjinx": { "link": "https://enjinx.io/", "name": "EnjinX" },
-  "aragon": { "link": "https://aragon.org/", "name": "Aragon" },
-  "bitfinex": { "link": "https://www.bitfinex.com/", "name": "Bitfinex" },
-  "etherscan": { "link": "https://etherscan.io", "name": "Etherscan" },
-  "swarm": { "link": "https://github.com/ethersphere/swarm", "name": "Swarm" },
-  "opensea": { "link": "https://opensea.io", "name": "OpenSea" },
-  "operaTouch": {
-    "link": "https://www.opera.com/mobile/touch",
-    "name": "Opera Touch"
-  },
-  "alphawallet": { "link": "https://alphawallet.com", "name": "AlphaWallet" },
-  "totem": { "link": "https://totem.network", "name": "Totem" },
-  "portal": { "link": "https://www.portal.network", "name": "Portal" },
-  "universallogin": {
-    "link": "https://universallogin.io",
-    "name": "Universal Login"
-  },
-  "pandax": { "link": "https://www.pandax.tech", "name": "PandaX" },
-  "opera": { "link": "https://www.opera.com", "name": "Opera" },
-  "emoon": { "link": "https://www.emoon.io/", "name": "Emoon" },
-  "poap": { "link": "https://www.poap.xyz//", "name": "POAP" },
-  "encirca": { "link": "https://www.encirca.com/eth/", "name": "EnCirca" },
-  "mevu": { "link": "https://mevu.bet/", "name": "meVu" },
-  "kred": { "link": "https://nft.kred/", "name": "Kred" },
-  "uniswap": { "link": "https://uniswap.io/", "name": "UniSwap" },
-  "ethsimple": {
-    "link": "https://ethsimple.com/",
-    "name": "ETHSimple"
-  },
-  "multis": {
-    "link": "https://multis.co/",
-    "name": "Multis"
-  },
-  "spiderdex": {
-    "link": "https://www.spiderdex.com/",
-    "name": "SpiderDEX"
-  },
-  "mintbase": {
-    "link": "https://mintbase.io/",
-    "name": "Mintbase"
-  },
-  "mailchain": {
-    "link": "https://mailchain.xyz/",
-    "name": "Mailchain"
-  },
-  "torque": {
-    "link": "https://torque.loans",
-    "name": "Torque"
-  },
-  "dcent": {
-    "link": "https://dcentwallet.com/",
-    "name": "D'CENT Wallet"
-  },
-  "dexwallet": {
-    "link": "https://www.dexwallet.io/",
-    "name": "DexWallet"
-  },
-  "mathwallet": {
-    "link": "https://www.mathwallet.org/en/",
-    "name": "Math Wallet"
-  },
-  "unlock": {
-    "link": "https://unlock-protocol.com/",
-    "name": "Unlock"
-  },
-  "stib": {
-    "link": "https://stib.co/",
-    "name": "StiB"
-  },
-  "defizap": {
-    "link": "https://defizap.com/",
-    "name": "DeFiZap"
-  },
-  "easycryptoname": {
-    "link": "https://easycryptoname.com/",
-    "name": "Easy Crypto Name"
-  },
-  "chainlink": {
-    "link": "https://chain.link/",
-    "name": "Chainlink"
-  },
-  "defisaver": {
-    "link": "https://defisaver.com/",
-    "name": "Defi Saver"
-  },
-  "trustwallet": {
-    "link": "https://trustwallet.com/",
-    "name": "Trust Wallet"
-  },
-  "anchorx": {
-    "link": "https://anchor-x.io/",
-    "name": "AnchorX"
-  },
-  "art": {
-    "link": "https://art.art/digital-twin/",
-    "name": ".ART"
-  },
-  "coinomi": {
-    "link": "https://www.coinomi.com/en/",
-    "name": "Coinomi"
-  },
-  "defiportfoliotracker": {
-    "link": "https://portfolio.defiprime.com/",
-    "name": "DeFi Portfolio Tracker"
-  },
-  "gnosissafe": {
-    "link": "https://safe.gnosis.io",
-    "name": "Gnosis Safe"
-  },
-  "gnosissafeteams": {
-    "link": "https://safe.gnosis.io/teams",
-    "name": "Gnosis Safe for Teams"
-  },
-  "burnerwallet": {
-    "link": "https://wallet.burnerfactory.com/",
-    "name": "Burner Wallet"
+  "accointing": {
+    "link": "https://www.accointing.com/",
+    "name": "Accointing"
   },
   "almonit": {
     "link": "http://almonit.eth.link/",
     "name": "Almonit"
   },
+  "alphawallet": {
+    "link": "https://alphawallet.com",
+    "name": "AlphaWallet"
+  },
+  "anchorx": {
+    "link": "https://anchor-x.io/",
+    "name": "AnchorX"
+  },
+  "aragon": {
+    "link": "https://aragon.org/",
+    "name": "Aragon"
+  },
+  "argent": {
+    "link": "https://www.argent.xyz/",
+    "name": "Argent"
+  },
+  "art": {
+    "link": "https://art.art/digital-twin/",
+    "name": ".ART"
+  },
   "authereum": {
     "link": "https://authereum.org/",
     "name": "Authereum"
   },
-  "truffle": {
-    "link": "https://www.trufflesuite.com/",
-    "name": "Truffle Suite"
+  "bitfinex": {
+    "link": "https://www.bitfinex.com/",
+    "name": "Bitfinex"
   },
-  "ownbit": {
-    "link": "https://ownbit.io/en/",
-    "name": "OwnBit"
+  "burnerwallet": {
+    "link": "https://wallet.burnerfactory.com/",
+    "name": "Burner Wallet"
   },
-  "luxe": {
-    "link": "http://nic.luxe/",
-    "name": ".LUXE"
+  "chainlink": {
+    "link": "https://chain.link/",
+    "name": "Chainlink"
+  },
+  "cipher": {
+    "link": "https://www.cipherbrowser.com/",
+    "name": "Cipher"
+  },
+  "coinomi": {
+    "link": "https://www.coinomi.com/en/",
+    "name": "Coinomi"
+  },
+  "colony": {
+    "link": "https://colony.io/",
+    "name": "Colony"
+  },
+  "dcent": {
+    "link": "https://dcentwallet.com/",
+    "name": "D'CENT Wallet"
+  },
+  "defiportfoliotracker": {
+    "link": "https://portfolio.defiprime.com/",
+    "name": "DeFi Portfolio Tracker"
+  },
+  "defisaver": {
+    "link": "https://defisaver.com/",
+    "name": "Defi Saver"
+  },
+  "defiwatch": {
+    "link": "https://defiwatch.io/",
+    "name": "Defi Watch"
+  },
+  "defizap": {
+    "link": "https://defizap.com/",
+    "name": "DeFiZap"
   },
   "defswap": {
     "link": "https://defswap.eth.link/",
@@ -159,48 +83,201 @@
     "link": "https://deversifi.com/",
     "name": "DeversiFI"
   },
+  "dexwallet": {
+    "link": "https://www.dexwallet.io/",
+    "name": "DexWallet"
+  },
+  "easycryptoname": {
+    "link": "https://easycryptoname.com/",
+    "name": "Easy Crypto Name"
+  },
+  "emoon": {
+    "link": "https://www.emoon.io/",
+    "name": "Emoon"
+  },
+  "encirca": {
+    "link": "https://www.encirca.com/eth/",
+    "name": "EnCirca"
+  },
+  "enjinx": {
+    "link": "https://enjinx.io/",
+    "name": "EnjinX"
+  },
+  "ethdns": {
+    "link":
+      "https://www.wealdtech.com/articles/using-ethdns-to-host-your-dns-domain/",
+    "name": "EthDNS"
+  },
+  "etherscan": {
+    "link": "https://etherscan.io",
+    "name": "Etherscan"
+  },
+  "ethsimple": {
+    "link": "https://ethsimple.com/",
+    "name": "ETHSimple"
+  },
+  "fabrx": {
+    "link": "https://www.fabrx.io/",
+    "name": "Fabrx"
+  },
   "gitcoin": {
     "link": "https://gitcoin.co/",
     "name": "Gitcoin"
   },
-  "metamaskmobile": {
-    "link": "https://metamask.io/",
-    "name": "MetaMask"
+  "gnosissafe": {
+    "link": "https://safe.gnosis.io",
+    "name": "Gnosis Safe"
   },
-  "colony": {
-    "link": "https://colony.io/",
-    "name": "Colony"
+  "gnosissafeteams": {
+    "link": "https://safe.gnosis.io/teams",
+    "name": "Gnosis Safe for Teams"
+  },
+  "imToken": {
+    "link": "https://token.im/",
+    "name": "imToken"
   },
   "knownorigin": {
     "link": "https://knownorigin.io/",
     "name": "KnownOrigin"
   },
-  "stablepay": {
-    "link": "https://stablepay.io/",
-    "name": "StablePay"
+  "kred": {
+    "link": "https://nft.kred/",
+    "name": "Kred"
   },
-  "ethdns": {
-    "link": "https://www.wealdtech.com/articles/using-ethdns-to-host-your-dns-domain/",
-    "name": "EthDNS"
+  "leth": {
+    "link": "https://www.inzhoop.com/",
+    "name": "LETH"
   },
-  "rainbow": {
-    "link": "https://rainbow.me/",
-    "name": "Rainbow"
+  "luxe": {
+    "link": "http://nic.luxe/",
+    "name": ".LUXE"
+  },
+  "mailchain": {
+    "link": "https://mailchain.xyz/",
+    "name": "Mailchain"
+  },
+  "mathwallet": {
+    "link": "https://www.mathwallet.org/en/",
+    "name": "Math Wallet"
+  },
+  "metamask": {
+    "link": "https://metamask.io/",
+    "name": "MetaMask"
+  },
+  "metamaskmobile": {
+    "link": "https://metamask.io/",
+    "name": "MetaMask"
+  },
+  "mevu": {
+    "link": "https://mevu.bet/",
+    "name": "meVu"
+  },
+  "mintbase": {
+    "link": "https://mintbase.io/",
+    "name": "Mintbase"
+  },
+  "multis": {
+    "link": "https://multis.co/",
+    "name": "Multis"
+  },
+  "myCrypto": {
+    "link": "https://mycrypto.com/",
+    "name": "MyCrypto"
+  },
+  "myEtherWallet": {
+    "link": "https://myetherwallet.com/",
+    "name": "MyEtherWallet"
+  },
+  "opensea": {
+    "link": "https://opensea.io",
+    "name": "OpenSea"
+  },
+  "opera": {
+    "link": "https://www.opera.com",
+    "name": "Opera"
+  },
+  "operaTouch": {
+    "link": "https://www.opera.com/mobile/touch",
+    "name": "Opera Touch"
+  },
+  "originprotocol": {
+    "link": "https://www.originprotocol.com/en",
+    "name": "Origin Protocol"
+  },
+  "ownbit": {
+    "link": "https://ownbit.io/en/",
+    "name": "OwnBit"
+  },
+  "pandax": {
+    "link": "https://www.pandax.tech",
+    "name": "PandaX"
+  },
+  "poap": {
+    "link": "https://www.poap.xyz//",
+    "name": "POAP"
   },
   "podcrypt": {
     "link": "https://podcrypt.app/",
     "name": "Podcrypt"
   },
-  "defiwatch": {
-    "link": "https://defiwatch.io/",
-    "name": "Defi Watch"
+  "portal": {
+    "link": "https://www.portal.network",
+    "name": "Portal"
   },
-  "accointing": {
-    "link": "https://www.accointing.com/",
-    "name": "Accointing"
+  "rainbow": {
+    "link": "https://rainbow.me/",
+    "name": "Rainbow"
   },
-  "originprotocol": {
-    "link": "https://www.originprotocol.com/en",
-    "name": "Origin Protocol"
+  "sablier": {
+    "link": "https://sablier.finance/",
+    "name": "Sablier"
+  },
+  "spiderdex": {
+    "link": "https://www.spiderdex.com/",
+    "name": "SpiderDEX"
+  },
+  "stablepay": {
+    "link": "https://stablepay.io/",
+    "name": "StablePay"
+  },
+  "status": {
+    "link": "https://status.im/",
+    "name": "Status"
+  },
+  "stib": {
+    "link": "https://stib.co/",
+    "name": "StiB"
+  },
+  "swarm": {
+    "link": "https://github.com/ethersphere/swarm",
+    "name": "Swarm"
+  },
+  "torque": {
+    "link": "https://torque.loans",
+    "name": "Torque"
+  },
+  "totem": {
+    "link": "https://totem.network",
+    "name": "Totem"
+  },
+  "truffle": {
+    "link": "https://www.trufflesuite.com/",
+    "name": "Truffle Suite"
+  },
+  "trustwallet": {
+    "link": "https://trustwallet.com/",
+    "name": "Trust Wallet"
+  },
+  "uniswap": {
+    "link": "https://uniswap.io/",
+    "name": "UniSwap"
+  },
+  "universallogin": {
+    "link": "https://universallogin.io",
+    "name": "Universal Login"
+  },
+  "unlock": {
+    "link": "https://unlock-protocol.com/",
+    "name": "Unlock"
   }
 }
