@@ -79,6 +79,10 @@
     "link": "https://defswap.eth.link/",
     "name": "Defswap"
   },
+  "dether": {
+    "link": "https://dether.io/",
+    "name": "Dether"
+  },
   "deversifi": {
     "link": "https://deversifi.com/",
     "name": "DeversiFI"
@@ -120,6 +124,10 @@
     "link": "https://www.fabrx.io/",
     "name": "Fabrx"
   },
+  "frontierwallet": {
+    "link": "https://frontierwallet.com/",
+    "name": "Frontier Wallet"
+  },
   "gitcoin": {
     "link": "https://gitcoin.co/",
     "name": "Gitcoin"
@@ -143,6 +151,10 @@
   "kred": {
     "link": "https://nft.kred/",
     "name": "Kred"
+  },
+  "kyberswap": {
+    "link": "https://kyberswap.com/swap",
+    "name": "KyberSwap"
   },
   "leth": {
     "link": "https://www.inzhoop.com/",
@@ -220,9 +232,17 @@
     "link": "https://podcrypt.app/",
     "name": "Podcrypt"
   },
+  "pooltogether": {
+    "link": "https://www.pooltogether.com/",
+    "name": "Pool Together"
+  },
   "portal": {
     "link": "https://www.portal.network",
     "name": "Portal"
+  },
+  "portle": {
+    "link": "https://portle.io/",
+    "name": "Portle"
   },
   "rainbow": {
     "link": "https://rainbow.me/",
@@ -252,6 +272,18 @@
     "link": "https://github.com/ethersphere/swarm",
     "name": "Swarm"
   },
+  "temporal": {
+    "link": "https://temporal.cloud/",
+    "name": "Temporal"
+  },
+  "terminal": {
+    "link": "https://terminal.co/",
+    "name": "Terminal"
+  },
+  "tornado": {
+    "link": "https://tornado.cash/",
+    "name": "Tornado Cash"
+  },
   "torque": {
     "link": "https://torque.loans",
     "name": "Torque"
@@ -279,5 +311,17 @@
   "unlock": {
     "link": "https://unlock-protocol.com/",
     "name": "Unlock"
+  },
+  "paytomat": {
+    "link": "https://paytomat.com/en/",
+    "name": "Paytomat"
+  },
+  "zerion": {
+    "link": "https://zerion.io/",
+    "name": "Zerion"
+  },
+  "1inch": {
+    "link": "https://1inch.exchange/",
+    "name": "1inch Exchange"
   }
 }
