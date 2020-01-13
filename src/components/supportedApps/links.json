@@ -136,9 +136,9 @@
     "link": "https://safe.gnosis.io",
     "name": "Gnosis Safe"
   },
-  "gnosissafeteams": {
-    "link": "https://safe.gnosis.io/teams",
-    "name": "Gnosis Safe for Teams"
+  "gnosissafemultisig": {
+    "link": "https://gnosis-safe.io",
+    "name": "Gnosis Safe Multisig"
   },
   "imToken": {
     "link": "https://token.im/",
