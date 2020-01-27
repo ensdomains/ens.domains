@@ -160,6 +160,10 @@
     "link": "https://www.inzhoop.com/",
     "name": "LETH"
   },
+  "localcoinswap": {
+    "link": "https://localcoinswap.com/",
+    "name": "LocalCoinSwap"
+  },
   "luxe": {
     "link": "http://nic.luxe/",
     "name": ".LUXE"
