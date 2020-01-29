@@ -46,5 +46,11 @@
     "title": "Executive Director",
     "type": "circle",
     "link": "https://twitter.com/nicksdjohnson"
+  },
+  "jim": {
+    "fullName": "Jim McDonald",
+    "title": "EthDNS developer",
+    "type": "hexagon",
+    "link": "http://linkedin.com/in/jimgmcdonald"
   }
 }
