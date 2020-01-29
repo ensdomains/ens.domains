@@ -8,10 +8,39 @@ import CallToAction from '../components/callToAction/CallToAction'
 import Header from '../components/headers/AnimatedHeader'
 import Footer from '../components/footer/Footer'
 import RoadMap from '../components/roadMap/RoadMap'
+import styled from 'react-emotion'
+import warning from '../assets/warning.svg'
+
+const Announcement = styled('div')`
+  display: flex;
+  color: #f5a623;
+  justify-content: center;
+  background: #5284ff;
+  border-bottom: #5284ff solid 3px;
+  div{
+    padding: 1em;
+  }
+  h3 {
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+  }
+  a {
+    color: #f5a623;
+    text-decoration: underline;
+  }
+`
 
 const IndexPage = () => (
   <Fragment>
     <Header />
+    <Announcement>
+      <div>
+        <img src={warning}></img>&nbsp;
+        ENS Registry Migration: Bug Fix, New Features&nbsp;
+        <a href="https://medium.com/p/64379193a5a/edit">(Find out more)</a>
+      </div>
+    </Announcement>
     <Pitch />
     <Quote
       quote="Mathematics is the art of giving the same name to different things."
