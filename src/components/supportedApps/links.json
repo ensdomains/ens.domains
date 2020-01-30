@@ -11,9 +11,9 @@
     "link": "https://alphawallet.com",
     "name": "AlphaWallet"
   },
-  "anchorx": {
-    "link": "https://anchor-x.io/",
-    "name": "AnchorX"
+  "ambo": {
+    "link": "https://www.ambo.io",
+    "name": "Ambo"
   },
   "aragon": {
     "link": "https://aragon.org/",
@@ -107,14 +107,26 @@
     "link": "https://enjinx.io/",
     "name": "EnjinX"
   },
+  "ensportal": {
+    "link": "https://ensportal.com/",
+    "name": "ENSPortal"
+  },
   "ethdns": {
     "link":
       "https://www.wealdtech.com/articles/using-ethdns-to-host-your-dns-domain/",
     "name": "EthDNS"
   },
+  "ethmojis": {
+    "link": "https://ethmojis.com/",
+    "name": "Ethmojis"
+  },
   "etherscan": {
     "link": "https://etherscan.io",
     "name": "Etherscan"
+  },
+  "etherscanquick": {
+    "link": "https://chrome.google.com/webstore/detail/etherscan-quick/nplfockicpoicmabmpjjkdiepdajflbn",
+    "name": "Etherscan Quick"
   },
   "ethsimple": {
     "link": "https://ethsimple.com/",
@@ -123,6 +135,10 @@
   "fabrx": {
     "link": "https://www.fabrx.io/",
     "name": "Fabrx"
+  },
+  "fantastic12": {
+    "link": "https://f12.network/",
+    "name": "Fantastic12"
   },
   "frontierwallet": {
     "link": "https://frontierwallet.com/",
@@ -164,6 +180,10 @@
     "link": "https://localcoinswap.com/",
     "name": "LocalCoinSwap"
   },
+  "localcryptos": {
+    "link": "https://localcryptos.com/",
+    "name": "LocalCryptos"
+  },
   "luxe": {
     "link": "http://nic.luxe/",
     "name": ".LUXE"
@@ -203,6 +223,14 @@
   "myEtherWallet": {
     "link": "https://myetherwallet.com/",
     "name": "MyEtherWallet"
+  },
+  "namestack": {
+    "link": "https://www.namestack.io/",
+    "name": "Namestack"
+  },
+  "nexusmutual": {
+    "link": "https://nexusmutual.io/",
+    "name": "Nexus Mutual"
   },
   "opensea": {
     "link": "https://opensea.io",
@@ -252,6 +280,14 @@
     "link": "https://rainbow.me/",
     "name": "Rainbow"
   },
+  "redireth": {
+    "link": "http://redir.eth.link/",
+    "name": "Redir.eth"
+  },
+  "rigoblock": {
+    "link": "http://rigoblock.eth.link/",
+    "name": "RigoBlock"
+  },
   "sablier": {
     "link": "https://sablier.finance/",
     "name": "Sablier"
@@ -292,6 +328,10 @@
     "link": "https://torque.loans",
     "name": "Torque"
   },
+  "torus": {
+    "link": "https://tor.us/",
+    "name": "Torus"
+  },
   "totem": {
     "link": "https://totem.network",
     "name": "Totem"
@@ -327,5 +367,9 @@
   "1inch": {
     "link": "https://1inch.exchange/",
     "name": "1inch Exchange"
+  },
+  "3box": {
+    "link": "https://3box.io/hub",
+    "name": "3Box Hub"
   }
 }
