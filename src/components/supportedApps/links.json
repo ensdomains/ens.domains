@@ -55,6 +55,10 @@
     "link": "https://colony.io/",
     "name": "Colony"
   },
+  "covalent": {
+    "link": "https://www.covalenthq.com/",
+    "name": "Covalent"
+  },
   "dcent": {
     "link": "https://dcentwallet.com/",
     "name": "D'CENT Wallet"
@@ -66,6 +70,10 @@
   "defisaver": {
     "link": "https://defisaver.com/",
     "name": "Defi Saver"
+  },
+  "defisnap": {
+    "link": "https://www.defisnap.io/",
+    "name": "DefiSnap"
   },
   "defiwatch": {
     "link": "https://defiwatch.io/",
@@ -86,6 +94,10 @@
   "deversifi": {
     "link": "https://deversifi.com/",
     "name": "DeversiFI"
+  },
+  "dexblue": {
+    "link": "https://dex.blue/",
+    "name": "dex.blue"
   },
   "dexwallet": {
     "link": "https://www.dexwallet.io/",
@@ -131,6 +143,10 @@
   "ethsimple": {
     "link": "https://ethsimple.com/",
     "name": "ETHSimple"
+  },
+  "existnames": {
+    "link": "http://existnames.xyz/",
+    "name": "Existential Name Search"
   },
   "fabrx": {
     "link": "https://www.fabrx.io/",
@@ -216,6 +232,10 @@
     "link": "https://multis.co/",
     "name": "Multis"
   },
+  "multisender": {
+    "link": "https://multisender.app/",
+    "name": "Multisender"
+  },
   "myCrypto": {
     "link": "https://mycrypto.com/",
     "name": "MyCrypto"
@@ -256,6 +276,10 @@
     "link": "https://www.pandax.tech",
     "name": "PandaX"
   },
+  "paraswap": {
+    "link": "https://paraswap.io/",
+    "name": "ParaSwap"
+  },
   "poap": {
     "link": "https://www.poap.xyz//",
     "name": "POAP"
@@ -284,6 +308,10 @@
     "link": "http://redir.eth.link/",
     "name": "Redir.eth"
   },
+  "revokecash": {
+    "link": "https://revoke.cash/",
+    "name": "Revoke.Cash"
+  },
   "rigoblock": {
     "link": "http://rigoblock.eth.link/",
     "name": "RigoBlock"
@@ -291,6 +319,10 @@
   "sablier": {
     "link": "https://sablier.finance/",
     "name": "Sablier"
+  },
+  "safekeep": {
+    "link": "https://safekeep.app/",
+    "name": "SafeKeep"
   },
   "spiderdex": {
     "link": "https://www.spiderdex.com/",
@@ -355,6 +387,10 @@
   "unlock": {
     "link": "https://unlock-protocol.com/",
     "name": "Unlock"
+  },
+  "walleth": {
+    "link": "https://walleth.org/",
+    "name": "WallETH"
   },
   "paytomat": {
     "link": "https://paytomat.com/en/",
