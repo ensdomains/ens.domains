@@ -121,7 +121,7 @@ class RoadMap extends React.Component {
             <dl>
               <div>
                 <dt>Aron Fischer</dt>
-                <dd>Colony &amp; Swarm</dd>
+                <dd>Colony</dd>
               </div>
               <div>
                 <dt>Dan Finlay</dt>
