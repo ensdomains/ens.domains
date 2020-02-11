@@ -23,7 +23,7 @@ const TeamContainer = styled.section`
     'nick becca'
     'jeff makoto'
     'dean brantly'
-    'chris jim';
+    'jim';
 
   ${mq.small`
     grid-template-columns: 1fr 1fr 1fr;
@@ -32,7 +32,7 @@ const TeamContainer = styled.section`
     grid-template-areas:
     'nick becca jeff'
     'makoto dean brantly'
-    'chris jim .';
+    'jim . .';
   `};
 
   .jeff {
@@ -45,10 +45,6 @@ const TeamContainer = styled.section`
 
   .nick {
     grid-area: nick;
-  }
-
-  .chris {
-    grid-area: chris;
   }
 
   .makoto {

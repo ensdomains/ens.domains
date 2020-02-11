@@ -11,12 +11,6 @@
     "type": "hexagon",
     "link": "https://twitter.com/BrantlyMillegan"
   },
-  "chris": {
-    "fullName": "Chris Remus",
-    "title": "Project Manager",
-    "type": "circle",
-    "link": "https://twitter.com/cjremus"
-  },
   "dean": {
     "fullName": "Dean Eigenmann",
     "title": "Solidity Developer",
