@@ -23,7 +23,7 @@ const TeamContainer = styled.section`
     'nick becca'
     'jeff makoto'
     'dean brantly'
-    'jim';
+    'jim .';
 
   ${mq.small`
     grid-template-columns: 1fr 1fr 1fr;

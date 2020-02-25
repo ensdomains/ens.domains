@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'react-emotion'
 import mq from '../../mediaQuery'
 import { modulate, importAll } from '../../utils'
-import phoneIcon from './icons/phone.png'
-import desktopIcon from './icons/desktop.svg'
+import walletIcon from './icons/wallet.png'
 import appsIcon from './icons/apps.png'
 import links from './links.json'
 import GridView, { Row } from '../gridView/GridView'
@@ -38,12 +37,7 @@ export default class SupportedContainer extends React.Component {
           <h2>Apps Supporting ENS</h2>
           <Row list={mobile} title="s" links={links}>
             <h3>
-              <img className="phone-icon" src={phoneIcon} />Mobile Wallets
-            </h3>
-          </Row>
-          <Row list={desktop} links={links}>
-            <h3>
-              <img className="desktop-icon" src={desktopIcon} />Desktop Wallets
+              <img className="wallet-icon" src={walletIcon} />Wallets
             </h3>
           </Row>
           <Row list={apps} links={links}>
