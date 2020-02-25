@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
-import mq from '../../mediaQuery'
-import { modulate, importAll } from '../../utils'
+import { importAll } from '../../utils'
 import walletIcon from './icons/wallet.png'
 import appsIcon from './icons/apps.png'
 import links from './links.json'
@@ -14,9 +13,6 @@ const Supported = styled.section`
 
 const mobile = importAll(
   require.context('./mobile', false, /\.(png|jpe?g|svg)$/)
-)
-const desktop = importAll(
-  require.context('./desktop', false, /\.(png|jpe?g|svg)$/)
 )
 const apps = importAll(require.context('./apps', false, /\.(png|jpe?g|svg)$/))
 
