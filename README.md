@@ -33,7 +33,7 @@ Please follow [this instruction](https://akrabat.com/the-beginners-guide-to-cont
 
 ### 1. Add your logo image
 
-The category is either under `apps`, `desktop`, or `mobile`.
+The category is either under `apps`, or `mobile`.
 
 We recommend filename to be all lowercase with png file format
 
@@ -41,7 +41,6 @@ eg:
 ```
 src/components/supportedApps
 ├── apps
-├── desktop
 ├── mobile
 │   ├── burnerwallet.png
 ```

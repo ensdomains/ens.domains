@@ -44,7 +44,7 @@ const GridView = styled('section')`
       margin-right: 5px;
     }
 
-    .phone-icon {
+    .wallet-icon {
       width: 15px;
       height: 22px;
     }
