@@ -51,6 +51,10 @@
     "link": "https://www.coinomi.com/en/",
     "name": "Coinomi"
   },
+  "coinbase": {
+    "link": "https://wallet.coinbase.com/",
+    "name": "Coinbase Wallet"
+  },
   "colony": {
     "link": "https://colony.io/",
     "name": "Colony"
