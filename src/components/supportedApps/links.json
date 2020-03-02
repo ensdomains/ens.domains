@@ -35,6 +35,14 @@
     "link": "https://www.bitfinex.com/",
     "name": "Bitfinex"
   },
+  "brave": {
+    "link": "https://brave.com/",
+    "name": "Brave"
+  },
+  "buidlhub": {
+    "link": "https://buidlhub.com/",
+    "name": "BUIDLHub"
+  },
   "burnerwallet": {
     "link": "https://wallet.burnerfactory.com/",
     "name": "Burner Wallet"
@@ -47,6 +55,10 @@
     "link": "https://www.cipherbrowser.com/",
     "name": "Cipher"
   },
+  "cloversnetwork": {
+    "link": "https://clovers.network/",
+    "name": "Clovers Network"
+  },
   "coinomi": {
     "link": "https://www.coinomi.com/en/",
     "name": "Coinomi"
@@ -54,6 +66,10 @@
   "coinbase": {
     "link": "https://wallet.coinbase.com/",
     "name": "Coinbase Wallet"
+  },
+  "coinrequest": {
+    "link": "https://coinrequest.io/",
+    "name": "CoinRequest"
   },
   "colony": {
     "link": "https://colony.io/",
@@ -66,6 +82,10 @@
   "dcent": {
     "link": "https://dcentwallet.com/",
     "name": "D'CENT Wallet"
+  },
+  "decentraland": {
+    "link": "https://decentraland.org/",
+    "name": "Decentraland"
   },
   "defiportfoliotracker": {
     "link": "https://portfolio.defiprime.com/",
@@ -106,6 +126,14 @@
   "dexwallet": {
     "link": "https://www.dexwallet.io/",
     "name": "DexWallet"
+  },
+  "drip": {
+    "link": "https://www.dripscore.com/",
+    "name": "Drip"
+  },
+  "dxdao": {
+    "link": "https://daotalk.org/c/daos/dx-dao",
+    "name": "Dxdao"
   },
   "easycryptoname": {
     "link": "https://easycryptoname.com/",
@@ -180,6 +208,10 @@
     "link": "https://token.im/",
     "name": "imToken"
   },
+  "jarvis": {
+    "link": "https://beta.jarvis.network/welcome",
+    "name": "Jarvis"
+  },
   "knownorigin": {
     "link": "https://knownorigin.io/",
     "name": "KnownOrigin"
@@ -232,6 +264,14 @@
     "link": "https://mintbase.io/",
     "name": "Mintbase"
   },
+  "mosendo": {
+    "link": "https://mosendo.com/",
+    "name": "Mosendo"
+  },
+  "mulewtf": {
+    "link": "https://mule.wtf/",
+    "name": "Mule.WTF"
+  },
   "multis": {
     "link": "https://multis.co/",
     "name": "Multis"
@@ -244,6 +284,10 @@
     "link": "https://mycrypto.com/",
     "name": "MyCrypto"
   },
+  "mycryptocheckout": {
+    "link": "https://wordpress.org/plugins/mycryptocheckout/",
+    "name": "MyCryptoCheckout"
+  },
   "myEtherWallet": {
     "link": "https://myetherwallet.com/",
     "name": "MyEtherWallet"
@@ -252,9 +296,21 @@
     "link": "https://www.namestack.io/",
     "name": "Namestack"
   },
+  "nethereum": {
+    "link": "http://playground.nethereum.com/",
+    "name": "Nethereum Playground"
+  },
   "nexusmutual": {
     "link": "https://nexusmutual.io/",
     "name": "Nexus Mutual"
+  },
+  "nonfungible": {
+    "link": "https://nonfungible.com/",
+    "name": "NonFungible.com"
+  },
+  "onemillionsdevs": {
+    "link": "https://join.onemilliondevs.com/",
+    "name": "OneMillionsDevs"
   },
   "opensea": {
     "link": "https://opensea.io",
@@ -336,6 +392,10 @@
     "link": "https://stablepay.io/",
     "name": "StablePay"
   },
+  "sureswap": {
+    "link": "https://beta.sureswap.app/",
+    "name": "SureSwap"
+  },
   "status": {
     "link": "https://status.im/",
     "name": "Status"
@@ -391,6 +451,10 @@
   "unlock": {
     "link": "https://unlock-protocol.com/",
     "name": "Unlock"
+  },
+  "unstoppable": {
+    "link": "https://unstoppabledomains.com/browser",
+    "name": "Unstoppable Browser"
   },
   "walleth": {
     "link": "https://walleth.org/",
