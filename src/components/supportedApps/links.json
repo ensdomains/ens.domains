@@ -35,6 +35,10 @@
     "link": "https://www.bitfinex.com/",
     "name": "Bitfinex"
   },
+  "blocto": {
+    "link": "https://blocto.portto.io/",
+    "name": "Blocto"
+  },
   "brave": {
     "link": "https://brave.com/",
     "name": "Brave"
