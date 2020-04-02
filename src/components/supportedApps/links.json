@@ -204,6 +204,10 @@
     "link": "https://gnosis-safe.io",
     "name": "Gnosis Safe Multisig"
   },
+  "guarda": {
+    "link": "http://guarda.co/",
+    "name": "Guarda"
+  },
   "imToken": {
     "link": "https://token.im/",
     "name": "imToken"
