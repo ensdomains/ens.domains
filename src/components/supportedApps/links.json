@@ -7,6 +7,10 @@
     "link": "http://almonit.eth.link/",
     "name": "Almonit"
   },
+  "almonitextension": {
+    "link": "http://almonit.eth.link/",
+    "name": "Almonit Extension"
+  },
   "alphawallet": {
     "link": "https://alphawallet.com",
     "name": "AlphaWallet"
@@ -34,6 +38,10 @@
   "bitfinex": {
     "link": "https://www.bitfinex.com/",
     "name": "Bitfinex"
+  },
+  "blocto": {
+    "link": "https://blocto.portto.io/en/",
+    "name": "Blocto"
   },
   "brave": {
     "link": "https://brave.com/",
@@ -155,6 +163,10 @@
     "link": "https://ensportal.com/",
     "name": "ENSPortal"
   },
+  "ensuser": {
+    "link": "https://ensuser.com/",
+    "name": "ENSUser"
+  },
   "ethdns": {
     "link":
       "https://www.wealdtech.com/articles/using-ethdns-to-host-your-dns-domain/",
@@ -188,6 +200,10 @@
     "link": "https://f12.network/",
     "name": "Fantastic12"
   },
+  "floatify": {
+    "link": "https://beta.floatify.net/",
+    "name": "Floatify"
+  },
   "frontierwallet": {
     "link": "https://frontierwallet.com/",
     "name": "Frontier Wallet"
@@ -215,6 +231,10 @@
   "jarvis": {
     "link": "https://beta.jarvis.network/welcome",
     "name": "Jarvis"
+  },
+  "keplr": {
+    "link": "https://wallet.keplr.app/",
+    "name": "Keplr"
   },
   "knownorigin": {
     "link": "https://knownorigin.io/",
@@ -254,7 +274,7 @@
   },
   "metamask": {
     "link": "https://metamask.io/",
-    "name": "MetaMask"
+    "name": "MetaMask Extension"
   },
   "metamaskmobile": {
     "link": "https://metamask.io/",
@@ -420,6 +440,10 @@
     "link": "https://terminal.co/",
     "name": "Terminal"
   },
+  "tokenallowancechecker": {
+    "link": "https://tac.dappstar.io/",
+    "name": "Token Allowance Checker"
+  },
   "tornado": {
     "link": "https://tornado.cash/",
     "name": "Tornado Cash"
@@ -459,6 +483,10 @@
   "unstoppable": {
     "link": "https://unstoppabledomains.com/browser",
     "name": "Unstoppable Browser"
+  },
+  "unstoppableextension": {
+    "link": "https://unstoppabledomains.com/browser",
+    "name": "Unstoppable Extension"
   },
   "walleth": {
     "link": "https://walleth.org/",
