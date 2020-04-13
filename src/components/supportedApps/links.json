@@ -147,6 +147,10 @@
     "link": "https://easycryptoname.com/",
     "name": "Easy Crypto Name"
   },
+  "edge": {
+    "link": "https://edge.app/",
+    "name": "Edge"
+  },
   "emoon": {
     "link": "https://www.emoon.io/",
     "name": "Emoon"
@@ -154,6 +158,10 @@
   "encirca": {
     "link": "https://www.encirca.com/eth/",
     "name": "EnCirca"
+  },
+  "enjin": {
+    "link": "https://enjin.io/products/wallet",
+    "name": "Enjin"
   },
   "enjinx": {
     "link": "https://enjinx.io/",
