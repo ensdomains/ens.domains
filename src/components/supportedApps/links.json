@@ -147,6 +147,10 @@
     "link": "https://easycryptoname.com/",
     "name": "Easy Crypto Name"
   },
+  "edge": {
+    "link": "https://edge.app/",
+    "name": "Edge"
+  },
   "emoon": {
     "link": "https://www.emoon.io/",
     "name": "Emoon"
@@ -154,6 +158,10 @@
   "encirca": {
     "link": "https://www.encirca.com/eth/",
     "name": "EnCirca"
+  },
+  "enjin": {
+    "link": "https://enjin.io/products/wallet",
+    "name": "Enjin"
   },
   "enjinx": {
     "link": "https://enjinx.io/",
@@ -199,6 +207,10 @@
   "fantastic12": {
     "link": "https://f12.network/",
     "name": "Fantastic12"
+  },
+  "fleek": {
+    "link": "https://fleek.co/",
+    "name": "Fleek"
   },
   "floatify": {
     "link": "https://beta.floatify.net/",
@@ -420,6 +432,10 @@
     "link": "https://beta.sureswap.app/",
     "name": "SureSwap"
   },
+  "stakeonme": {
+    "link": "https://stakeonme.com/",
+    "name": "StakeOnMe"
+  },
   "status": {
     "link": "https://status.im/",
     "name": "Status"
@@ -435,10 +451,6 @@
   "temporal": {
     "link": "https://temporal.cloud/",
     "name": "Temporal"
-  },
-  "terminal": {
-    "link": "https://terminal.co/",
-    "name": "Terminal"
   },
   "tokenallowancechecker": {
     "link": "https://tac.dappstar.io/",
@@ -485,7 +497,7 @@
     "name": "Unstoppable Browser"
   },
   "unstoppableextension": {
-    "link": "https://unstoppabledomains.com/browser",
+    "link": "https://unstoppabledomains.com/extension",
     "name": "Unstoppable Extension"
   },
   "walleth": {
