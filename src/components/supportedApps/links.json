@@ -180,6 +180,10 @@
       "https://www.wealdtech.com/articles/using-ethdns-to-host-your-dns-domain/",
     "name": "EthDNS"
   },
+  "ethmail": {
+    "link": "http://ethmail.cc/",
+    "name": "ETHMail"
+  },
   "ethmojis": {
     "link": "https://ethmojis.com/",
     "name": "Ethmojis"
@@ -403,6 +407,10 @@
   "redireth": {
     "link": "http://redir.eth.link/",
     "name": "Redir.eth"
+  },
+  "request": {
+    "link": "https://request.network/",
+    "name": "Request"
   },
   "revokecash": {
     "link": "https://revoke.cash/",
