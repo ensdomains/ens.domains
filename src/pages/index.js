@@ -37,8 +37,8 @@ const IndexPage = () => (
     <Announcement>
       <div>
         <img src={warning}></img>&nbsp;
-        ENS Registry Migration: Bug Fix, New Features&nbsp;
-        <a href="https://medium.com/the-ethereum-name-service/ens-registry-migration-bug-fix-new-features-64379193a5a">(Find out more)</a>
+        Names bought in May are expiring soon. &nbsp;
+        <a href="https://app.ens.domains">(Find out more)</a>
       </div>
     </Announcement>
     <Pitch />
