@@ -38,7 +38,7 @@ const IndexPage = () => (
       <div>
         <img src={warning}></img>&nbsp;
         Names bought in May are expiring soon. &nbsp;
-        <a href="https://app.ens.domains">(Go to ENS manager)</a>
+        <a href="https://app.ens.domains">(Go to ENS App)</a>
       </div>
     </Announcement>
     <Pitch />
