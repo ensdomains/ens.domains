@@ -244,6 +244,10 @@
     "link": "https://token.im/",
     "name": "imToken"
   },
+  "ipfs": {
+    "link": "https://ipfs.io/",
+    "name": "IPFS"
+  },
   "jarvis": {
     "link": "https://beta.jarvis.network/welcome",
     "name": "Jarvis"
@@ -456,6 +460,10 @@
     "link": "https://github.com/ethersphere/swarm",
     "name": "Swarm"
   },
+  "synthetix": {
+    "link": "https://docs.synthetix.io/integrations/ens/",
+    "name": "Synthetix"
+  },
   "temporal": {
     "link": "https://temporal.cloud/",
     "name": "Temporal"
@@ -484,6 +492,10 @@
     "link": "https://www.trufflesuite.com/",
     "name": "Truffle Suite"
   },
+  "trustlessfund": {
+    "link": "https://trustless.fund/",
+    "name": "TrustlessFund"
+  },
   "trustwallet": {
     "link": "https://trustwallet.com/",
     "name": "Trust Wallet"
@@ -511,6 +523,10 @@
   "walleth": {
     "link": "https://walleth.org/",
     "name": "WallETH"
+  },
+   "wip2p": {
+    "link": "http://ens.wip2p.com/",
+    "name": "WIP2P"
   },
   "paytomat": {
     "link": "https://paytomat.com/en/",
