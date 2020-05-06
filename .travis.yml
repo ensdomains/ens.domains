@@ -16,11 +16,12 @@ notifications:
   email:
     - false
 deploy:
-  provider: pages
-  local_dir: public
-  skip_cleanup: true
-  github_token: $GITHUB_API_TOKEN  # Set in the settings page of your repository, as a secure variable
+  provider: pages:git
+  edge: true
+  deploy_key: $GITHUB_API_TOKEN
+  local_dir: ./public
   keep_history: true
+  cleanup: false
   verbose : true
   on:
     branch: master
