@@ -26,12 +26,13 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "clean": "rm -rf node_modules/gh-pages/.cache",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy:dev": "gatsby build && cd public && surge . --domain ensdomains.surge.sh",
     "deploy:live": "gatsby build --prefix-paths && gh-pages -d public",
-    "deploy:ci": "gatsby build --prefix-paths && gh-pages -d public -r https://$GITHUB_API_TOKEN@github.com/ensdomains/ens.domains.git",
+    "deploy:ci": "yarn clearn && gatsby build --prefix-paths && gh-pages -d public -r https://ensbot:$GITHUB_API_TOKEN@github.com/ensdomains/ens.domains.git",
     "deploy:branch": "/bin/sh -c 'if [ \"$TRAVIS_BRANCH\" = \"master\" ]; then yarn deploy:live; elif [ \"$TRAVIS_BRANCH\" = \"dev\" ]; then yarn deploy:dev; fi'",
     "deploy:pr": "gatsby build && ./deploy.sh",
     "deploy": "echo $TRAVIS_PULL_REQUEST && /bin/sh -c 'if [ \"$TRAVIS_PULL_REQUEST\" = \"false\" ]; then yarn deploy:branch; else yarn deploy:pr; fi'"
