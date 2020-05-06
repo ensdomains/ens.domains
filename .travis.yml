@@ -17,7 +17,8 @@ notifications:
     - false
 deploy:
   provider: script
-  script: yarn run deploy:ci
+  github_token: $GITHUB_API_TOKEN
+  script: echo 'HELLO WORLD'
   skip_cleanup: true
   on:
     branch: master
