@@ -15,3 +15,9 @@ jobs:
 notifications:
   email:
     - false
+deploy:
+  provider: script
+  script: yarn run deploy:ci
+  skip_cleanup: true
+  on:
+    branch: master
