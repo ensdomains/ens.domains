@@ -32,7 +32,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy:dev": "gatsby build && cd public && surge . --domain ensdomains.surge.sh",
     "deploy:live": "gatsby build --prefix-paths && gh-pages -d public",
-    "deploy:ci": "echo '*** DEPLOY1' && yarn clean && echo '*** DEPLOY2' && gatsby build --prefix-paths && echo '*** DEPLOY3' && ./deploy-gh.sh",
+    "deploy:ci": "yarn clean && gatsby build --prefix-paths && ./deploy-gh.sh",
     "deploy:branch": "/bin/sh -c 'if [ \"$TRAVIS_BRANCH\" = \"master\" ]; then yarn deploy:ci; elif [ \"$TRAVIS_BRANCH\" = \"dev\" ]; then yarn deploy:dev; fi'",
     "deploy:pr": "gatsby build && ./deploy.sh",
     "deploy": "echo $TRAVIS_PULL_REQUEST && /bin/sh -c 'if [ \"$TRAVIS_PULL_REQUEST\" = \"false\" ]; then yarn deploy:branch; else yarn deploy:pr; fi'"
