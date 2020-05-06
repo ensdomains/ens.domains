@@ -17,7 +17,7 @@ notifications:
     - false
 deploy:
   provider: script
-  github_token: $GITHUB_API_TOKEN
+  github_token: $GITHUB_TOKEN
   script: echo 'HELLO WORLD'
   skip_cleanup: true
   on:
