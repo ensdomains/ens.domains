@@ -16,12 +16,8 @@ notifications:
   email:
     - false
 deploy:
-  provider: pages:git
-  edge: true
-  deploy_key: $GITHUB_API_TOKEN
-  local_dir: ./public
-  keep_history: true
-  cleanup: false
-  verbose : true
+  provider: script
+  script: yarn run deploy:ci
+  skip_cleanup: true
   on:
     branch: master
