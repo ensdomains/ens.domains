@@ -87,9 +87,17 @@
     "link": "https://www.covalenthq.com/",
     "name": "Covalent"
   },
+  "daostack": {
+    "link": "https://daostack.io/",
+    "name": "DAOStack"
+  },
   "dcent": {
     "link": "https://dcentwallet.com/",
     "name": "D'CENT Wallet"
+  },
+  "debank": {
+    "link": "https://debank.com/overview/",
+    "name": "DeBank"
   },
   "decentraland": {
     "link": "https://decentraland.org/",
@@ -150,6 +158,10 @@
   "edge": {
     "link": "https://edge.app/",
     "name": "Edge"
+  },
+  "eidoo": {
+    "link": "https://eidoo.io/",
+    "name": "Eidoo"
   },
   "emoon": {
     "link": "https://www.emoon.io/",
@@ -243,6 +255,10 @@
   "imToken": {
     "link": "https://token.im/",
     "name": "imToken"
+  },
+  "interspacechat": {
+    "link": "https://interspace.chat/",
+    "name": "interspace.chat"
   },
   "ipfs": {
     "link": "https://ipfs.io/",
