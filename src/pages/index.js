@@ -44,7 +44,7 @@ const IndexPage = () => (
     <Pitch />
     <Quote
       quote="Mathematics is the art of giving the same name to different things."
-      author="— Henri Poincare"
+      author="— Henri Poincaré"
     />
     <GetStarted />
     <Supported />
