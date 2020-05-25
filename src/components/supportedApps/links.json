@@ -96,7 +96,7 @@
     "name": "D'CENT Wallet"
   },
   "debank": {
-    "link": "https://debank.com/overview/",
+    "link": "https://debank.com/",
     "name": "DeBank"
   },
   "decentraland": {
@@ -551,6 +551,10 @@
   "zerion": {
     "link": "https://zerion.io/",
     "name": "Zerion"
+  },
+  "zippie": {
+    "link": "https://www.zippie.com/",
+    "name": "Zippie"
   },
   "1inch": {
     "link": "https://1inch.exchange/",
