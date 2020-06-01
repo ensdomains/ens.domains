@@ -1,8 +1,4 @@
 {
-  "securedns": {
-    "link": "https://github.com/Texnomic/SecureDNS",
-    "name": "SecureDNS"
-  },
   "accointing": {
     "link": "https://www.accointing.com/",
     "name": "Accointing"
@@ -451,6 +447,10 @@
   "safekeep": {
     "link": "https://safekeep.app/",
     "name": "SafeKeep"
+  },
+  "securedns": {
+    "link": "https://github.com/Texnomic/SecureDNS",
+    "name": "SecureDNS"
   },
   "spiderdex": {
     "link": "https://www.spiderdex.com/",
