@@ -1,4 +1,8 @@
 {
+  "securedns": {
+    "link": "https://github.com/Texnomic/SecureDNS",
+    "name": "SecureDNS"
+  },
   "accointing": {
     "link": "https://www.accointing.com/",
     "name": "Accointing"
