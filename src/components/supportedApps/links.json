@@ -123,6 +123,10 @@
     "link": "https://defizap.com/",
     "name": "DeFiZap"
   },
+  "defi777": {
+    "link": "https://defi777.com/",
+    "name": "DeFi777"
+  },
   "defswap": {
     "link": "https://defswap.eth.link/",
     "name": "Defswap"
@@ -191,6 +195,10 @@
     "link":
       "https://www.wealdtech.com/articles/using-ethdns-to-host-your-dns-domain/",
     "name": "EthDNS"
+  },
+  "ethereumdefilanguagesupport": {
+    "link": "https://marketplace.visualstudio.com/items?itemName=ericglau.defi-ls",
+    "name": "Ethereum DeFi Language Support"
   },
   "ethmail": {
     "link": "http://ethmail.cc/",
@@ -400,6 +408,10 @@
     "link": "https://paraswap.io/",
     "name": "ParaSwap"
   },
+  "pillar": {
+    "link": "https://pillarproject.io/",
+    "name": "Pillar"
+  },
   "poap": {
     "link": "https://www.poap.xyz//",
     "name": "POAP"
@@ -539,6 +551,10 @@
   "unstoppableextension": {
     "link": "https://unstoppabledomains.com/extension",
     "name": "Unstoppable Extension"
+  },
+  "waffle": {
+    "link": "https://getwaffle.io/",
+    "name": "Waffle"
   },
   "walleth": {
     "link": "https://walleth.org/",
