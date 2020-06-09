@@ -91,6 +91,10 @@
     "link": "https://daostack.io/",
     "name": "DAOStack"
   },
+  "dappnode": {
+    "link": "https://dappnode.io/",
+    "name": "DAppNode"
+  },
   "dcent": {
     "link": "https://dcentwallet.com/",
     "name": "D'CENT Wallet"
@@ -303,6 +307,10 @@
   "localcryptos": {
     "link": "https://localcryptos.com/",
     "name": "LocalCryptos"
+  },
+  "loopring": {
+    "link": "https://loopring.org/",
+    "name": "Loopring"
   },
   "luxe": {
     "link": "http://nic.luxe/",
