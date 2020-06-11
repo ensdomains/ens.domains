@@ -39,6 +39,10 @@
     "link": "https://www.bitfinex.com/",
     "name": "Bitfinex"
   },
+  "blockscan": {
+    "link": "https://blockscan.com/",
+    "name": "Blockscan"
+  },
   "blocto": {
     "link": "https://blocto.portto.io/en/",
     "name": "Blocto"
