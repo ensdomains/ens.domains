@@ -144,8 +144,8 @@ class RoadMap extends React.Component {
                 <dd>MyCrypto</dd>
               </div>
               <div>
-                <dt>Vlad Zamfir</dt>
-                <dd>Ethereum Foundation</dd>
+                <dt>Sergey Nazarov</dt>
+                <dd>Chainlink</dd>
               </div>
             </dl>
           </div>
