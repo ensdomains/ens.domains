@@ -432,6 +432,10 @@
     "link": "https://paraswap.io/",
     "name": "ParaSwap"
   },
+  "paytomat": {
+    "link": "https://paytomat.com/en/",
+    "name": "Paytomat"
+  },
   "pillar": {
     "link": "https://pillarproject.io/",
     "name": "Pillar"
@@ -588,9 +592,9 @@
     "link": "http://ens.wip2p.com/",
     "name": "WIP2P"
   },
-  "paytomat": {
-    "link": "https://paytomat.com/en/",
-    "name": "Paytomat"
+   "wyre": {
+    "link": "https://www.sendwyre.com/",
+    "name": "Wyre"
   },
   "zerion": {
     "link": "https://zerion.io/",
