@@ -1,3 +1,5 @@
+# DEPRECATED, new repo at [https://github.com/ensdomains/ens.domains-v2](https://github.com/ensdomains/ens.domains-v2)
+
 # ens.domains
 
 Landing page for [ens.domains](https://ens.domains)
