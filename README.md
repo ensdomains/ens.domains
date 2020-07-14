@@ -1,4 +1,4 @@
-# DEPRECATED, new repo at [https://github.com/ensdomains/ens.domains-v2](https://github.com/ensdomains/ens.domains-v2)
+# DEPRECATED, new repo at [https://github.com/ensdomains/ensdomains-v2](https://github.com/ensdomains/ensdomains-v2)
 
 # ens.domains
 
