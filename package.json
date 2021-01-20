@@ -13,7 +13,7 @@
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-react-next": "^1.0.11",
-    "gsap": "^2.0.1",
+    "gsap": "^3.6.0",
     "module-alias": "^2.1.0",
     "react-emotion": "^9.2.3",
     "react-helmet": "^5.2.0",
